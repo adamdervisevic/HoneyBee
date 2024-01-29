@@ -70,6 +70,7 @@ header {
   cursor: pointer;
   display: none;
 }
+
 .hero {
   height: 100%;
   width: 100%;
@@ -317,7 +318,7 @@ section {
     display: block;
     margin: 7px 0;
   }
-  .navlist .open {
+  .open {
     right: 0;
   }
 }

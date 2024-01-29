@@ -21,9 +21,9 @@
             <li>
                 <a href="#">Naši programi</a>
                 <ul>
-                    <li><a href="#">Program 1</a></li>
-                    <li><a href="#">Program 2</a></li>
-                    <li><a href="#">Program 3</a></li>
+                    <li><a href="#">Individualna nastava za odrasle</a></li>
+                    <li><a href="#">Ucenje u paru</a></li>
+                    <li><a href="#">Grupna nastava za decu</a></li>
                 </ul>
             </li>
             <li><a href="#">Cenovnik</a></li>

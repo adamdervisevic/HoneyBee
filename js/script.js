@@ -29,17 +29,21 @@ window.addEventListener("load", deal_with_dropdown);
 
 function deal_with_dropdown() {
   if (body.offsetWidth <= 1155) {
-    menu_trigger.addEventListener("click", () => {
+    let isMenuVisible = false;
+
+    menu_trigger.addEventListener("mouseover", () => {
       menu_program.classList.toggle("display_toggle");
       navlist.classList.toggle("navlist_extend_height");
       cenovnik.classList.toggle("extend_padding");
+      isMenuVisible = true;
     });
 
-    document.addEventListener("click", (event) => {
-      if (!menu_trigger.contains(event.target)) {
+    menu_trigger.addEventListener("mouseout", () => {
+      if (isMenuVisible) {
         menu_program.classList.remove("display_toggle");
         navlist.classList.remove("navlist_extend_height");
         cenovnik.classList.remove("extend_padding");
+        isMenuVisible = false;
       }
     });
   } else {

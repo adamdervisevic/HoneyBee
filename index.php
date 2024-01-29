@@ -18,7 +18,14 @@
 
         <ul class="navlist">
             <li><a href="#">Pocetna strana</a></li>
-            <li><a href="#">Nasi programi</a></li>
+            <li>
+                <a href="#">Naši programi</a>
+                <ul>
+                    <li><a href="#">Program 1</a></li>
+                    <li><a href="#">Program 2</a></li>
+                    <li><a href="#">Program 3</a></li>
+                </ul>
+            </li>
             <li><a href="#">Cenovnik</a></li>
             <li><a href="#">O nama</a></li>
             <li><a href="#">Iskustva polaznika</a></li>
@@ -49,9 +56,6 @@
         <a href="#"><i class="ri-facebook-line"></i></a>
     </div>
 
-    <div class="scroll-down">
-        <a href="#"><i class="ri-arrow-down-s-fill"></i></a>
-    </div>
 
     <script src="https://unpkg.com/scrollreveal"></script>
 

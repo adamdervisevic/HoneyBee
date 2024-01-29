@@ -37,6 +37,7 @@ header {
 .navlist a:hover {
     border-bottom: 2px solid white;
 }
+
 #menu-icon {
     color: white;
     font-size: 35px;
@@ -131,23 +132,6 @@ section {
     color: #ca8102;
     transform: translateY(-5px);
 }
-.scroll-down {
-    position: absolute;
-    bottom: 6%;
-    right: 9%;
-}
-.scroll-down i {
-    display: block;
-    padding: 12px;
-    font-size: 25px;
-    color: white;
-    background: #ca8102;
-    border-radius: 30px;
-    transition: all .50s ease;
-}
-.scroll-down i:hover{
-    transform: translateY(-5px);
-}
 
 @media (max-width: 1535px) {
     header {
@@ -156,10 +140,6 @@ section {
     }
     .icons {
         padding: 0 3%;
-        transition: .2s;
-    }
-    .scroll-down {
-        right: 3%;
         transition: .2s;
     }
 }
@@ -205,9 +185,6 @@ section {
     .icons {
         display: none;
     }
-    .scroll-down {
-        display: none;
-    }
 }
 
 @media (max-width: 1155px) {
@@ -232,14 +209,18 @@ section {
         display: block;
         margin: 7px 0;
     }
-    .navlist .open{
+    .open{
         right: 0;
     }
 }
-
 @media (max-width: 680px) {
     .hero-img img {
         width: 100%;
         height: auto;
+    }
+}
+@media only screen and (max-width: 375px) {
+    .hero-text h1 {
+        font-size: 65px;
     }
 }

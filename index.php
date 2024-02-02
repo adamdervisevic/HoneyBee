@@ -18,7 +18,9 @@
 <body>
 
     <header>
-        <a href="#" class="logo">Honey Bee</a>
+        <a href="#" class="logo">
+            <img src="img/logo.webp" alt="website logo">
+        </a>
 
         <ul class="navlist">
             <li><a href="#">Pocetna strana</a></li>
@@ -50,8 +52,25 @@
             <a href="#" class="ctaa"><i class="ri-play-fill"></i>Watch</a>
         </div>
 
-        <div class="hero-img">
+        <!-- <div class="hero-img">
             <img src="img/main.png" alt="">
+        </div> -->
+
+        <!-- og hive for v--1 and v--2 -->
+        <!-- <div class="hive">
+            <div class="hexagon"></div>
+            <div class="hexagon hex-2"></div>
+            <div class="hexagon hex-3"></div>
+            <div class="hexagon hex-4"></div>
+            <div class="hexagon hex-5"></div>
+            <div class="hexagon hex-6"></div>
+            <div class="hexagon hex-7"></div>
+        </div> -->
+
+        <div class="hive">
+            <div class="hexagon hex-s"></div>
+            <div class="hexagon hex-m"></div>
+            <div class="hexagon hex-b"></div>
         </div>
     </section>
 

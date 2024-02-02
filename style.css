@@ -6,6 +6,10 @@
   list-style: none;
   text-decoration: none;
 }
+
+html {
+  font-size: 62.5%;
+}
 header {
   position: fixed;
   right: 0;
@@ -18,10 +22,9 @@ header {
   padding: 33px 9%;
   background: transparent;
 }
-.logo {
-  font-size: 30px;
-  font-weight: 700;
-  color: white;
+.logo img {
+  width: 12rem;
+  height: 12em;
 }
 .navlist {
   display: flex;
@@ -56,6 +59,10 @@ header {
   display: block;
   text-align: right;
 }
+.navlist a {
+  font-size: 1.6rem;
+}
+
 .navlist li ul li:hover {
   background-color: #faaa1a;
 }
@@ -82,10 +89,13 @@ header {
   min-height: 100vh;
   background: linear-gradient(180deg, #faaa1a 0%, #f5ad3b 50%, #fbaa19 100%);
   position: relative;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  align-items: center;
-  gap: 2rem;
+  /* display: grid; */
+  /* grid-template-columns: repeat(2, 1fr); */
+  /* align-items: center; */
+  display: flex;
+  justify-content: space-around;
+  gap: 20rem;
+  padding-top: 25rem;
 }
 section {
   padding: 0 19%;
@@ -371,3 +381,77 @@ section {
 .extend_padding {
   padding-top: 180px;
 }
+
+/* hive v-- 3 */
+.hive {
+  width: 100%;
+  max-width: 320px;
+  height: 300px;
+  position: relative;
+}
+.hexagon {
+  clip-path: polygon(50% -50%, 100% 50%, 100% 50%, 50% 150%, 0% 50%, 0% 50%);
+
+  background-image: url("/img/main.webp");
+  background-size: cover;
+  margin: 0 auto;
+  position: absolute;
+}
+.hex-s {
+  width: 200px;
+  height: 115.47px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.hex-m {
+  width: 240px;
+  height: 138.56px;
+  top: 46px;
+  left: -135px;
+}
+
+.hex-b {
+  width: 280px;
+  height: 161.65px;
+  top: 117.5px;
+  left: 38px;
+}
+
+@media only screen and (max-width: 700px) {
+  .hero {
+    flex-direction: column;
+  }
+  .hive {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .hex-s {
+    width: 100px; /* Adjusted width */
+    height: 57.74px; /* Adjusted height for a proportional size */
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .hex-m {
+    width: 120px; /* Adjusted width */
+    height: 69.28px; /* Adjusted height for a proportional size */
+    top: 23px; /* Adjusted top position */
+    left: 10px; /* Adjusted left position */
+  }
+
+  .hex-b {
+    width: 140px; /* Adjusted width */
+    height: 80.82px; /* Adjusted height for a proportional size */
+    top: 62px; /* Adjusted top position */
+    left: 97.5px; /* Adjusted left position */
+  }
+}
+
+@media only screen and (max-width: 340px) {
+  .hex-s {
+    left: 52%;
+    transform: translateX(-48%);
+  }
+}
+/* end hive */

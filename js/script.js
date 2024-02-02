@@ -1,6 +1,7 @@
 const body = document.querySelector("body");
 let menu = document.querySelector("#menu-icon");
 let navlist = document.querySelector(".navlist");
+const hive = document.querySelector(".hive");
 
 menu.onclick = () => {
   menu.classList.toggle("bx-x");
@@ -26,6 +27,11 @@ const menu_program_link = document.querySelectorAll(".menu_program_link");
 
 window.addEventListener("resize", deal_with_dropdown);
 window.addEventListener("load", deal_with_dropdown);
+window.addEventListener("load", hive_appear);
+
+function hive_appear() {
+  hive.classList.add("hive_opacity");
+}
 
 function add_styles() {
   menu_program.classList.add("display_toggle");

@@ -10,7 +10,7 @@
 html {
   font-size: 62.5%;
 }
-header {
+nav {
   position: fixed;
   right: 0;
   top: 0;
@@ -19,7 +19,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 33px 9%;
+  padding: 1rem 5rem;
   background: linear-gradient(180deg, #faaa1a 0%, #f5ad3b 50%, #fbaa19 100%);
 }
 .logo img {
@@ -259,7 +259,7 @@ section {
   }
 }
 
-@media (max-width: 1155px) {
+@media (max-width: 1200px) {
   #menu-icon {
     display: block;
   }
@@ -310,7 +310,7 @@ section {
   }
 }
 
-@media (max-width: 1155px) {
+@media (max-width: 1200px) {
   #menu-icon {
     display: block;
   }
@@ -394,7 +394,7 @@ section {
 .hexagon {
   clip-path: polygon(50% -50%, 100% 50%, 100% 50%, 50% 150%, 0% 50%, 0% 50%);
 
-  background-image: url("/img/main.webp");
+  background-image: url("/assets/img/main.webp");
   background-size: cover;
   margin: 0 auto;
   position: absolute;

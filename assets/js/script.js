@@ -47,7 +47,7 @@ function remove_styles() {
 
 function deal_with_dropdown() {
   let isMenuVisible = false;
-  if (body.offsetWidth <= 1155) {
+  if (body.offsetWidth <= 1200) {
     menu_trigger.addEventListener("mouseover", () => {
       add_styles();
       isMenuVisible = true;
@@ -59,12 +59,12 @@ function deal_with_dropdown() {
         isMenuVisible = false;
       }
     });
-  } else if (body.offsetWidth > 1155) {
+  } else if (body.offsetWidth > 1200) {
     navlist.classList.remove("navlist_extend_height");
     cenovnik.classList.remove("extend_padding");
 
     menu_trigger.addEventListener("mouseover", () => {
-      if (document.body.offsetWidth > 1155 && !isMenuVisible) {
+      if (document.body.offsetWidth > 1200 && !isMenuVisible) {
         menu_program.classList.add("display_toggle");
         navlist.classList.remove("navlist_extend_height");
         cenovnik.classList.remove("extend_padding");
@@ -73,7 +73,7 @@ function deal_with_dropdown() {
     });
 
     menu_trigger.addEventListener("mouseout", () => {
-      if (isMenuVisible && document.body.offsetWidth > 1155) {
+      if (isMenuVisible && document.body.offsetWidth > 1200) {
         remove_styles();
         isMenuVisible = false;
       }

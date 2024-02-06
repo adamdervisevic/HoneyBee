@@ -9,6 +9,7 @@
 
 html {
   font-size: 62.5%;
+  background: linear-gradient(180deg, #faaa1a 0%, #f5ad3b 50%, #fbaa19 100%);
 }
 nav {
   position: fixed;
@@ -87,7 +88,7 @@ nav {
   height: 100%;
   width: 100%;
   min-height: 100vh;
-  background: linear-gradient(180deg, #faaa1a 0%, #f5ad3b 50%, #fbaa19 100%);
+
   position: relative;
   /* display: grid; */
   /* grid-template-columns: repeat(2, 1fr); */
@@ -387,9 +388,11 @@ section {
   width: 100%;
   max-width: 320px;
   height: 300px;
-  position: relative;
   opacity: 0;
   transition: opacity 1s ease-in;
+}
+.header_hive {
+  position: relative;
 }
 .hexagon {
   clip-path: polygon(50% -50%, 100% 50%, 100% 50%, 50% 150%, 0% 50%, 0% 50%);
@@ -397,6 +400,8 @@ section {
   background-image: url("/assets/img/main.webp");
   background-size: cover;
   margin: 0 auto;
+}
+.header_hexagon {
   position: absolute;
 }
 .hex-s {
@@ -471,3 +476,57 @@ section {
   opacity: 1;
 }
 /* end hive */
+/* start why online course section */
+.reasons_why {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  transition: all 1s ease-in;
+}
+.reasons_why_disappear {
+  opacity: 0;
+  transform: translateY(20%);
+}
+.reasons_why h2 {
+  font-size: 3.2rem;
+  color: white;
+}
+.section_why_hive {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
+.section_why_hive button {
+  clip-path: polygon(50% -50%, 100% 50%, 100% 50%, 50% 150%, 0% 50%, 0% 50%);
+  background: linear-gradient(180deg, #faaa1a 0%, #f5ad3b 50%, #fbaa19 100%);
+  width: 210px;
+  cursor: pointer;
+  justify-self: center;
+  border: none;
+}
+.hex-why {
+  background-color: black;
+  background-image: none;
+  display: flex;
+  width: 210px;
+  height: 121.24px;
+}
+.section_why_hive div p {
+  color: white;
+  text-align: center;
+  margin: auto !important;
+  font-size: 2rem;
+}
+.reason_why {
+  font-size: 2rem;
+  color: white;
+  padding: 4rem 0rem 5rem 0rem;
+  text-align: center;
+  transition: opacity 0.5s ease-in;
+}
+.reason_why_disappear {
+  opacity: 0;
+}

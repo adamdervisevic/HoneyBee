@@ -402,22 +402,22 @@ section {
 .hex-s {
   width: 140px;
   height: 80.83px;
-  left: 37%;
+  left: 39%;
   transform: translateX(-50%);
-  top: 22px;
+  top: 20px;
 }
 
 .hex-m {
   width: 210px;
   height: 121.24px;
   top: 46px;
-  left: -135px;
+  left: -145px;
 }
 
 .hex-b {
   width: 280px;
   height: 161.65px;
-  top: 113px;
+  top: 123px;
   left: 15px;
 }
 
@@ -428,6 +428,7 @@ section {
   .hive {
     left: 50%;
     transform: translateX(-50%);
+    display: none;
   }
   .hex-s {
     width: 100px; /* Adjusted width */

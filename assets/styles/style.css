@@ -534,7 +534,7 @@ section {
 .reason_why_disappear {
   opacity: 0;
 }
-@media only screen and (min-width: 649px) and (max-width: 979px) {
+@media only screen and (min-width: 666px) and (max-width: 1210px) {
   .section_why_hive button:nth-child(3) {
     transform: translateX(-50%);
     left: 50%;

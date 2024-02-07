@@ -494,11 +494,14 @@ section {
 .reasons_why h2 {
   font-size: 3.2rem;
   color: white;
+  text-align: center;
 }
 .section_why_hive {
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+  position: relative;
 }
 .section_why_hive button {
   clip-path: polygon(50% -50%, 100% 50%, 100% 50%, 50% 150%, 0% 50%, 0% 50%);
@@ -530,4 +533,13 @@ section {
 }
 .reason_why_disappear {
   opacity: 0;
+}
+@media only screen and (min-width: 649px) and (max-width: 979px) {
+  .section_why_hive button:nth-child(3) {
+    transform: translateX(-50%);
+    left: 50%;
+    bottom: -100px;
+    position: absolute;
+    margin-bottom: 10px;
+  }
 }

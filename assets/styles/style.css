@@ -436,24 +436,24 @@ section {
     display: none;
   }
   .hex-s {
-    width: 100px; /* Adjusted width */
-    height: 57.74px; /* Adjusted height for a proportional size */
+    width: 100px;
+    height: 57.74px;
     left: 50%;
     transform: translateX(-50%);
   }
 
   .hex-m {
-    width: 120px; /* Adjusted width */
-    height: 69.28px; /* Adjusted height for a proportional size */
-    top: 50px; /* Adjusted top position */
-    left: 10px; /* Adjusted left position */
+    width: 120px;
+    height: 69.28px;
+    top: 50px;
+    left: 10px;
   }
 
   .hex-b {
-    width: 140px; /* Adjusted width */
-    height: 80.82px; /* Adjusted height for a proportional size */
-    top: 87.5px; /* Adjusted top position */
-    left: 103.5px; /* Adjusted left position */
+    width: 140px;
+    height: 80.82px;
+    top: 87.5px;
+    left: 103.5px;
   }
   .logo img {
     width: 8rem;

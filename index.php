@@ -48,6 +48,28 @@ include "components/header.php";
         </div>
         <p class="reason_why"></p>
     </section>
+
+    <section class="our_teachers">
+        <h2>Nasi ucitelji</h2>
+        <div>
+            <div class="content_teachers_holder">
+                <img src="assets/img/teacher.jpg" alt="teacher_1">
+                <div class="text_teachers_holder">
+                    <p>&#9733; Iskustvo: 5 godina</p>
+                    <p>&#9733; Broj casova: 2400</p>
+                    <p>&#9733; Neki atribut: 1000</p>
+                </div>
+            </div>
+            <div class="content_teachers_holder">
+                <img src="assets/img/teacher.jpg" alt="teacher_1">
+                <div class="text_teachers_holder">
+                    <p>&#9733; Iskustvo: 5 godina</p>
+                    <p>&#9733; Broj casova: 2400</p>
+                    <p>&#9733; Neki atribut: 1000</p>
+                </div>
+            </div>
+        </div>
+    </section>
 </main>
 <?php
 include "components/footer.php";

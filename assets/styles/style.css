@@ -499,7 +499,7 @@ section {
 .section_why_hive {
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
   position: relative;
 }
@@ -534,7 +534,10 @@ section {
 .reason_why_disappear {
   opacity: 0;
 }
-@media only screen and (min-width: 649px) and (max-width: 979px) {
+@media only screen and (min-width: 649px) and (max-width: 1210px) {
+  .section_why_hive {
+    grid-template-columns: 1fr 1fr;
+  }
   .section_why_hive button:nth-child(3) {
     transform: translateX(-50%);
     left: 50%;
@@ -542,4 +545,58 @@ section {
     position: absolute;
     margin-bottom: 10px;
   }
+}
+@media only screen and (max-width: 648px) {
+  .section_why_hive {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* our teachers section */
+.our_teachers {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+.our_teachers h2 {
+  font-size: 3.2rem;
+  color: white;
+  text-align: center;
+}
+.our_teachers > div {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+}
+.our_teachers > div > div {
+  position: relative;
+  overflow: hidden;
+}
+.our_teachers div div img {
+  width: 100%;
+  object-fit: cover;
+}
+.text_teachers_holder {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  width: 25rem;
+  background-color: rgba(0, 0, 0, 0.7);
+  height: 98.5%;
+  padding: 1rem;
+  transform: translateX(150%);
+  transition: transform 0.5s ease-in;
+}
+.text_teachers_holder p {
+  font-size: 1.8rem;
+  color: white;
+}
+.content_teachers_holder:hover .text_teachers_holder {
+  transform: translateX(0%) !important;
 }

@@ -46,7 +46,11 @@ include "components/header.php";
                 </div>
             </button>
         </div>
-        <p class="reason_why"></p>
+        <p class="reason_why reason_why_disappear">
+            "Online časovi nude fleksibilnost u rasporedu, omogućavajući studentima da usklade svoje studije sa drugim
+            obavezama kao što su posao ili porodične obaveze. Ova fleksibilnost omogućava učenicima da kreiraju
+            personalizovane rutine učenja koje odgovaraju njihovim individualnim potrebama.";
+        </p>
     </section>
 
     <section class="our_teachers reasons_why_disappear">

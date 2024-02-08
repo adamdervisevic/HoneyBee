@@ -114,7 +114,9 @@ window.addEventListener("scroll", function () {
 reasons_why_btn.forEach(
   (btn, index) =>
     (btn.onclick = () => {
-      reason_why.classList.add("reason_why_disappear");
+      if (!reason_why.classList.contains("reason_why_disappear")) {
+        reason_why.classList.add("reason_why_disappear");
+      }
       setTimeout(() => {
         if (index === 0) {
           reason_why.innerHTML =

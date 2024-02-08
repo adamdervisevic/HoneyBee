@@ -15,8 +15,8 @@
         </li>
         <li id="cenovnik"><a href="#">Cenovnik</a></li>
         <li><a href="#">O nama</a></li>
-        <li><a href="#">Iskustva polaznika</a></li>
-        <li><a href="#">Kontakt</a></li>
+        <li><a href="#testimonials_id">Iskustva polaznika</a></li>
+        <li><a href="#contact_id">Kontakt</a></li>
 
     </ul>
 

@@ -75,7 +75,7 @@ include "components/header.php";
         </div>
     </section>
 
-    <section class="section_testimonials">
+    <section class="section_testimonials reasons_why_disappear" id="testimonials_id">
         <h2>Utisci</h2>
         <div class="testimonial_carousel">
             <div>
@@ -104,6 +104,10 @@ include "components/header.php";
         </div>
 
     </section>
+
+    <?php
+    include "components/contact.php";
+    ?>
 </main>
 <?php
 include "components/footer.php";

@@ -18,7 +18,7 @@ const sr = ScrollReveal({
 sr.reveal(".hero-text", { delay: 200, origin: "top" });
 sr.reveal(".hero-img", { delay: 450, origin: "top" });
 sr.reveal(".icons", { delay: 500, origin: "left" });
-sr.reveal(".hive", {delay: 200, origin: "top"});
+sr.reveal(".hive", { delay: 200, origin: "top" });
 
 // custom menu change
 const menu_program = document.querySelector("#menu_program");
@@ -87,15 +87,27 @@ const reasons_why_container = document.querySelector(".reasons_why");
 const reasons_why_btn = document.querySelectorAll(".section_why_hive button");
 const reason_why = document.querySelector(".reason_why");
 
+// *our teachers
+
+const our_teachers_container = document.querySelector(".our_teachers");
+
+// end teachers
+
 // collect value of pixel
 const rect = reasons_why_container.getBoundingClientRect();
+const rect_2 = our_teachers_container.getBoundingClientRect();
 // rect.top = distance form the top; window.pageYOffset = total distance
-const distanceFromTop = rect.top + window.pageYOffset;
+const distanceFromTop = rect.top + window.scrollY;
+const distanceFromTop_2 = rect_2.top + window.scrollY;
 
 window.addEventListener("scroll", function () {
-  if (window.pageYOffset * 4 >= distanceFromTop) {
+  if (window.scrollY * 4 >= distanceFromTop) {
     reasons_why_container.classList.remove("reasons_why_disappear");
-    window.removeEventListener("scroll", arguments.callee);
+    // window.removeEventListener("scroll", arguments.callee);
+  }
+  if (window.scrollY * 3 >= distanceFromTop_2) {
+    our_teachers_container.classList.remove("reasons_why_disappear");
+    // window.removeEventListener("scroll", arguments.callee);
   }
 });
 

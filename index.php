@@ -49,7 +49,7 @@ include "components/header.php";
         <p class="reason_why"></p>
     </section>
 
-    <section class="our_teachers">
+    <section class="our_teachers reasons_why_disappear">
         <h2>Nasi ucitelji</h2>
         <div>
             <div class="content_teachers_holder">
@@ -70,8 +70,43 @@ include "components/header.php";
             </div>
         </div>
     </section>
+
+    <section class="section_testimonials">
+        <h2>Utisci</h2>
+        <div class="testimonial_carousel">
+            <div>
+                <video width="100%" height="100%" controls>
+                    <source src="assets/img/clip.mp4" type="video/mp4">
+                    <source src="assets/img/clip.mkv" type="video/mkv">
+                    <source src="assets/img/clip.webm" type="video/webm">
+                </video>
+            </div>
+            <div>
+                <video width="100%" height="100%" controls>
+                    <source src="assets/img/clip.webm" type="video/webm">
+                </video>
+            </div>
+            <div>
+                <video width="100%" height="100%" controls>
+                    <source src="assets/img/clip.webm" type="video/webm">
+                </video>
+            </div>
+            <div>
+                <video width="100%" height="100%" controls>
+                    <source src="assets/img/clip.webm" type="video/webm">
+                </video>
+            </div>
+
+        </div>
+
+    </section>
 </main>
 <?php
 include "components/footer.php";
+?>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+<script src="assets/js/carousel.js"></script>
+<?php
 include "components/foot.php";
 ?>

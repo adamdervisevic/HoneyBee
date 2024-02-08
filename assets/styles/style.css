@@ -9,7 +9,13 @@
 
 html {
   font-size: 62.5%;
+}
+body {
   background: linear-gradient(180deg, #faaa1a 0%, #f5ad3b 50%, #fbaa19 100%);
+}
+
+a {
+  text-decoration: none !important;
 }
 nav {
   position: fixed;
@@ -429,6 +435,7 @@ section {
 @media only screen and (max-width: 720px) {
   .hero {
     flex-direction: column;
+    min-height: 70vh;
   }
   .hive {
     left: 50%;
@@ -550,6 +557,9 @@ section {
   .section_why_hive {
     grid-template-columns: 1fr;
   }
+  .reason_why {
+    font-size: 1.5rem;
+  }
 }
 
 /* our teachers section */
@@ -557,6 +567,8 @@ section {
   display: flex;
   flex-direction: column;
   gap: 5rem;
+  transition: all 1s ease-in;
+  margin-bottom: 5rem;
 }
 .our_teachers h2 {
   font-size: 3.2rem;
@@ -575,6 +587,7 @@ section {
 }
 .our_teachers div div img {
   width: 100%;
+  height: 100%;
   object-fit: cover;
 }
 .text_teachers_holder {
@@ -588,7 +601,7 @@ section {
   gap: 1rem;
   width: 25rem;
   background-color: rgba(0, 0, 0, 0.7);
-  height: 98.5%;
+  height: 100%;
   padding: 1rem;
   transform: translateX(150%);
   transition: transform 0.5s ease-in;
@@ -599,4 +612,51 @@ section {
 }
 .content_teachers_holder:hover .text_teachers_holder {
   transform: translateX(0%) !important;
+}
+
+/* testimonials */
+.section_testimonials {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.section_testimonials h2 {
+  color: white;
+  font-size: 3.2rem;
+  text-align: center;
+}
+
+.testimonial_carousel {
+  width: 100%;
+  max-width: 134rem;
+  margin: 0 auto;
+}
+
+.testimonial_carousel div {
+  padding: 0 1px;
+}
+
+.testimonial_carousel video {
+  width: 100%;
+  height: 100%;
+}
+
+.slick-dots {
+  display: none !important;
+}
+.slick-prev,
+.slick-next {
+  position: absolute;
+  top: 50%;
+  z-index: 100;
+  transform: translateY(-50%);
+  width: 5rem;
+  height: 5rem;
+  font-size: 3rem;
+  color: white;
+  border: none;
+  background-color: transparent;
+}
+.slick-next {
+  right: 0;
 }

@@ -27,8 +27,18 @@ include "components/header.php";
         <a href="#"><i class="ri-facebook-line"></i></a>
     </div>
 
+    <section class="offer">
+        <div class="offer_1">
+            <img src="assets/img/main.webp" alt="">
+        </div>
+        <div class="offer_2">
+            <h2>Sta nudimo?</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, est! Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur ab voluptatibus distinctio vitae accusamus molestias!</p>
+        </div>
+    </section>
+
     <section class="reasons_why reasons_why_disappear">
-        <h2>Zasto online nastava</h2>
+        <h2>Zasto online nastava?</h2>
         <div class="section_why_hive">
             <button>
                 <div class="hexagon hex-why">

@@ -2,11 +2,11 @@
   <div name="contact-form" class="form-container">
     <h2>KONTAKTIRAJTE
       NAS</h2>
-    <p>Popunite formu i neko ce vam se javiti u narednih nekoliko sati</p>
+    <p>Popunite formu i neko ce Vam se javiti u narednih nekoliko sati</p>
     <p class="form-notification"></p>
     <div class="name_mail_container">
       <div>
-        <label for="from_name">Name</label>
+        <label for="from_name">Ime</label>
         <input id="from_name" name="from_name" type="text" required />
       </div>
       <div>
@@ -14,7 +14,7 @@
         <input type="email" name="email" id="email" required />
       </div>
     </div>
-    <label for="message">Message</label>
+    <label for="message">Poruka</label>
     <textarea name="message" id="message" cols="30" rows="6"></textarea>
     <button class="button-form--submit" onclick="sendMail();">Send</button>
   </div>

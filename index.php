@@ -27,13 +27,14 @@ include "components/header.php";
         <a href="#"><i class="ri-facebook-line"></i></a>
     </div>
 
-    <section class="offer">
+    <section class="offer reasons_why_disappear">
         <div class="offer_1">
             <img src="assets/img/main.webp" alt="">
         </div>
         <div class="offer_2">
             <h2>Sta nudimo?</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, est! Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur ab voluptatibus distinctio vitae accusamus molestias!</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, est! Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Consequuntur ab voluptatibus distinctio vitae accusamus molestias!</p>
         </div>
     </section>
 
@@ -56,7 +57,7 @@ include "components/header.php";
                 </div>
             </button>
         </div>
-        <p class="reason_why reason_why_disappear">
+        <p class="reason_why">
             "Online časovi nude fleksibilnost u rasporedu, omogućavajući studentima da usklade svoje studije sa drugim
             obavezama kao što su posao ili porodične obaveze. Ova fleksibilnost omogućava učenicima da kreiraju
             personalizovane rutine učenja koje odgovaraju njihovim individualnim potrebama.";
@@ -67,6 +68,7 @@ include "components/header.php";
         <h2>Nasi ucitelji</h2>
         <div>
             <div class="content_teachers_holder">
+                <p>Ucitelj: Bee</p>
                 <img src="assets/img/teacher.jpg" alt="teacher_1">
                 <div class="text_teachers_holder">
                     <p>&#9733; Iskustvo: 5 godina</p>
@@ -75,6 +77,8 @@ include "components/header.php";
                 </div>
             </div>
             <div class="content_teachers_holder">
+                <p>Ucitelj: Bee</p>
+
                 <img src="assets/img/teacher.jpg" alt="teacher_1">
                 <div class="text_teachers_holder">
                     <p>&#9733; Iskustvo: 5 godina</p>

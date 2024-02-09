@@ -19,9 +19,9 @@ $(".testimonial_carousel").slick({
       },
     },
     {
-      breakpoint: 600,
+      breakpoint: 750,
       settings: {
-        slidesToShow: 2,
+        slidesToShow: 1,
         slidesToScroll: 1,
       },
     },

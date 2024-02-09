@@ -90,34 +90,56 @@ const reason_why = document.querySelector(".reason_why");
 const our_teachers_container = document.querySelector(".our_teachers");
 const testimonials = document.querySelector(".section_testimonials");
 const contact = document.querySelector(".contact-container");
+const offer = document.querySelector(".offer");
 
 // collect value of pixel
 const rect = reasons_why_container.getBoundingClientRect();
 const rect_2 = our_teachers_container.getBoundingClientRect();
 const rect_3 = testimonials.getBoundingClientRect();
 const rect_4 = contact.getBoundingClientRect();
+const rect_5 = offer.getBoundingClientRect();
 
 // rect.top = distance form the top; window.pageYOffset = total distance
 const distanceFromTop = rect.top + window.scrollY;
 const distanceFromTop_2 = rect_2.top + window.scrollY;
 const distanceFromTop_3 = rect_3.top + window.scrollY;
 const distanceFromTop_4 = rect_4.top + window.scrollY;
+const distanceFromTop_5 = rect_5.top + window.scrollY;
 
 window.addEventListener("scroll", function () {
-  if (window.scrollY * 2.5 >= distanceFromTop) {
+  if (
+    window.scrollY * 2.5 >= distanceFromTop &&
+    this.window.scrollY < distanceFromTop
+  ) {
     reasons_why_container.classList.remove("reasons_why_disappear");
     // window.removeEventListener("scroll", arguments.callee);
   }
-  if (window.scrollY * 2.5 >= distanceFromTop_2) {
+  if (
+    window.scrollY * 2.5 >= distanceFromTop_2 &&
+    this.window.scrollY < distanceFromTop_2
+  ) {
     our_teachers_container.classList.remove("reasons_why_disappear");
     // window.removeEventListener("scroll", arguments.callee);
   }
-  if (window.scrollY * 1.5 >= distanceFromTop_3) {
+  if (
+    window.scrollY * 1.5 >= distanceFromTop_3 &&
+    this.window.scrollY < distanceFromTop_3
+  ) {
     testimonials.classList.remove("reasons_why_disappear");
     // window.removeEventListener("scroll", arguments.callee);
   }
-  if (window.scrollY * 1.5 >= distanceFromTop_4) {
+  if (
+    window.scrollY * 1.5 >= distanceFromTop_4 &&
+    this.window.scrollY < distanceFromTop_4
+  ) {
     contact.classList.remove("reasons_why_disappear");
+    // window.removeEventListener("scroll", arguments.callee);
+  }
+  if (
+    window.scrollY * 1.5 >= distanceFromTop_5 &&
+    this.window.scrollY < distanceFromTop_5
+  ) {
+    offer.classList.remove("reasons_why_disappear");
     // window.removeEventListener("scroll", arguments.callee);
   }
 });

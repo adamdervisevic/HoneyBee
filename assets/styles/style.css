@@ -94,7 +94,7 @@ nav {
 }
 
 .hero {
-  height: 100vh;
+  height: 80vh;
   width: 100%;
   min-height: 80vh;
 
@@ -535,7 +535,7 @@ section {
 .reason_why {
   font-size: 2rem;
   color: white;
-  padding: 4rem 0rem 5rem 0rem;
+  padding: 10rem 0rem 5rem 0rem;
   text-align: center;
   transition: opacity 0.5s ease-in;
 }
@@ -560,6 +560,7 @@ section {
   }
   .reason_why {
     font-size: 1.5rem;
+    padding: 5rem 0rem;
   }
 }
 
@@ -611,6 +612,13 @@ section {
 }
 .content_teachers_holder:hover .text_teachers_holder {
   transform: translateX(0%) !important;
+}
+.content_teachers_holder > p {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  color: white;
+  font-size: 1.8rem;
 }
 
 /* testimonials */
@@ -728,50 +736,119 @@ label {
   font-size: 1.5rem;
   color: white;
 }
-
+@media only screen and (max-width: 700px) {
+  .contact-container {
+    grid-template-columns: 1fr;
+  }
+  .contact-container img {
+    display: none;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .name_mail_container {
+    grid-template-columns: 1fr;
+  }
+  .text_teachers_holder p {
+    font-size: 1.5rem;
+  }
+  .offer_2 p {
+    font-size: 1.5rem !important;
+  }
+  .offer {
+    margin: 0 auto 10rem 0 !important;
+  }
+}
 /* footer */
 footer {
   display: flex;
+  gap: 10rem;
   justify-content: center;
+  align-items: top;
   background-color: black;
   width: 100%;
-  padding: 5rem 0rem;
+  padding: 5rem 2rem;
 }
 footer p {
   color: white;
-  font-size: 1.8rem;
+  font-size: 1.2rem;
   text-align: center;
+}
+.icons_footer {
+  color: white !important;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+.icons_footer a {
+  color: white;
+  font-size: 2rem;
+}
+
+address {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 1rem;
+}
+address p {
+  font-size: 1.5rem;
+}
+
+.footer_nav {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  font-size: 1.5rem;
+}
+.footer_nav a {
+  color: white;
+}
+.footer_address_links {
+  display: flex;
+  gap: 2rem;
+}
+
+@media only screen and (max-width: 550px) {
+  footer {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .footer_address_links {
+    flex-direction: column;
+  }
 }
 
 .offer {
   display: grid;
-  grid-template-columns: 1fr 1fr; 
-  gap: 30px; 
-  max-width: 100%; 
-  margin: auto; 
-  padding: 50px 0; 
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  max-width: 100%;
+  margin: 0 auto 20rem auto;
+  /* padding: 50px 0; */
+  transition: all 1s ease-in;
 }
 
-.offer_1, .offer_2 {
-  width: 100%; 
-  height: 700px; 
+.offer_1,
+.offer_2 {
+  width: 100%;
   display: flex;
-  justify-content: center; 
-  align-items: center; 
-  overflow: hidden; 
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
 }
 .offer_1 img {
-  max-width: 100%; 
-  max-height: 100%; 
+  max-width: 100%;
+  max-height: 100%;
 }
 .offer_2 {
-  display: flex; 
-  flex-direction: column; 
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: center; 
-  width: 100%; 
-  height: 700px; 
-  overflow: hidden; 
+  align-items: center;
+  width: 100%;
+  overflow: hidden;
 }
 .offer_2 p {
   font-size: 20px;
@@ -781,8 +858,6 @@ footer p {
 
 @media (max-width: 1024px) {
   .offer {
-      grid-template-columns: 1fr;
+    grid-template-columns: 1fr;
   }
 }
-
-

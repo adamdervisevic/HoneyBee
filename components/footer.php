@@ -26,8 +26,8 @@
       <a href="">Programi</a>
       <a href="">O nama</a>
       <a href="">Cenovnik</a>
-      <a href="">Iskustva</a>
-      <a href="">Kontakt</a>
+      <a href="#testimonials_id">Iskustva</a>
+      <a href="#contact_id">Kontakt</a>
     </div>
   </div>
 </footer>

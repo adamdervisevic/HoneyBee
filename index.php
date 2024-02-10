@@ -43,7 +43,7 @@ include "components/header.php";
         <div class="section_why_hive">
             <button>
                 <div class="hexagon hex-why">
-                    <p>Fleksibilnost</p>
+                    <p style="color: #faaa1a;">Fleksibilnost</p>
                 </div>
             </button>
             <button>
@@ -68,19 +68,19 @@ include "components/header.php";
         <h2>Nasi ucitelji</h2>
         <div>
             <div class="content_teachers_holder">
-                <p>Ucitelj: Bee</p>
+
                 <img src="assets/img/teacher.jpg" alt="teacher_1">
                 <div class="text_teachers_holder">
+                    <p>Ucitelj: Bee</p>
                     <p>&#9733; Iskustvo: 5 godina</p>
                     <p>&#9733; Broj casova: 2400</p>
                     <p>&#9733; Neki atribut: 1000</p>
                 </div>
             </div>
             <div class="content_teachers_holder">
-                <p>Ucitelj: Bee</p>
-
                 <img src="assets/img/teacher.jpg" alt="teacher_1">
                 <div class="text_teachers_holder">
+                    <p>Ucitelj: Bee</p>
                     <p>&#9733; Iskustvo: 5 godina</p>
                     <p>&#9733; Broj casova: 2400</p>
                     <p>&#9733; Neki atribut: 1000</p>
@@ -89,8 +89,8 @@ include "components/header.php";
         </div>
     </section>
 
-    <section class="section_testimonials reasons_why_disappear" id="testimonials_id">
-        <h2>Utisci</h2>
+    <section class="section_testimonials reasons_why_disappear">
+        <h2 id="testimonials_id">Utisci</h2>
         <div class="testimonial_carousel">
             <div>
                 <video width="100%" height="100%" controls>

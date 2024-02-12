@@ -83,7 +83,7 @@ nav {
   color: white;
   font-weight: 600;
   margin-left: 60px;
-  font-size: 15px;
+  font-size: 1.6rem;
 }
 #menu-icon {
   color: white;
@@ -106,6 +106,7 @@ nav {
   justify-content: space-around;
   gap: 20rem;
   padding-top: 25rem;
+  margin-bottom: 5rem;
 }
 section {
   padding: 0 19%;
@@ -416,56 +417,35 @@ section {
 }
 .hex-s {
   width: 140px;
-  height: 80.83px;
-  left: 39%;
+  height: 112px;
+  left: 38%;
   transform: translateX(-50%);
-  top: 20px;
 }
 
 .hex-m {
-  width: 210px;
-  height: 121.24px;
+  width: 200px;
+  height: 160px;
   top: 46px;
   left: -145px;
 }
 
 .hex-b {
-  width: 280px;
-  height: 161.65px;
-  top: 123px;
-  left: 15px;
+  width: 250px;
+  height: 200px;
+  top: 140px;
+  left: 20px;
 }
 
 @media only screen and (max-width: 720px) {
   .hero {
     flex-direction: column;
     min-height: 70vh;
+    margin-bottom: 10rem;
   }
   .hive {
-    left: 50%;
-    transform: translateX(-50%);
     display: none;
   }
-  .hex-s {
-    width: 100px;
-    height: 57.74px;
-    left: 50%;
-    transform: translateX(-50%);
-  }
 
-  .hex-m {
-    width: 120px;
-    height: 69.28px;
-    top: 50px;
-    left: 10px;
-  }
-
-  .hex-b {
-    width: 140px;
-    height: 80.82px;
-    top: 87.5px;
-    left: 103.5px;
-  }
   .logo img {
     width: 8rem;
     height: 8rem;
@@ -491,13 +471,21 @@ section {
 /* start why online course section */
 .reasons_why {
   width: 100%;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 5rem;
   transition: all 1s ease-in;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+    url("/assets/img/1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
+
 .reasons_why_disappear {
   opacity: 0;
   transform: translateY(20%);
@@ -524,8 +512,12 @@ section {
   background-color: black;
   background-image: none;
   display: flex;
-  width: 210px;
-  height: 121.24px;
+  width: 180px;
+  height: 144px;
+}
+.hex-why > p {
+  color: white;
+  transition: color 0.3s ease-in;
 }
 .section_why_hive div p {
   color: white;
@@ -538,7 +530,7 @@ section {
   color: white;
   padding: 10rem 0rem 5rem 0rem;
   text-align: center;
-  transition: opacity 0.5s ease-in;
+  transition: opacity 0.4s ease-in;
 }
 .reason_why_disappear {
   opacity: 0;
@@ -571,7 +563,19 @@ section {
   flex-direction: column;
   gap: 5rem;
   transition: all 1s ease-in;
-  margin: 10rem 5rem 20rem 5rem;
+  padding-top: 15rem;
+  padding-bottom: 15rem;
+  /* margin: 10rem 5rem 20rem 5rem; */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+    url("/assets/img/1.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 0%, 0%;
+}
+@media only screen and (max-width: 754px) {
+  .our_teachers {
+    margin: 10rem 0;
+  }
 }
 .our_teachers h2 {
   text-align: center;
@@ -628,7 +632,11 @@ section {
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  margin-bottom: 20rem;
+  /* margin-bottom: 20rem; */
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+  margin-bottom: 10rem;
+
   transition: all 1s ease-in;
 }
 .section_testimonials h2 {
@@ -824,11 +832,18 @@ address p {
 }
 
 .offer {
+  padding-top: 15rem;
+  padding-bottom: 15rem;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+    url("/assets/img/3.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 0%, 100%;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 30px;
   max-width: 100%;
-  margin: 0 auto 20rem auto;
+  margin: 0 auto 0rem auto;
   /* padding: 50px 0; */
   transition: all 1s ease-in;
 }
@@ -836,14 +851,15 @@ address p {
 .offer_1,
 .offer_2 {
   width: 100%;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   overflow: hidden;
 }
 .offer_1 img {
-  max-width: 100%;
-  max-height: 100%;
+  width: 520px;
+  height: 416px;
   object-fit: cover;
   clip-path: polygon(50% -50%, 100% 50%, 100% 50%, 50% 150%, 0% 50%, 0% 50%);
 }
@@ -864,5 +880,11 @@ address p {
 @media (max-width: 1024px) {
   .offer {
     grid-template-columns: 1fr;
+  }
+}
+@media only screen and (max-width: 350px) {
+  .offer_1 img {
+    width: 300px;
+    height: 227px;
   }
 }

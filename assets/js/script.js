@@ -84,7 +84,7 @@ function deal_with_dropdown() {
 
 // reason why section
 const reasons_why_container = document.querySelector(".reasons_why");
-const reasons_why_btn = document.querySelectorAll(".section_why_hive button");
+const reasons_why_btn = document.querySelectorAll(".btn_why");
 const reason_why = document.querySelector(".reason_why");
 
 const our_teachers_container = document.querySelector(".our_teachers");
@@ -145,28 +145,36 @@ window.addEventListener("scroll", function () {
 });
 
 reasons_why_btn.forEach((btn, index) => {
+  // btn.onclick = () => {
+  //   handle_reason_why(index);
+  // };
   btn.onclick = () => {
+    handle_reason_why(index);
+  };
+});
+
+function handle_reason_why(index) {
+  if (!reason_why.classList.contains("reason_why_disappear")) {
+    reason_why.classList.add("reason_why_disappear");
+  }
+
+  setTimeout(() => {
     document
       .querySelectorAll(`.hex-why > p`)
       .forEach((target, target_index) => {
         target.style.color = target_index === index ? "#faaa1a" : "white";
       });
 
-    if (!reason_why.classList.contains("reason_why_disappear")) {
-      reason_why.classList.add("reason_why_disappear");
+    if (index === 0) {
+      reason_why.innerHTML =
+        "Online časovi nude fleksibilnost u rasporedu, omogućavajući studentima da usklade svoje studije sa drugim obavezama kao što su posao ili porodične obaveze. Ova fleksibilnost omogućava učenicima da kreiraju personalizovane rutine učenja koje odgovaraju njihovim individualnim potrebama.";
+    } else if (index === 1) {
+      reason_why.innerHTML =
+        "Pristupačnost:</strong> Online časovi eliminišu geografske barijere, omogućavajući studentima iz različitih pozadina i lokacija pristup kvalitetnom obrazovanju. Bez obzira da li se nalaze u ruralnim područjima ili u prometnim urbanim centrima, pojedinci mogu da se bave obrazovnim prilikama bez ograničenja fizičke udaljenosti.";
+    } else {
+      reason_why.innerHTML =
+        "Online časovi pružaju pristup raznovrsnim resursima, uključujući multimedijalne materijale, interaktivne simulacije i virtualne laboratorije. Ova raznovrsnost unapređuje iskustvo učenja nudeći više puteva za istraživanje i razumevanje, prilagođavajući se različitim stilovima učenja.";
     }
-    setTimeout(() => {
-      if (index === 0) {
-        reason_why.innerHTML =
-          "Online časovi nude fleksibilnost u rasporedu, omogućavajući studentima da usklade svoje studije sa drugim obavezama kao što su posao ili porodične obaveze. Ova fleksibilnost omogućava učenicima da kreiraju personalizovane rutine učenja koje odgovaraju njihovim individualnim potrebama.";
-      } else if (index === 1) {
-        reason_why.innerHTML =
-          "Pristupačnost:</strong> Online časovi eliminišu geografske barijere, omogućavajući studentima iz različitih pozadina i lokacija pristup kvalitetnom obrazovanju. Bez obzira da li se nalaze u ruralnim područjima ili u prometnim urbanim centrima, pojedinci mogu da se bave obrazovnim prilikama bez ograničenja fizičke udaljenosti.";
-      } else {
-        reason_why.innerHTML =
-          "Online časovi pružaju pristup raznovrsnim resursima, uključujući multimedijalne materijale, interaktivne simulacije i virtualne laboratorije. Ova raznovrsnost unapređuje iskustvo učenja nudeći više puteva za istraživanje i razumevanje, prilagođavajući se različitim stilovima učenja.";
-      }
-      reason_why.classList.remove("reason_why_disappear");
-    }, 500);
-  };
-});
+    reason_why.classList.remove("reason_why_disappear");
+  }, 400);
+}

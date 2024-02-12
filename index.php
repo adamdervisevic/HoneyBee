@@ -29,7 +29,7 @@ include "components/header.php";
 
     <section class="offer reasons_why_disappear">
         <div class="offer_1">
-            <img src="assets/img/main.webp" alt="">
+            <img src="assets/img/2.jfif" alt="offer(ponuda)">
         </div>
         <div class="offer_2">
             <h2>Sta nudimo?</h2>
@@ -41,17 +41,17 @@ include "components/header.php";
     <section class="reasons_why reasons_why_disappear">
         <h2>Zasto online nastava?</h2>
         <div class="section_why_hive">
-            <button>
+            <button class="btn_why">
                 <div class="hexagon hex-why">
                     <p style="color: #faaa1a;">Fleksibilnost</p>
                 </div>
             </button>
-            <button>
+            <button class="btn_why">
                 <div class="hexagon hex-why">
                     <p>Pristupacnost</p>
                 </div>
             </button>
-            <button>
+            <button class="btn_why">
                 <div class="hexagon hex-why">
                     <p>Resursi</p>
                 </div>

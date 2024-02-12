@@ -121,6 +121,7 @@ include "components/header.php";
 
     <?php
     include "components/contact.php";
+    include "components/calendly.php";
     ?>
 </main>
 <?php

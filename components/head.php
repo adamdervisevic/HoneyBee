@@ -3,6 +3,17 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta name="description"
+    content="Experience innovative teaching methods and interactive lessons at HoneyBee. Enroll in our online English courses.">
+  <meta name="keywords" content="English courses online,
+Learn English in Serbia,
+Online English school Serbia,
+English lessons Serbia,
+English language classes,
+Serbian students English,
+ESL classes online,
+Language learning Serbia">
+  <meta name="author" content="Uros Zikic, Adam Dervisevic">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />

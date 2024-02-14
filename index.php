@@ -29,12 +29,11 @@ include "components/header.php";
 
     <section class="offer reasons_why_disappear">
         <div class="offer_1">
-            <img src="assets/img/2.jfif" alt="offer(ponuda)">
+            <img src="assets/img/2.webp" alt="offer(ponuda)">
         </div>
         <div class="offer_2">
             <h2>Sta nudimo?</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, est! Lorem ipsum dolor sit amet
-                consectetur adipisicing elit. Consequuntur ab voluptatibus distinctio vitae accusamus molestias!</p>
+            <p class="offer_dynamic"></p>
         </div>
     </section>
 
@@ -69,7 +68,7 @@ include "components/header.php";
         <div>
             <div class="content_teachers_holder">
 
-                <img src="assets/img/teacher.jpg" alt="teacher_1">
+                <img src="assets/img/teacher.webp" alt="teacher_1">
                 <div class="text_teachers_holder">
                     <p>Ucitelj: Bee</p>
                     <p>&#9733; Iskustvo: 5 godina</p>
@@ -78,7 +77,7 @@ include "components/header.php";
                 </div>
             </div>
             <div class="content_teachers_holder">
-                <img src="assets/img/teacher.jpg" alt="teacher_1">
+                <img src="assets/img/teacher.webp" alt="teacher_2">
                 <div class="text_teachers_holder">
                     <p>Ucitelj: Bee</p>
                     <p>&#9733; Iskustvo: 5 godina</p>

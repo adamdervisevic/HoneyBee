@@ -106,41 +106,60 @@ const distanceFromTop_3 = rect_3.top + window.scrollY;
 const distanceFromTop_4 = rect_4.top + window.scrollY;
 const distanceFromTop_5 = rect_5.top + window.scrollY;
 
+const offer_text = document.querySelector(".offer_dynamic");
+let text =
+  "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, est! Lorem ipsum dolor sit ametconsectetur adipisicing elit. Consequuntur ab voluptatibus distinctio vitae accusamus molestias!";
+text = text.split("");
+let text_triggered = false;
+// scroll animation function
 window.addEventListener("scroll", function () {
   if (
     window.scrollY * 1.5 >= distanceFromTop &&
     this.window.scrollY < distanceFromTop
   ) {
     reasons_why_container.classList.remove("reasons_why_disappear");
-    // window.removeEventListener("scroll", arguments.callee);
   }
   if (
     window.scrollY * 1.3 >= distanceFromTop_2 &&
     this.window.scrollY < distanceFromTop_2
   ) {
     our_teachers_container.classList.remove("reasons_why_disappear");
-    // window.removeEventListener("scroll", arguments.callee);
   }
   if (
     window.scrollY * 1.2 >= distanceFromTop_3 &&
     this.window.scrollY < distanceFromTop_3
   ) {
     testimonials.classList.remove("reasons_why_disappear");
-    // window.removeEventListener("scroll", arguments.callee);
   }
   if (
     window.scrollY * 1.2 >= distanceFromTop_4 &&
     this.window.scrollY < distanceFromTop_4
   ) {
     contact.classList.remove("reasons_why_disappear");
-    // window.removeEventListener("scroll", arguments.callee);
   }
   if (
+    !text_triggered &&
     window.scrollY * 2.5 >= distanceFromTop_5 &&
     this.window.scrollY < distanceFromTop_5
   ) {
+    text_triggered = true;
+
     offer.classList.remove("reasons_why_disappear");
-    // window.removeEventListener("scroll", arguments.callee);
+
+    if (!offer_text.textContent) {
+      setTimeout(() => {
+        const intervalArticle = setInterval(add, 40);
+        let counter = 0;
+        function add() {
+          offer_text.innerHTML += text[counter];
+          counter++;
+
+          if (counter == text.length) {
+            clearInterval(intervalArticle);
+          }
+        }
+      }, 1000);
+    }
   }
 });
 

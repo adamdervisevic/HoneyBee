@@ -92,20 +92,6 @@ const testimonials = document.querySelector(".section_testimonials");
 const contact = document.querySelector(".contact-container");
 const offer = document.querySelector(".offer");
 
-// collect value of pixel
-const rect = reasons_why_container.getBoundingClientRect();
-const rect_2 = our_teachers_container.getBoundingClientRect();
-const rect_3 = testimonials.getBoundingClientRect();
-const rect_4 = contact.getBoundingClientRect();
-const rect_5 = offer.getBoundingClientRect();
-
-// rect.top = distance form the top; window.pageYOffset = total distance
-const distanceFromTop = rect.top + window.scrollY;
-const distanceFromTop_2 = rect_2.top + window.scrollY;
-const distanceFromTop_3 = rect_3.top + window.scrollY;
-const distanceFromTop_4 = rect_4.top + window.scrollY;
-const distanceFromTop_5 = rect_5.top + window.scrollY;
-
 const offer_text = document.querySelector(".offer_dynamic");
 let text =
   "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, est! Lorem ipsum dolor sit ametconsectetur adipisicing elit. Consequuntur ab voluptatibus distinctio vitae accusamus molestias!";
@@ -113,53 +99,82 @@ text = text.split("");
 let text_triggered = false;
 // scroll animation function
 window.addEventListener("scroll", function () {
+  //
+  // collect value of pixel
+  const rect = reasons_why_container.getBoundingClientRect();
+  const rect_2 = our_teachers_container.getBoundingClientRect();
+  const rect_3 = testimonials.getBoundingClientRect();
+  const rect_4 = contact.getBoundingClientRect();
+  const rect_5 = offer.getBoundingClientRect();
+
+  // rect.top = distance form the top; window.pageYOffset = total distance
+  const distanceFromTop = rect.top + window.scrollY;
+  const distanceFromTop_2 = rect_2.top + window.scrollY;
+  const distanceFromTop_3 = rect_3.top + window.scrollY;
+  const distanceFromTop_4 = rect_4.top + window.scrollY;
+  const distanceFromTop_5 = rect_5.top + window.scrollY;
+  //
   if (
-    window.scrollY * 1.5 >= distanceFromTop &&
+    window.scrollY * 1.7 >= distanceFromTop &&
     this.window.scrollY < distanceFromTop
   ) {
     reasons_why_container.classList.remove("reasons_why_disappear");
+  } else {
+    reasons_why_container.classList.add("reasons_why_disappear");
   }
+
   if (
-    window.scrollY * 1.3 >= distanceFromTop_2 &&
+    window.scrollY * 1.45 >= distanceFromTop_2 &&
     this.window.scrollY < distanceFromTop_2
   ) {
     our_teachers_container.classList.remove("reasons_why_disappear");
+  } else {
+    our_teachers_container.classList.add("reasons_why_disappear");
   }
+
   if (
-    window.scrollY * 1.2 >= distanceFromTop_3 &&
+    window.scrollY * 1.3 >= distanceFromTop_3 &&
     this.window.scrollY < distanceFromTop_3
   ) {
     testimonials.classList.remove("reasons_why_disappear");
+  } else {
+    testimonials.classList.add("reasons_why_disappear");
   }
+
   if (
-    window.scrollY * 1.2 >= distanceFromTop_4 &&
+    window.scrollY * 1.225 >= distanceFromTop_4 &&
     this.window.scrollY < distanceFromTop_4
   ) {
     contact.classList.remove("reasons_why_disappear");
+  } else {
+    contact.classList.add("reasons_why_disappear");
   }
+
   if (
-    !text_triggered &&
-    window.scrollY * 2.5 >= distanceFromTop_5 &&
+    window.scrollY * 2.75 >= distanceFromTop_5 &&
     this.window.scrollY < distanceFromTop_5
   ) {
-    text_triggered = true;
-
     offer.classList.remove("reasons_why_disappear");
 
-    if (!offer_text.textContent) {
-      setTimeout(() => {
-        const intervalArticle = setInterval(add, 40);
-        let counter = 0;
-        function add() {
-          offer_text.innerHTML += text[counter];
-          counter++;
+    if (!text_triggered) {
+      text_triggered = true;
+      if (!offer_text.textContent) {
+        setTimeout(() => {
+          const intervalArticle = setInterval(add, 40);
+          let counter = 0;
+          function add() {
+            offer_text.innerHTML += text[counter];
+            counter++;
 
-          if (counter == text.length) {
-            clearInterval(intervalArticle);
+            if (counter == text.length) {
+              clearInterval(intervalArticle);
+            }
           }
-        }
-      }, 1000);
+        }, 1000);
+      }
     }
+  } else {
+    offer.classList.add("reasons_why_disappear");
   }
 });
 

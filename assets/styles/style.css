@@ -467,6 +467,7 @@ section {
 }
 /* end hive */
 /* start why online course section */
+
 .reasons_why {
   width: 100%;
   padding-top: 10rem;
@@ -533,7 +534,7 @@ section {
 .reason_why_disappear {
   opacity: 0;
 }
-@media only screen and (min-width: 649px) and (max-width: 1210px) {
+@media only screen and (min-width: 250px) and (max-width: 1210px) {
   .section_why_hive {
     grid-template-columns: 1fr 1fr;
   }
@@ -546,8 +547,15 @@ section {
   }
 }
 @media only screen and (max-width: 648px) {
-  .section_why_hive {
-    grid-template-columns: 1fr;
+  .btn_why {
+    width: 150px !important;
+  }
+  .hex-why {
+    width: 140px;
+    height: 112px;
+  }
+  .section_why_hive div p {
+    font-size: 1.8rem;
   }
   .reason_why {
     font-size: 1.5rem;
@@ -563,7 +571,21 @@ section {
     height: 240px !important;
   }
 }
-
+@media only screen and (max-width: 350px) {
+  .btn_why {
+    width: 110px !important;
+  }
+  .hex-why {
+    width: 100px;
+    height: 80px;
+  }
+  .section_why_hive div p {
+    font-size: 1.35rem;
+  }
+  .section_why_hive button:nth-child(3) {
+    bottom: -70%;
+  }
+}
 /* our teachers section */
 .our_teachers {
   display: flex;
@@ -647,6 +669,10 @@ section {
     background-size: cover;
     background-position: top;
   }
+  .section_testimonials {
+    background-size: cover !important;
+    background-position: unset !important;
+  }
 }
 
 /* testimonials */
@@ -712,7 +738,7 @@ section {
   grid-template-columns: 2fr 1fr;
   border-radius: 20px;
   overflow: hidden;
-  background-color: #45260a;
+  background-color: black;
   transition: all 1s ease-in;
 }
 .contact-container img {
@@ -774,6 +800,9 @@ label {
   font-size: 1.5rem;
   color: white;
 }
+.form-notification {
+  color: #d9480f !important;
+}
 @media only screen and (max-width: 700px) {
   .contact-container {
     grid-template-columns: 1fr;
@@ -791,6 +820,9 @@ label {
   }
   .offer_2 p {
     font-size: 1.5rem !important;
+  }
+  .hero {
+    margin-bottom: 0 !important;
   }
 }
 /* footer */

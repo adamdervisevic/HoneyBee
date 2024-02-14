@@ -100,16 +100,22 @@ include "components/header.php";
             </div>
             <div>
                 <video width="100%" height="100%" controls>
+                    <source src="assets/img/clip.mp4" type="video/mp4">
+                    <source src="assets/img/clip.mkv" type="video/mkv">
                     <source src="assets/img/clip.webm" type="video/webm">
                 </video>
             </div>
             <div>
                 <video width="100%" height="100%" controls>
+                    <source src="assets/img/clip.mp4" type="video/mp4">
+                    <source src="assets/img/clip.mkv" type="video/mkv">
                     <source src="assets/img/clip.webm" type="video/webm">
                 </video>
             </div>
             <div>
                 <video width="100%" height="100%" controls>
+                    <source src="assets/img/clip.mp4" type="video/mp4">
+                    <source src="assets/img/clip.mkv" type="video/mkv">
                     <source src="assets/img/clip.webm" type="video/webm">
                 </video>
             </div>

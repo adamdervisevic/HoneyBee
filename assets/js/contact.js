@@ -6,7 +6,7 @@ function sendMail() {
     !document.querySelector("#email").value
   ) {
     document.querySelector(".form-notification").innerHTML =
-      "Please fill in all required fields";
+      "Popunite sve podatke!";
     return; // Exit the function if any field is empty
   }
   const domains = [
@@ -43,7 +43,7 @@ function sendMail() {
     !document.querySelector("#email").value.includes("@fastmail.com")
   ) {
     document.querySelector(".form-notification").innerHTML =
-      "Please provide a proper email";
+      "Uneli ste nepostojeći mejl!";
     return;
   }
   // Define a regular expression for valid Gmail or Yahoo addresses
@@ -82,7 +82,7 @@ function sendMail() {
     )
   ) {
     document.querySelector(".form-notification").innerHTML =
-      "Please enter a valid address";
+      "Uneli ste nepostojeći mejl!";
     return; // Exit the function if the email is not Gmail or Yahoo
   }
 
@@ -97,7 +97,7 @@ function sendMail() {
 
   if (domainCounter > 1) {
     document.querySelector(".form-notification").innerHTML =
-      "Please enter a valid domain!";
+      "Unesite ispravni mejl!";
     return; // Exit the function if the email contains both Gmail and Yahoo
   }
 
@@ -119,7 +119,7 @@ function sendMail() {
     .send(serviceID, templateID, params)
     .then((res) => {
       document.querySelector(".form-notification").innerHTML =
-        "Email sent successfully";
+        "Uspešno ste prosledili vaš mejl!";
 
       setTimeout(() => {
         document.querySelector(".form-notification").innerHTML = "";
@@ -162,7 +162,7 @@ document.addEventListener("keydown", (event) => {
         document.querySelector(".button-form--submit").click();
       } else {
         document.querySelector(".form-notification").innerHTML =
-          "Please fill in all required fields";
+          "Popunite sve podatke!";
       }
     }
   }

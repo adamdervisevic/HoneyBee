@@ -17,8 +17,7 @@
                         nastava za decu</a></li>
             </ul>
         </li>
-        <li id="cenovnik"><a href="#">Cenovnik</a></li>
-        <li><a href="#">O nama</a></li>
+        <li id="about"><a href="about.php">O nama</a></li>
         <li><a href="#testimonials_id">Iskustva polaznika</a></li>
         <li><a href="#contact_id">Kontakt</a></li>
 

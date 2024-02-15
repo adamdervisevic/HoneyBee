@@ -26,7 +26,7 @@ sr.reveal(".hive", { delay: 200, origin: "top" });
 // custom menu change
 const menu_program = document.querySelector("#menu_program");
 const menu_trigger = document.querySelector("#menu_trigger");
-const cenovnik = document.querySelector("#cenovnik");
+const about = document.querySelector("#about");
 const menu_program_link = document.querySelectorAll(".menu_program_link");
 
 window.addEventListener("resize", deal_with_dropdown);
@@ -40,13 +40,13 @@ function hive_appear() {
 function add_styles() {
   menu_program.classList.add("display_toggle");
   navlist.classList.add("navlist_extend_height");
-  cenovnik.classList.add("extend_padding");
+  about.classList.add("extend_padding");
 }
 
 function remove_styles() {
   menu_program.classList.remove("display_toggle");
   navlist.classList.remove("navlist_extend_height");
-  cenovnik.classList.remove("extend_padding");
+  about.classList.remove("extend_padding");
 }
 
 function deal_with_dropdown() {
@@ -65,13 +65,13 @@ function deal_with_dropdown() {
     });
   } else if (body.offsetWidth > 1200) {
     navlist.classList.remove("navlist_extend_height");
-    cenovnik.classList.remove("extend_padding");
+    about.classList.remove("extend_padding");
 
     menu_trigger.addEventListener("mouseover", () => {
       if (document.body.offsetWidth > 1200 && !isMenuVisible) {
         menu_program.classList.add("display_toggle");
         navlist.classList.remove("navlist_extend_height");
-        cenovnik.classList.remove("extend_padding");
+        about.classList.remove("extend_padding");
         isMenuVisible = true;
       }
     });

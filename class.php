@@ -34,7 +34,7 @@ include "components/navbar.php";
       <p>Cena:
         <?php echo $target[2] ?>
       </p>
-      <a href="#contact_id">link</a>
+      <a href="#contact_id">Prijava</a>
     </div>
     <div>
       <img src="../assets/img/<?php echo $target[3] ?>" alt="<?php echo $target[0] ?>">

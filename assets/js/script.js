@@ -1,7 +1,10 @@
 const body = document.querySelector("body");
 let menu = document.querySelector("#menu-icon");
 let navlist = document.querySelector(".navlist");
-const hive = document.querySelector(".hive");
+
+const hive = document.querySelector(".hive")
+  ? document.querySelector(".hive")
+  : null;
 
 menu.onclick = () => {
   menu.classList.toggle("bx-x");
@@ -28,7 +31,7 @@ const menu_program_link = document.querySelectorAll(".menu_program_link");
 
 window.addEventListener("resize", deal_with_dropdown);
 window.addEventListener("load", deal_with_dropdown);
-window.addEventListener("load", hive_appear);
+if (hive) window.addEventListener("load", hive_appear);
 
 function hive_appear() {
   hive.classList.add("hive_opacity");
@@ -83,132 +86,128 @@ function deal_with_dropdown() {
 }
 
 // reason why section
-const reasons_why_container = document.querySelector(".reasons_why");
-const reasons_why_btn = document.querySelectorAll(".btn_why");
-const reason_why = document.querySelector(".reason_why");
+const reasons_why_container = document.querySelector(".reasons_why")
+  ? document.querySelector(".reasons_why")
+  : null;
+const our_teachers_container = document.querySelector(".our_teachers")
+  ? document.querySelector(".our_teachers")
+  : null;
+const testimonials = document.querySelector(".section_testimonials")
+  ? document.querySelector(".section_testimonials")
+  : null;
+const contact = document.querySelector(".contact-container")
+  ? document.querySelector(".contact-container")
+  : null;
+const offer = document.querySelector(".offer")
+  ? document.querySelector(".offer")
+  : null;
 
-const our_teachers_container = document.querySelector(".our_teachers");
-const testimonials = document.querySelector(".section_testimonials");
-const contact = document.querySelector(".contact-container");
-const offer = document.querySelector(".offer");
+const reasons_why_btn = document.querySelectorAll(".btn_why")
+  ? document.querySelectorAll(".btn_why")
+  : null;
+const reason_why = document.querySelector(".reason_why")
+  ? document.querySelector(".reason_why")
+  : null;
 
-const offer_text = document.querySelector(".offer_dynamic");
+const offer_text = document.querySelector(".offer_dynamic")
+  ? document.querySelector(".offer_dynamic")
+  : null;
 let text =
   "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, est! Lorem ipsum dolor sit ametconsectetur adipisicing elit. Consequuntur ab voluptatibus distinctio vitae accusamus molestias!";
 text = text.split("");
 let text_triggered = false;
 // scroll animation function
 window.addEventListener("scroll", function () {
-  //
   // collect value of pixel
-  const rect = reasons_why_container.getBoundingClientRect();
-  const rect_2 = our_teachers_container.getBoundingClientRect();
-  const rect_3 = testimonials.getBoundingClientRect();
-  const rect_4 = contact.getBoundingClientRect();
-  const rect_5 = offer.getBoundingClientRect();
+  const rect = reasons_why_container
+    ? reasons_why_container.getBoundingClientRect()
+    : null;
+  const rect_2 = our_teachers_container
+    ? our_teachers_container.getBoundingClientRect()
+    : null;
+  const rect_3 = testimonials ? testimonials.getBoundingClientRect() : null;
+  const rect_4 = contact ? contact.getBoundingClientRect() : null;
+  const rect_5 = offer ? offer.getBoundingClientRect() : null;
 
   // rect.top = distance form the top; window.pageYOffset = total distance
-  const distanceFromTop = rect.top + window.scrollY;
-  const distanceFromTop_2 = rect_2.top + window.scrollY;
-  const distanceFromTop_3 = rect_3.top + window.scrollY;
-  const distanceFromTop_4 = rect_4.top + window.scrollY;
-  const distanceFromTop_5 = rect_5.top + window.scrollY;
+  const distanceFromTop = rect ? rect.top + window.scrollY : null;
+  const distanceFromTop_2 = rect_2 ? rect_2.top + window.scrollY : null;
+  const distanceFromTop_3 = rect_3 ? rect_3.top + window.scrollY : null;
+  const distanceFromTop_4 = rect_4 ? rect_4.top + window.scrollY : null;
+  const distanceFromTop_5 = rect_5 ? rect_5.top + window.scrollY : null;
   //
-  if (
-    window.scrollY * 1.7 >= distanceFromTop &&
-    this.window.scrollY < distanceFromTop
-  ) {
-    reasons_why_container.classList.remove("reasons_why_disappear");
-  } else {
-    reasons_why_container.classList.add("reasons_why_disappear");
-  }
-
-  if (
-    window.scrollY * 1.45 >= distanceFromTop_2 &&
-    this.window.scrollY < distanceFromTop_2
-  ) {
-    our_teachers_container.classList.remove("reasons_why_disappear");
-  } else {
-    our_teachers_container.classList.add("reasons_why_disappear");
-  }
-
-  if (
-    window.scrollY * 1.3 >= distanceFromTop_3 &&
-    this.window.scrollY < distanceFromTop_3
-  ) {
-    testimonials.classList.remove("reasons_why_disappear");
-  } else {
-    testimonials.classList.add("reasons_why_disappear");
-  }
-
-  if (
-    window.scrollY * 1.225 >= distanceFromTop_4 &&
-    this.window.scrollY < distanceFromTop_4
-  ) {
-    contact.classList.remove("reasons_why_disappear");
-  } else {
-    contact.classList.add("reasons_why_disappear");
-  }
-
-  if (
-    window.scrollY * 2.75 >= distanceFromTop_5 &&
-    this.window.scrollY < distanceFromTop_5
-  ) {
-    offer.classList.remove("reasons_why_disappear");
-
-    if (!text_triggered) {
-      text_triggered = true;
-      if (!offer_text.textContent) {
-        setTimeout(() => {
-          const intervalArticle = setInterval(add, 40);
-          let counter = 0;
-          function add() {
-            offer_text.innerHTML += text[counter];
-            counter++;
-
-            if (counter == text.length) {
-              clearInterval(intervalArticle);
-            }
-          }
-        }, 1000);
-      }
-    }
-  } else {
-    offer.classList.add("reasons_why_disappear");
-  }
-});
-
-reasons_why_btn.forEach((btn, index) => {
-  // btn.onclick = () => {
-  //   handle_reason_why(index);
-  // };
-  btn.onclick = () => {
-    handle_reason_why(index);
-  };
-});
-
-function handle_reason_why(index) {
-  if (!reason_why.classList.contains("reason_why_disappear")) {
-    reason_why.classList.add("reason_why_disappear");
-  }
-
-  setTimeout(() => {
-    document
-      .querySelectorAll(`.hex-why > p`)
-      .forEach((target, target_index) => {
-        target.style.color = target_index === index ? "#faaa1a" : "white";
-      });
-
-    if (index === 0) {
-      reason_why.innerHTML =
-        "Online časovi nude fleksibilnost u rasporedu, omogućavajući studentima da usklade svoje studije sa drugim obavezama kao što su posao ili porodične obaveze. Ova fleksibilnost omogućava učenicima da kreiraju personalizovane rutine učenja koje odgovaraju njihovim individualnim potrebama.";
-    } else if (index === 1) {
-      reason_why.innerHTML =
-        "Pristupačnost:</strong> Online časovi eliminišu geografske barijere, omogućavajući studentima iz različitih pozadina i lokacija pristup kvalitetnom obrazovanju. Bez obzira da li se nalaze u ruralnim područjima ili u prometnim urbanim centrima, pojedinci mogu da se bave obrazovnim prilikama bez ograničenja fizičke udaljenosti.";
+  if (distanceFromTop) {
+    if (
+      window.scrollY * 1.7 >= distanceFromTop &&
+      this.window.scrollY < distanceFromTop
+    ) {
+      reasons_why_container.classList.remove("reasons_why_disappear");
     } else {
-      reason_why.innerHTML =
-        "Online časovi pružaju pristup raznovrsnim resursima, uključujući multimedijalne materijale, interaktivne simulacije i virtualne laboratorije. Ova raznovrsnost unapređuje iskustvo učenja nudeći više puteva za istraživanje i razumevanje, prilagođavajući se različitim stilovima učenja.";
+      reasons_why_container.classList.add("reasons_why_disappear");
     }
-    reason_why.classList.remove("reason_why_disappear");
-  }, 400);
-}
+  }
+
+  if (distanceFromTop_2) {
+    if (
+      window.scrollY * 1.45 >= distanceFromTop_2 &&
+      this.window.scrollY < distanceFromTop_2
+    ) {
+      our_teachers_container.classList.remove("reasons_why_disappear");
+    } else {
+      our_teachers_container.classList.add("reasons_why_disappear");
+    }
+  }
+
+  if (distanceFromTop_3) {
+    if (
+      window.scrollY * 1.3 >= distanceFromTop_3 &&
+      this.window.scrollY < distanceFromTop_3
+    ) {
+      testimonials.classList.remove("reasons_why_disappear");
+    } else {
+      testimonials.classList.add("reasons_why_disappear");
+    }
+  }
+
+  if (distanceFromTop_4) {
+    let contact_multiplier = contact_class_validation ? 4 : 1.225;
+
+    if (
+      window.scrollY * contact_multiplier >= distanceFromTop_4 &&
+      this.window.scrollY < distanceFromTop_4
+    ) {
+      contact.classList.remove("reasons_why_disappear");
+    } else {
+      contact.classList.add("reasons_why_disappear");
+    }
+  }
+
+  if (distanceFromTop_5) {
+    if (
+      window.scrollY * 2.75 >= distanceFromTop_5 &&
+      this.window.scrollY < distanceFromTop_5
+    ) {
+      offer.classList.remove("reasons_why_disappear");
+
+      if (!text_triggered) {
+        text_triggered = true;
+        if (!offer_text.textContent) {
+          setTimeout(() => {
+            const intervalArticle = setInterval(add, 40);
+            let counter = 0;
+            function add() {
+              offer_text.innerHTML += text[counter];
+              counter++;
+
+              if (counter == text.length) {
+                clearInterval(intervalArticle);
+              }
+            }
+          }, 1000);
+        }
+      }
+    } else {
+      offer.classList.add("reasons_why_disappear");
+    }
+  }
+});

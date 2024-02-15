@@ -19,6 +19,6 @@
       <textarea name="message" id="message" cols="30" rows="6"></textarea>
       <button class="button-form--submit" onclick="sendMail();">Send</button>
     </div>
-    <img src="assets/img/2.webp" alt="teacher">
+    <img src="../assets/img/2.webp" alt="teacher">
   </div>
 </div>

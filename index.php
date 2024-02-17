@@ -1,4 +1,6 @@
 <?php
+$title = "HoneyBee - Home Page";
+
 include "components/head.php";
 include "components/header.php";
 ?>
@@ -10,7 +12,7 @@ include "components/header.php";
             <h4>skolica</h4>
             <h1>HoneyBee</h1>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque animi nihil nulla</p>
-            <a href="#">Nesto</a>
+            <a href="#calendly_link">Prijavite se</a>
             <a href="#" class="ctaa"><i class="ri-play-fill"></i>Watch</a>
         </div>
 
@@ -22,9 +24,9 @@ include "components/header.php";
     </section>
 
     <div class="icons">
-        <a href="#"><i class="ri-instagram-line"></i></a>
-        <a href="#"><i class="ri-youtube-line"></i></a>
-        <a href="#"><i class="ri-facebook-line"></i></a>
+        <a href="#" aria-label="instagram"><i class="ri-instagram-line"></i></a>
+        <a href="#" aria-label="youtube"><i class="ri-youtube-line"></i></a>
+        <a href="#" aria-label="facebook"><i class="ri-facebook-line"></i></a>
     </div>
 
     <section class="offer reasons_why_disappear">

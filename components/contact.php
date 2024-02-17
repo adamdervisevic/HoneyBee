@@ -1,5 +1,5 @@
-<div style="padding: 0.5rem">
-  <div class="contact-container reasons_why_disappear" id="contact_id">
+<div style="padding: 0.5rem" id="contact_id">
+  <div class="contact-container reasons_why_disappear">
     <div name="contact-form" class="form-container">
       <h2>KONTAKTIRAJTE
         NAS</h2>

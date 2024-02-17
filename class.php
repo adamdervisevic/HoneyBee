@@ -1,4 +1,7 @@
 <?php
+$title = "HoneyBee - Class Page"
+  ?>
+<?php
 $class_target = $_GET['class_type'];
 $single_class = ["Individual class", "Individualni časovi engleskog jezika pružaju personalizovan pristup učenju jezika. Svaki čas se fokusira na potrebe i ciljeve samog učenika. Učitelj može prilagoditi tempo i sadržaj u skladu sa nivoom znanja, interesovanjima i stilom učenja pojedinca. Ovi časovi često omogućavaju dublje razumevanje gradiva, intenzivniji rad na veštinama i veću pažnju posvećenu individualnim izazovima u učenju jezika. Učenik ima mogućnost da postavi pitanja i dobije odgovore direktno od nastavnika, što može doprineti bržem napretku u usvajanju jezika.", '10$', 'single_class.webp'];
 $dual_class = ["Dual class", "Časovi engleskog jezika u paru pružaju mogućnost učenja jezika u manjoj grupi, obično sa jednim drugim učenikom. Ovi časovi kombinuju individualnu pažnju sa socijalnom interakcijom, što može biti korisno za učenike koji preferiraju grupno okruženje, ali i žele personalizovan pristup učenju. Učenici imaju priliku da vežbaju konverzaciju, rade zajedničke vežbe i pružaju podršku jedni drugima. Ovo takođe može biti ekonomičnija opcija u odnosu na potpuno individualne časove, ali i dalje omogućava prilagođavanje nastavnog procesa potrebama svakog učenika.", '18$', "pair_class.webp"];

@@ -1,4 +1,7 @@
 <?php
+$title = "HoneyBee - About Page"
+  ?>
+<?php
 include "components/head.php";
 include "components/navbar.php";
 ?>

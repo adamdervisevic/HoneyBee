@@ -8,12 +8,12 @@
         <li id="menu_trigger">
             <p>Naši programi</p>
             <ul id="menu_program">
-                <li><a class="menu_program_link"
-                        href="class.php?class_type=<?php echo 'Individual class'; ?>">Individualna nastava za
+                <li><a class="menu_program_link" href="class.php?class_type=<?php echo 'solo'; ?>">Individualna nastava
+                        za
                         odrasle</a></li>
-                <li><a class="menu_program_link" href="class.php?class_type=<?php echo 'Dual class'; ?>">Ucenje u
+                <li><a class="menu_program_link" href="class.php?class_type=<?php echo 'group'; ?>">Ucenje u
                         paru</a></li>
-                <li><a class="menu_program_link" href="class.php?class_type=<?php echo 'Junior class'; ?>">Grupna
+                <li><a class="menu_program_link" href="class.php?class_type=<?php echo 'Junior'; ?>">Grupna
                         nastava za decu</a></li>
             </ul>
         </li>

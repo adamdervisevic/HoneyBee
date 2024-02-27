@@ -9,10 +9,39 @@ include "components/navbar.php";
 
   <div class="about_us_container">
     <div class="about_us_content">
-      <h1>About Us</h1>
-      <p>HONEYBEE Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium explicabo consequuntur non rerum
-        unde. Dolorem perferendis quos, laborum id minima repellat alias ut nihil necessitatibus, expedita eaque optio
-        assumenda cumque.</p>
+      <h2>O nama</h2>
+      <p>Hello! Zdravo!</p>
+      <p>Mislimo da je pravo vreme da se predstavimo i kazemo nesto o nasoj skoli.</p>
+      <p>Mi smo HoneyBee skola engleskog jezika, koja ima tim akreditovanih predavaca sa dugogodisnjim iskustvom. Tu smo
+        za Vas da Vam kroz zajednicki trud i posvecenost pomognemo da dostignete visoke nivoe svakodnevne konverzacije.
+      </p>
+    </div>
+    <div class="about_overlay"></div>
+  </div>
+
+  <div class="about_us_container">
+    <div class="about_us_content">
+      <h2>Naše metode</h2>
+      <p>Metode koje mi primenjujemo su tako kreirane da mozete sa lakocom i samopouzdanjem da govorite engleski jezik.
+      </p>
+      <p>Izmedju ostalog ,akreditovana smo skola engleskog jezika za Callan metod, koji predstavlja dinamican i zabavan
+        nacin ucenja , gde je focus stavljen na govor i pitanja koja podsticu da komunikacija bude na zavidnom nivou.
+        Saznajte vise o Callan metod ucenju na ovom linku Callan method. </p>
+      </p>
+    </div>
+    <div class="about_overlay"></div>
+  </div>
+
+  <div class="about_us_container">
+    <div class="about_us_content">
+      <h2>Naši predavači</h2>
+      <p>Zajedno smo odrzali vise od 20. 000 casova i taj broj je sve veci iz dana u dan, sto nasu skolu cini jos boljim
+        okruzenjem za Vas napredak. </p>
+      <p>Nasi predavaci su strucni , uvek nasmejani , ljubazni i puni podrske. Strast i ljubav prema jezicima je ono sto
+        nas spaja i to je prva stvar koju cete osetiti u nasoj ucionici. Svaki cas je dizajniran po Vasoj meri. </p>
+      <p>Radujemo se da zajedno sa Vama izgradimo taj nivo znanja gde cete sa samopouzdanjem moci da razgovarate i
+        razmisljate na engleskom jeziku. </p>
+      </p>
     </div>
     <div class="about_overlay"></div>
   </div>

@@ -3,9 +3,98 @@ $title = "HoneyBee - Class Page"
   ?>
 <?php
 $class_target = $_GET['class_type'];
-$single_class = ["Individual class", "Individualni časovi engleskog jezika pružaju personalizovan pristup učenju jezika. Svaki čas se fokusira na potrebe i ciljeve samog učenika. Učitelj može prilagoditi tempo i sadržaj u skladu sa nivoom znanja, interesovanjima i stilom učenja pojedinca. Ovi časovi često omogućavaju dublje razumevanje gradiva, intenzivniji rad na veštinama i veću pažnju posvećenu individualnim izazovima u učenju jezika. Učenik ima mogućnost da postavi pitanja i dobije odgovore direktno od nastavnika, što može doprineti bržem napretku u usvajanju jezika.", '10$', 'single_class.webp'];
-$dual_class = ["Dual class", "Časovi engleskog jezika u paru pružaju mogućnost učenja jezika u manjoj grupi, obično sa jednim drugim učenikom. Ovi časovi kombinuju individualnu pažnju sa socijalnom interakcijom, što može biti korisno za učenike koji preferiraju grupno okruženje, ali i žele personalizovan pristup učenju. Učenici imaju priliku da vežbaju konverzaciju, rade zajedničke vežbe i pružaju podršku jedni drugima. Ovo takođe može biti ekonomičnija opcija u odnosu na potpuno individualne časove, ali i dalje omogućava prilagođavanje nastavnog procesa potrebama svakog učenika.", '18$', "pair_class.webp"];
-$junior_class = ["Junior class", "Časovi engleskog jezika za decu su osmišljeni da budu interaktivni, zabavni i prilagođeni uzrastu i interesovanjima dece. Ovi časovi često koriste igru, pesme, priče i druge kreativne aktivnosti kako bi decu motivisali da uče jezik. Nastavni materijali su obično ilustrovani i prilagođeni dečjem razumevanju. Učitelji često koriste metodologije koje podstiču aktivno učešće dece, kao što su role-playing igre, grupni projekti i aktivnosti koje podstiču komunikaciju. Cilj ovih časova je ne samo naučiti decu osnovama engleskog jezika, već i razviti njihovu ljubav prema učenju jezika i otvoriti vrata ka međukulturalnom razumevanju.", '25$', "junior_class.webp"];
+$single_class = [
+  "solo",
+  "Individualna nastava za odrasle",
+  ['prijatna atmosfera tokom nastave', 'efikasan i dinamičan način učenja', 'fokus je na govoru', 'Vi ste aktivni učesnici u konverzaciji', 'po završenom svakom nivou dobijate sertifikat (ukupno 12 nivoa)'],
+  'Individualna nastava se kreira za Vas i po Vašoj meri. Ovaj oblik nastave omogućava da se fokusirate na Vaše lične ciljeve i napredak, bilo da se radi o poslovnom engleskom jeziku ili konverzaciji.',
+  'Koristimo proverene metode poput Callan metoda nastave, gde ste Vi kao polaznik aktivan učesnik u konverzaciji, dok Vam mi kao predavači pojašnjavamo vokabular i nove koncepte i u toku konverzacije ispravljamo napravljene greške. Tu smo da Vam pomognemo da tečno govorite engleski jezik uz intenzivnu konverzaciju.',
+  'single_class.webp',
+  [
+    [
+      'Cenovnik za konverzacioni engleski na mesecnom nivou',
+      '2x1 čas nedeljno',
+      '9.000 dinara',
+      [
+        '1 čas traje 60 minuta',
+        'pristup platformi',
+        'jutarnji, popodnevni i večernji termini',
+        'besplatno testiranje'
+      ]
+    ],
+    [
+      'Cenovnik za poslovni engleski na mesecnom nivou',
+      '2x1 čas nedeljno',
+      '11.400 dinara',
+      [
+        '1 čas traje 60 minuta',
+        'pristup platformi',
+        'jutarnji, popodnevni i večernji termini',
+        'besplatno testiranje'
+
+      ]
+    ]
+  ]
+];
+$dual_class = [
+  "group",
+  "Učenje u paru (Dual fun)",
+  ['prijatna atmosfera tokom nastave', 'efikasan i dinamičan način učenja', 'focus je na govoru', '-	Vi ste aktivni učesnici u konverzaciji', 'po završenom svakom nivou dobijate sertifikat ( ukupno 12 nivoa)'],
+  'Ukoliko ste osoba koja pored individualnog pristupa voli i socijalnu interakciju , onda je ovaj program idealan za Vas . Ovde ćete imati priliku da učestvujete  u role play aktivnostima gde se simuliraju realne situacije kako iz svakodnevnog zivota , tako i iz Vašeg poslovnog okruzenja.',
+  'Ovaj tip programa je idealan ako biste zajedno učili s nekim iz vašeg okruzenja , bilo da se radi o Vašem partneru , prijatelju , ili pak rodjaku. Samim tim biste postigli i najrealnije simulacije iz svakodnevnog zivota.',
+  'pair_class.webp',
+  [
+    [
+      'Cenovnik za učenje u paru (Dual fun) na mesecnom nivou po osobi',
+      '2x1 čas nedeljno',
+      '4.200 dinara',
+      [
+        '1 čas traje 60 minuta',
+        'pristup platformi',
+        'jutarnji, popodnevni i večernji termini',
+        'besplatno testiranje'
+      ]
+    ]
+  ]
+];
+$junior_class = [
+  'Junior',
+  "Grupna nastava za decu uzrasta 6-14 godina",
+  [
+    'prijatna i zabavna atmosfera tokom nastave',
+    'efikasan i dinamičan način učenja',
+    'focus je na govoru',
+    'Vaše dete aktivno učestvuje u konverzaciji',
+    'po završenom svakom nivou Vaše dete dobija diplomu'
+  ],
+  'Kroz ovaj program smo tu da Vašem detetu pruzimo ono najbolje. Kako sam i sama roditelj, razumem Vaše zelje I očekivanja koja imate kada je reč o napretku vašeg deteta. Zato sam kreirala poseban način učenja gde se pre svega fokusiramo na razvijanje konverzacije , učeći o mnogim korisnim stvarima i sve to kroz igru, koristeći pesme , price i druge kreativne aktivnosti u zavisnosti od uzrasta deteta.',
+  'Koristimo razlicite metode za aktivno učešće dece ,kao što je Callan metod za decu i role play aktivnosti , koje podsticu komunikaciju i brzo usvajanje i primenjivanje vokabulara. Ono što je vazno reći jeste da pored svih ovih aktivnosti , s velikom paznjom pristupamo svakom detetu i pratimo njegov napredak.',
+  'junior_class.webp',
+  [
+    [
+      'Cenovnik za grupnu nastavu za decu na mesečnom nivou ',
+      '3x1 čas nedeljno',
+      '3.000 dinara',
+      [
+        '1 čas traje 75 minuta',
+        'U grupi je najviše 4 deteta',
+        'jutarnji, popodnevni i večernji termini',
+        'besplatno testiranje'
+      ]
+    ],
+    [
+      'Cenovnik za grupnu nastavu za decu na mesečnom nivou ',
+      '2x1 čas nedeljno',
+      '2.700 dinara',
+      [
+        '1 čas traje 75 minuta',
+        'U grupi je najviše 4 deteta',
+        'jutarnji, popodnevni i večernji termini',
+        'besplatno testiranje'
+      ]
+    ]
+  ]
+];
 $collect_class_types = [$single_class, $dual_class, $junior_class];
 
 $target;
@@ -28,20 +117,75 @@ include "components/navbar.php";
 
   <section class="class_program">
     <div>
-      <h1>Program:
-        <?php echo $target[0] ?>
-      </h1>
-      <p>opis:
+      <h1>
         <?php echo $target[1] ?>
+      </h1>
+      <ul>
+        <?php
+        for ($i = 0; $i < count($target[2]); $i++) {
+          ?>
+          <li>&#9733;
+            <?php
+            echo $target[2][$i];
+            ?>
+          </li>
+          <?php
+        }
+        ?>
+      </ul>
+      <p>
+        <?php echo $target[3] ?>
       </p>
-      <p>Cena:
-        <?php echo $target[2] ?>
+      <p>
+        <?php echo $target[4] ?>
+      </p>
+      <p>
+        Očekujemo Vas s velikom radošču!!!
       </p>
       <a href="#contact_id">Prijava</a>
     </div>
     <div>
-      <img src="../assets/img/<?php echo $target[3] ?>" alt="<?php echo $target[0] ?>">
+      <img src="../assets/img/<?php echo $target[5] ?>" alt="<?php echo $target[0] ?>">
     </div>
+  </section>
+
+  <section class="cenovnik">
+    <?php
+    for ($i = 0; $i < count($target[6]); $i++) {
+      ?>
+      <div>
+        <h2>
+          <?php
+          echo $target[6][$i][0];
+          ?>
+        </h2>
+        <p>
+          <?php
+          echo $target[6][$i][1];
+          ?>
+        </p>
+        <p>
+          <?php
+          echo $target[6][$i][2];
+          ?>
+        </p>
+        <ul>
+          <?php
+          for ($y = 0; $y < count($target[6][$i][3]); $y++) {
+            ?>
+            <li>&#9733;
+              <?php
+              echo $target[6][$i][3][$y];
+              ?>
+            </li>
+            <?php
+          }
+          ?>
+        </ul>
+      </div>
+      <?php
+    }
+    ?>
   </section>
 
 

@@ -8,12 +8,13 @@ include "components/header.php";
     <!-- ovde ide content -->
     <section class="hero">
         <div class="hero-text">
-            <h5>Neki text</h5>
-            <h4>skolica</h4>
+            <p>Dobodosli u</p>
             <h1>HoneyBee</h1>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque animi nihil nulla</p>
+            <p>Tim gde cemo zajedno ostvariti Vase ciljeve!</p>
+            <p>Uz kreativnost i nasu podrsku steknite samopouzdanje da tečno govorite i razumete engleski jezik.</p>
+            <p>Već danas se prijavite za jedan od najboljih programa, i ne zaboravite, “Uvek je pravi trenutak za
+                napredak!”</p>
             <a href="#calendly_link">Prijavite se</a>
-            <a href="#" class="ctaa"><i class="ri-play-fill"></i>Watch</a>
         </div>
 
         <div class="hive header_hive">
@@ -91,37 +92,38 @@ include "components/header.php";
     </section>
 
     <section class="section_testimonials reasons_why_disappear">
-        <h2 id="testimonials_id">Utisci</h2>
+        <h2 id="testimonials_id">Pogled u učionicu</h2>
         <div class="testimonial_carousel">
             <div>
-                <video width="100%" height="100%" controls>
-                    <source src="assets/img/clip.mp4" type="video/mp4">
-                    <source src="assets/img/clip.mkv" type="video/mkv">
-                    <source src="assets/img/clip.webm" type="video/webm">
+                <video width="100%" height="100%" controls poster="assets/img/logo.png">
+                    <source src="assets/img/Jana.mp4" type="video/mp4">
                 </video>
             </div>
             <div>
-                <video width="100%" height="100%" controls>
-                    <source src="assets/img/clip.mp4" type="video/mp4">
-                    <source src="assets/img/clip.mkv" type="video/mkv">
-                    <source src="assets/img/clip.webm" type="video/webm">
+                <video width="100%" height="100%" controls poster="assets/img/logo.png">
+                    <source src="assets/img/try 2 d.mp4" type="video/mp4">
                 </video>
             </div>
             <div>
-                <video width="100%" height="100%" controls>
-                    <source src="assets/img/clip.mp4" type="video/mp4">
-                    <source src="assets/img/clip.mkv" type="video/mkv">
-                    <source src="assets/img/clip.webm" type="video/webm">
+                <video width="100%" height="100%" controls poster="assets/img/logo.png">
+                    <source src="assets/img/try 3 f.mp4" type="video/mp4">
                 </video>
             </div>
             <div>
-                <video width="100%" height="100%" controls>
-                    <source src="assets/img/clip.mp4" type="video/mp4">
-                    <source src="assets/img/clip.mkv" type="video/mkv">
-                    <source src="assets/img/clip.webm" type="video/webm">
+                <video width="100%" height="100%" controls poster="assets/img/logo.png">
+                    <source src="assets/img/try_1_b_1.mp4" type="video/mp4">
                 </video>
             </div>
-
+            <div>
+                <video width="100%" height="100%" controls poster="assets/img/logo.png">
+                    <source src="assets/img/try_1_b_2.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div>
+                <video width="100%" height="100%" controls poster="assets/img/logo.png">
+                    <source src="assets/img/try_2.mp4" type="video/mp4">
+                </video>
+            </div>
         </div>
 
     </section>

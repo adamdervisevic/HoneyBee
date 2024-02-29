@@ -85,33 +85,39 @@ include "components/header.php";
         <h2 id="testimonials_id">Pogled u učionicu</h2>
         <div class="testimonial_carousel">
             <div>
-                <video width="100%" height="100%" controls poster="assets/img/logo.png">
+                <video width="100%" height="100%" controls preload="auto" poster="assets/img/logo.png">
                     <source src="assets/img/Jana.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
                 </video>
             </div>
             <div>
-                <video width="100%" height="100%" controls poster="assets/img/logo.png">
+                <video width="100%" height="100%" controls preload="auto" poster="assets/img/logo.png">
                     <source src="assets/img/try 2 d.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
                 </video>
             </div>
             <div>
-                <video width="100%" height="100%" controls poster="assets/img/logo.png">
+                <video width="100%" height="100%" controls preload="auto" poster="assets/img/logo.png">
                     <source src="assets/img/try 3 f.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
                 </video>
             </div>
             <div>
-                <video width="100%" height="100%" controls poster="assets/img/logo.png">
+                <video width="100%" height="100%" controls preload="auto" poster="assets/img/logo.png">
                     <source src="assets/img/try_1_b_1.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
                 </video>
             </div>
             <div>
-                <video width="100%" height="100%" controls poster="assets/img/logo.png">
+                <video width="100%" height="100%" controls preload="auto" poster="assets/img/logo.png">
                     <source src="assets/img/try_1_b_2.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
                 </video>
             </div>
             <div>
-                <video width="100%" height="100%" controls poster="assets/img/logo.png">
+                <video width="100%" height="100%" controls preload="auto" poster="assets/img/logo.png">
                     <source src="assets/img/try_2.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
                 </video>
             </div>
         </div>

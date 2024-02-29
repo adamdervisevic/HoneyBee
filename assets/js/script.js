@@ -211,3 +211,21 @@ window.addEventListener("scroll", function () {
     }
   }
 });
+
+// video skip back - forward
+document.addEventListener("DOMContentLoaded", function () {
+  const video = document.querySelectorAll("video");
+
+  video.forEach((clip) => {
+    // Event listener for arrow key presses
+    document.addEventListener("keydown", function (e) {
+      if (e.keyCode === 37) {
+        // Left arrow key pressed - go back 5 seconds
+        clip.currentTime -= 5;
+      } else if (e.keyCode === 39) {
+        // Right arrow key pressed - skip forward 5 seconds
+        clip.currentTime += 5;
+      }
+    });
+  });
+});

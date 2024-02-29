@@ -523,7 +523,7 @@ section {
 .section_why_hive button {
   clip-path: polygon(50% -50%, 100% 50%, 100% 50%, 50% 150%, 0% 50%, 0% 50%);
   background: linear-gradient(180deg, #faaa1a 0%, #f5ad3b 50%, #fbaa19 100%);
-  width: 210px;
+  width: 300px;
   cursor: pointer;
   justify-self: center;
   border: none;
@@ -532,8 +532,8 @@ section {
   background-color: black;
   background-image: none;
   display: flex;
-  width: 180px;
-  height: 144px;
+  width: 270px;
+  height: 216px;
 }
 .hex-why > p {
   color: white;
@@ -567,41 +567,29 @@ section {
     margin-bottom: 10px;
   }
 }
-@media only screen and (max-width: 648px) {
+@media only screen and (max-width: 930px) {
   .btn_why {
-    width: 150px !important;
+    width: 200px !important;
   }
   .hex-why {
-    width: 140px;
-    height: 112px;
+    width: 170px;
+    height: 136px;
   }
   .section_why_hive div p {
-    font-size: 1.8rem;
-  }
-  .reason_why {
-    font-size: 1.5rem;
-    padding: 5rem 0rem;
-  }
-  .reasons_why,
-  .our_teachers,
-  .offer {
-    padding: 5rem 0 2rem 0 !important;
-  }
-  .offer_1 img {
-    width: 320px !important;
-    height: 240px !important;
+    font-size: 1.25rem;
   }
 }
-@media only screen and (max-width: 350px) {
+
+@media only screen and (max-width: 480px) {
   .btn_why {
-    width: 110px !important;
+    width: 140px !important;
   }
   .hex-why {
-    width: 100px;
-    height: 80px;
+    width: 130px;
+    height: 104px;
   }
   .section_why_hive div p {
-    font-size: 1.35rem;
+    font-size: 1rem;
   }
   .section_why_hive button:nth-child(3) {
     bottom: -70%;
@@ -609,18 +597,29 @@ section {
 }
 /* our teachers section */
 .our_teachers {
+  width: 100%;
   display: flex;
   flex-direction: column;
   gap: 5rem;
-  transition: all 1s ease-in;
-  padding-top: 15rem;
-  padding-bottom: 15rem;
-  /* margin: 10rem 5rem 20rem 5rem; */
+  padding: 10rem 1rem !important;
   background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
     url("/assets/img/4.webp");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: 0%, 0%;
+  transition: all 1s ease-in;
+}
+.teacher_container {
+  width: 100%;
+}
+.content_teachers_holder img {
+  width: 100%;
+  max-width: 300px;
+  height: 100%;
+  max-height: 350px;
+  object-fit: cover;
+  border: 10px solid;
+  border-image: linear-gradient(45deg, #1a1a1a, #faaa1a) 10;
 }
 @media only screen and (max-width: 754px) {
   .our_teachers {
@@ -632,59 +631,11 @@ section {
 }
 .our_teachers > div {
   width: 100%;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  /* justify-content: center; */
-  gap: 1rem;
-}
-.our_teachers > div > div {
-  position: relative;
-  overflow: hidden;
-  clip-path: polygon(50% -50%, 100% 50%, 100% 50%, 50% 150%, 0% 50%, 0% 50%);
-  /* background-image: url("/assets/img/teacher.webp");
-  background-size: 100% 100%;
-  justify-self: center;
-  width: 500px;
-  height: 300px; */
-}
-/* .our_teachers > div > div:last-child {
-  background-image: url("/assets/img/teacher.webp");
-} */
-.our_teachers div div img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-.text_teachers_holder {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  gap: 1rem;
-  width: 25rem;
-  background-color: rgba(0, 0, 0, 0.7);
-  height: 100%;
-  padding: 1rem;
-  transform: translateX(150%);
-  transition: transform 0.5s ease-in;
+  gap: 3rem;
 }
-.text_teachers_holder p {
-  font-size: 1.7rem;
-  color: white;
-}
-.content_teachers_holder:hover .text_teachers_holder {
-  transform: translateX(0%) !important;
-}
-.content_teachers_holder > p {
-  position: absolute;
-  top: 1rem;
-  left: 1rem;
-  color: white;
-  font-size: 1.8rem;
-}
+
 @media only screen and (max-width: 609px) {
   .our_teachers {
     background-size: cover;
@@ -768,9 +719,12 @@ video {
   overflow: hidden;
   background-color: #1a1a1a;
   transition: all 1s ease-in;
+  position: relative;
 }
 .contact-container img {
-  width: 100%;
+  position: absolute;
+  right: 0;
+  width: 35%;
   height: 100%;
   object-fit: cover;
 }
@@ -831,7 +785,7 @@ label {
 .form-notification {
   color: #d9480f !important;
 }
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 900px) {
   .contact-container {
     grid-template-columns: 1fr;
   }
@@ -944,6 +898,7 @@ address p {
 .offer_1 img {
   width: 520px;
   height: 416px;
+  transform: scale(0.75);
   object-fit: cover;
   clip-path: polygon(50% -50%, 100% 50%, 100% 50%, 50% 150%, 0% 50%, 0% 50%);
 }

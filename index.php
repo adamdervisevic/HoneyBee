@@ -55,38 +55,28 @@ include "components/header.php";
             </button>
             <button class="btn_why">
                 <div class="hexagon hex-why">
-                    <p>Resursi</p>
+                    <p>Udaljeni smo na samo jedan klik od Vas</p>
                 </div>
             </button>
         </div>
-        <p class="reason_why">
+        <!-- <p class="reason_why">
             "Online časovi nude fleksibilnost u rasporedu, omogućavajući studentima da usklade svoje studije sa drugim
             obavezama kao što su posao ili porodične obaveze. Ova fleksibilnost omogućava učenicima da kreiraju
             personalizovane rutine učenja koje odgovaraju njihovim individualnim potrebama.";
-        </p>
+        </p> -->
     </section>
 
     <section class="our_teachers reasons_why_disappear">
         <h2>Nasi ucitelji</h2>
-        <div>
+        <div class="teachers_container">
             <div class="content_teachers_holder">
-
-                <img src="assets/img/teacher.webp" alt="teacher_1">
-                <div class="text_teachers_holder">
-                    <p>Ucitelj: Bee</p>
-                    <p>&#9733; Iskustvo: 5 godina</p>
-                    <p>&#9733; Broj casova: 2400</p>
-                    <p>&#9733; Neki atribut: 1000</p>
-                </div>
+                <img src="assets/img/Maja_Stamenkovic.jpg" alt="teacher_1">
             </div>
             <div class="content_teachers_holder">
-                <img src="assets/img/teacher.webp" alt="teacher_2">
-                <div class="text_teachers_holder">
-                    <p>Ucitelj: Bee</p>
-                    <p>&#9733; Iskustvo: 5 godina</p>
-                    <p>&#9733; Broj casova: 2400</p>
-                    <p>&#9733; Neki atribut: 1000</p>
-                </div>
+                <img src="assets/img/Pocuca.jpg" alt="teacher_2">
+            </div>
+            <div class="content_teachers_holder">
+                <img src="assets/img/Dragana_Gvozdenovic.jpg" alt="teacher_2">
             </div>
         </div>
     </section>
@@ -146,39 +136,39 @@ include "components/footer.php";
 include "components/foot.php";
 ?>
 <script>
-    reasons_why_btn.forEach((btn, index) => {
-        // btn.onclick = () => {
-        //   handle_reason_why(index);
-        // };
-        btn.onclick = () => {
-            handle_reason_why(index);
-        };
-    });
+    // reasons_why_btn.forEach((btn, index) => {
+    //     // btn.onclick = () => {
+    //     //   handle_reason_why(index);
+    //     // };
+    //     btn.onclick = () => {
+    //         handle_reason_why(index);
+    //     };
+    // });
 
-    function handle_reason_why(index) {
-        if (!reason_why.classList.contains("reason_why_disappear")) {
-            reason_why.classList.add("reason_why_disappear");
-        }
+    // function handle_reason_why(index) {
+    //     if (!reason_why.classList.contains("reason_why_disappear")) {
+    //         reason_why.classList.add("reason_why_disappear");
+    //     }
 
-        setTimeout(() => {
-            document
-                .querySelectorAll(`.hex-why > p`)
-                .forEach((target, target_index) => {
-                    target.style.color = target_index === index ? "#faaa1a" : "white";
-                });
+    //     setTimeout(() => {
+    //         document
+    //             .querySelectorAll(`.hex-why > p`)
+    //             .forEach((target, target_index) => {
+    //                 target.style.color = target_index === index ? "#faaa1a" : "white";
+    //             });
 
-            if (index === 0) {
-                reason_why.innerHTML =
-                    "Online časovi nude fleksibilnost u rasporedu, omogućavajući studentima da usklade svoje studije sa drugim obavezama kao što su posao ili porodične obaveze. Ova fleksibilnost omogućava učenicima da kreiraju personalizovane rutine učenja koje odgovaraju njihovim individualnim potrebama.";
-            } else if (index === 1) {
-                reason_why.innerHTML =
-                    "Pristupačnost:</strong> Online časovi eliminišu geografske barijere, omogućavajući studentima iz različitih pozadina i lokacija pristup kvalitetnom obrazovanju. Bez obzira da li se nalaze u ruralnim područjima ili u prometnim urbanim centrima, pojedinci mogu da se bave obrazovnim prilikama bez ograničenja fizičke udaljenosti.";
-            } else {
-                reason_why.innerHTML =
-                    "Online časovi pružaju pristup raznovrsnim resursima, uključujući multimedijalne materijale, interaktivne simulacije i virtualne laboratorije. Ova raznovrsnost unapređuje iskustvo učenja nudeći više puteva za istraživanje i razumevanje, prilagođavajući se različitim stilovima učenja.";
-            }
-            reason_why.classList.remove("reason_why_disappear");
-        }, 400);
-    }
+    //         if (index === 0) {
+    //             reason_why.innerHTML =
+    //                 "Online časovi nude fleksibilnost u rasporedu, omogućavajući studentima da usklade svoje studije sa drugim obavezama kao što su posao ili porodične obaveze. Ova fleksibilnost omogućava učenicima da kreiraju personalizovane rutine učenja koje odgovaraju njihovim individualnim potrebama.";
+    //         } else if (index === 1) {
+    //             reason_why.innerHTML =
+    //                 "Pristupačnost:</strong> Online časovi eliminišu geografske barijere, omogućavajući studentima iz različitih pozadina i lokacija pristup kvalitetnom obrazovanju. Bez obzira da li se nalaze u ruralnim područjima ili u prometnim urbanim centrima, pojedinci mogu da se bave obrazovnim prilikama bez ograničenja fizičke udaljenosti.";
+    //         } else {
+    //             reason_why.innerHTML =
+    //                 "Online časovi pružaju pristup raznovrsnim resursima, uključujući multimedijalne materijale, interaktivne simulacije i virtualne laboratorije. Ova raznovrsnost unapređuje iskustvo učenja nudeći više puteva za istraživanje i razumevanje, prilagođavajući se različitim stilovima učenja.";
+    //         }
+    //         reason_why.classList.remove("reason_why_disappear");
+    //     }, 400);
+    // }
 
 </script>

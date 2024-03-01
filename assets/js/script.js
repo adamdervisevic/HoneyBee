@@ -113,9 +113,44 @@ const offer_text = document.querySelector(".offer_dynamic")
   ? document.querySelector(".offer_dynamic")
   : null;
 let text =
-  "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, est! Lorem ipsum dolor sit ametconsectetur adipisicing elit. Consequuntur ab voluptatibus distinctio vitae accusamus molestias!";
+  "✓ Zato sto smo zajedničkim trudom  postigli da naša škola ima zavidan broj učenika, a jedina reklama nam je bila preporuka prethodnih polaznika.";
 text = text.split("");
 let text_triggered = false;
+const offer_dynamic_2 = document.querySelector(".offer_dynamic_2");
+let text_2 =
+  "✓ Zato što koristimo SAMO proverene metode i programe koji su dizajnirani po Vašoj meri. Akreditovana smo škola Callan metod učenja, koji predstavlja brz, efektivan, efikasan  i  pre svega zabavan nacin učenja.";
+text_2 = text_2.split("");
+function generate_text_2() {
+  const intervalArticle = setInterval(add, 40);
+  let counter = 0;
+  console.log(text_2.length);
+  function add() {
+    offer_dynamic_2.innerHTML += text_2[counter];
+    counter++;
+
+    if (counter == text_2.length) {
+      clearInterval(intervalArticle);
+      generate_text_3();
+    }
+  }
+}
+const offer_dynamic_3 = document.querySelector(".offer_dynamic_3");
+let text_3 =
+  "✓ Zato što uz HoneyBee English online nastavu štedite Vaše vreme i novac. Neka Vaš napredak krene iz udobnosti Vaše fotelje. Pridružite nam se i uverite se i sami zašto baš HoneyBee!";
+text_3 = text_3.split("");
+function generate_text_3() {
+  const intervalArticle = setInterval(add, 40);
+  let counter = 0;
+  console.log(text_3.length);
+  function add() {
+    offer_dynamic_3.innerHTML += text_3[counter];
+    counter++;
+
+    if (counter == text_3.length) {
+      clearInterval(intervalArticle);
+    }
+  }
+}
 // scroll animation function
 window.addEventListener("scroll", function () {
   // collect value of pixel
@@ -201,6 +236,7 @@ window.addEventListener("scroll", function () {
 
               if (counter == text.length) {
                 clearInterval(intervalArticle);
+                generate_text_2();
               }
             }
           }, 1000);

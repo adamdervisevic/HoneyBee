@@ -8,20 +8,28 @@ include "components/header.php";
     <!-- ovde ide content -->
     <section class="hero">
         <div class="hero-text">
-            <p>Dobodosli u</p>
-            <h1>HoneyBee</h1>
-            <p>Tim gde cemo zajedno ostvariti Vase ciljeve!</p>
-            <p>Uz kreativnost i nasu podrsku steknite samopouzdanje da tečno govorite i razumete engleski jezik.</p>
-            <p>Već danas se prijavite za jedan od najboljih programa, i ne zaboravite, “Uvek je pravi trenutak za
-                napredak!”</p>
+            <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem" class="title_container">
+                <p>Dobodosli u</p>
+                <h1>
+                    HoneyBee
+                </h1>
+                <p>online English!</p>
+            </div>
+            <p>Unapredite svoje znanje engleskog jezika i konacno pocnite da govorite sa samopouzdanjem.</p>
+            <p>U našoj online učionici Vas očekuju stručni predavači, koji će Vam pomoći da s lakoćom savladate engleski
+                jezik.</p>
+            <p>Uz proverene tehnike I metode učenja pomoći ćemo Vam da postignete merljive rezultate i usavršite svoju
+                svakodnevnu ili poslovnu komunikaciju.</p>
+            <p>Uvek je pravi trenutak za napredak!</p>
             <a href="#calendly_link">Prijavite se</a>
+            <div class="hive header_hive">
+                <div class="hexagon header_hexagon hex-s"></div>
+                <div class="hexagon header_hexagon hex-m"></div>
+                <div class="hexagon header_hexagon hex-b"></div>
+            </div>
         </div>
 
-        <div class="hive header_hive">
-            <div class="hexagon header_hexagon hex-s"></div>
-            <div class="hexagon header_hexagon hex-m"></div>
-            <div class="hexagon header_hexagon hex-b"></div>
-        </div>
+
     </section>
 
     <div class="icons">
@@ -31,17 +39,19 @@ include "components/header.php";
     </div>
 
     <section class="offer reasons_why_disappear">
-        <div class="offer_1">
+        <!-- <div class="offer_1">
             <img src="assets/img/2.webp" alt="offer(ponuda)">
-        </div>
+        </div> -->
         <div class="offer_2">
-            <h2>Sta nudimo?</h2>
+            <h2>Zašto baš HoneyBee?</h2>
             <p class="offer_dynamic"></p>
+            <p class="offer_dynamic_2"></p>
+            <p class="offer_dynamic_3"></p>
         </div>
     </section>
 
     <section class="reasons_why reasons_why_disappear">
-        <h2>Zasto online nastava?</h2>
+        <h2>Zašto online nastava?</h2>
         <div class="section_why_hive">
             <button class="btn_why">
                 <div class="hexagon hex-why">
@@ -68,15 +78,89 @@ include "components/header.php";
 
     <section class="our_teachers reasons_why_disappear">
         <h2>Nasi ucitelji</h2>
-        <div class="teachers_container">
+        <div class="teachers_container teacher_carousel">
             <div class="content_teachers_holder">
                 <img src="assets/img/Maja_Stamenkovic.jpg" alt="teacher_1">
+                <div class="teacher_info">
+                    <p>Maja Stamenkovic</p>
+                    <p>Osnivac HoneyBee skole</p>
+                    <p>7+ godina iskustva</p>
+                    <p>Preko 10.000 odrzanih casova sa ljudima sirom sveta</p>
+                    <p>Akreditovan i sertifikovan predavac engleskog jezika</p>
+                </div>
             </div>
             <div class="content_teachers_holder">
                 <img src="assets/img/Pocuca.jpg" alt="teacher_2">
+                <div class="teacher_info">
+                    <p>Jana P.</p>
+                    <p>5+ godina iskustva</p>
+                    <p>Preko 6.000 odrzanih casova sa ljudima sirom sveta</p>
+                    <p>Akreditovan i sertifikovan predavac engleskog jezika</p>
+                </div>
             </div>
             <div class="content_teachers_holder">
                 <img src="assets/img/Dragana_Gvozdenovic.jpg" alt="teacher_2">
+                <div class="teacher_info">
+                    <p>Maja Stamenkovic</p>
+                    <p>10+ godina iskustva</p>
+                    <p>Akreditovan i sertifikovan predavac engleskog jezika</p>
+                </div>
+            </div>
+            <!--  -->
+            <div class="content_teachers_holder">
+                <img src="assets/img/Maja_Stamenkovic.jpg" alt="teacher_1">
+                <div class="teacher_info">
+                    <p>Maja Stamenkovic</p>
+                    <p>Osnivac HoneyBee skole</p>
+                    <p>7+ godina iskustva</p>
+                    <p>Preko 10.000 odrzanih casova sa ljudima sirom sveta</p>
+                    <p>Akreditovan i sertifikovan predavac engleskog jezika</p>
+                </div>
+            </div>
+            <div class="content_teachers_holder">
+                <img src="assets/img/Pocuca.jpg" alt="teacher_2">
+                <div class="teacher_info">
+                    <p>Jana P.</p>
+                    <p>5+ godina iskustva</p>
+                    <p>Preko 6.000 odrzanih casova sa ljudima sirom sveta</p>
+                    <p>Akreditovan i sertifikovan predavac engleskog jezika</p>
+                </div>
+            </div>
+            <div class="content_teachers_holder">
+                <img src="assets/img/Dragana_Gvozdenovic.jpg" alt="teacher_2">
+                <div class="teacher_info">
+                    <p>Maja Stamenkovic</p>
+                    <p>10+ godina iskustva</p>
+                    <p>Akreditovan i sertifikovan predavac engleskog jezika</p>
+                </div>
+            </div>
+            <!--  -->
+            <div class="content_teachers_holder">
+                <img src="assets/img/Maja_Stamenkovic.jpg" alt="teacher_1">
+                <div class="teacher_info">
+                    <p>Maja Stamenkovic</p>
+                    <p>Osnivac HoneyBee skole</p>
+                    <p>7+ godina iskustva</p>
+                    <p>Preko 10.000 odrzanih casova sa ljudima sirom sveta</p>
+                    <p>Akreditovan i sertifikovan predavac engleskog jezika</p>
+                </div>
+            </div>
+            <div class="content_teachers_holder">
+                <img src="assets/img/Pocuca.jpg" alt="teacher_2">
+                <div class="teacher_info">
+                    <p>Jana P.</p>
+                    <p>5+ godina iskustva</p>
+                    <p>Preko 6.000 odrzanih casova sa ljudima sirom sveta</p>
+                    <p>Akreditovan i sertifikovan predavac engleskog jezika</p>
+                </div>
+            </div>
+            <div class="content_teachers_holder">
+                <img src="assets/img/Dragana_Gvozdenovic.jpg" alt="teacher_2">
+                <div class="teacher_info">
+                    <p>Maja Stamenkovic</p>
+                    <p>10+ godina iskustva</p>
+                    <p>Akreditovan i sertifikovan predavac engleskog jezika</p>
+                </div>
             </div>
         </div>
     </section>
@@ -135,6 +219,7 @@ include "components/footer.php";
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
 <script src="assets/js/carousel.js"></script>
+<script src="assets/js/carousel_2.js"></script>
 <script>
     const contact_class_validation = false;
 </script>
@@ -142,39 +227,6 @@ include "components/footer.php";
 include "components/foot.php";
 ?>
 <script>
-    // reasons_why_btn.forEach((btn, index) => {
-    //     // btn.onclick = () => {
-    //     //   handle_reason_why(index);
-    //     // };
-    //     btn.onclick = () => {
-    //         handle_reason_why(index);
-    //     };
-    // });
 
-    // function handle_reason_why(index) {
-    //     if (!reason_why.classList.contains("reason_why_disappear")) {
-    //         reason_why.classList.add("reason_why_disappear");
-    //     }
-
-    //     setTimeout(() => {
-    //         document
-    //             .querySelectorAll(`.hex-why > p`)
-    //             .forEach((target, target_index) => {
-    //                 target.style.color = target_index === index ? "#faaa1a" : "white";
-    //             });
-
-    //         if (index === 0) {
-    //             reason_why.innerHTML =
-    //                 "Online časovi nude fleksibilnost u rasporedu, omogućavajući studentima da usklade svoje studije sa drugim obavezama kao što su posao ili porodične obaveze. Ova fleksibilnost omogućava učenicima da kreiraju personalizovane rutine učenja koje odgovaraju njihovim individualnim potrebama.";
-    //         } else if (index === 1) {
-    //             reason_why.innerHTML =
-    //                 "Pristupačnost:</strong> Online časovi eliminišu geografske barijere, omogućavajući studentima iz različitih pozadina i lokacija pristup kvalitetnom obrazovanju. Bez obzira da li se nalaze u ruralnim područjima ili u prometnim urbanim centrima, pojedinci mogu da se bave obrazovnim prilikama bez ograničenja fizičke udaljenosti.";
-    //         } else {
-    //             reason_why.innerHTML =
-    //                 "Online časovi pružaju pristup raznovrsnim resursima, uključujući multimedijalne materijale, interaktivne simulacije i virtualne laboratorije. Ova raznovrsnost unapređuje iskustvo učenja nudeći više puteva za istraživanje i razumevanje, prilagođavajući se različitim stilovima učenja.";
-    //         }
-    //         reason_why.classList.remove("reason_why_disappear");
-    //     }, 400);
-    // }
 
 </script>

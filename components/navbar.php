@@ -2,7 +2,7 @@
     <a href="index.php" class="logo">
         <img src="../assets/img/logo.webp" alt="website logo">
     </a>
-
+    <span></span>
     <ul class="navlist">
         <li><a href="index.php">Pocetna strana</a></li>
         <li id="menu_trigger">

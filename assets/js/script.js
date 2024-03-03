@@ -11,17 +11,17 @@ menu.onclick = () => {
   navlist.classList.toggle("open");
 };
 
-const sr = ScrollReveal({
-  distance: "65px",
-  duration: 2600,
-  delay: 450,
-  reset: true,
-});
+// const sr = ScrollReveal({
+//   distance: "65px",
+//   duration: 2600,
+//   delay: 450,
+//   reset: true,
+// });
 
-sr.reveal(".hero-text", { delay: 200, origin: "top" });
-sr.reveal(".hero-img", { delay: 450, origin: "top" });
-sr.reveal(".icons", { delay: 500, origin: "left" });
-sr.reveal(".hive", { delay: 200, origin: "top" });
+// sr.reveal(".hero-text", { delay: 200, origin: "top" });
+// sr.reveal(".hero-img", { delay: 450, origin: "top" });
+// sr.reveal(".icons", { delay: 500, origin: "left" });
+// sr.reveal(".hive", { delay: 200, origin: "top" });
 
 // custom menu change
 const menu_program = document.querySelector("#menu_program");
@@ -31,11 +31,11 @@ const menu_program_link = document.querySelectorAll(".menu_program_link");
 
 window.addEventListener("resize", deal_with_dropdown);
 window.addEventListener("load", deal_with_dropdown);
-if (hive) window.addEventListener("load", hive_appear);
+// if (hive) window.addEventListener("load", hive_appear);
 
-function hive_appear() {
-  hive.classList.add("hive_opacity");
-}
+// function hive_appear() {
+//   hive.classList.add("hive_opacity");
+// }
 
 function add_styles() {
   menu_program.classList.add("display_toggle");
@@ -102,12 +102,12 @@ const offer = document.querySelector(".offer")
   ? document.querySelector(".offer")
   : null;
 
-const reasons_why_btn = document.querySelectorAll(".btn_why")
-  ? document.querySelectorAll(".btn_why")
-  : null;
-const reason_why = document.querySelector(".reason_why")
-  ? document.querySelector(".reason_why")
-  : null;
+// const reasons_why_btn = document.querySelectorAll(".btn_why")
+//   ? document.querySelectorAll(".btn_why")
+//   : null;
+// const reason_why = document.querySelector(".reason_why")
+//   ? document.querySelector(".reason_why")
+//   : null;
 
 const offer_text = document.querySelector(".offer_dynamic")
   ? document.querySelector(".offer_dynamic")
@@ -120,34 +120,37 @@ const offer_dynamic_2 = document.querySelector(".offer_dynamic_2");
 let text_2 =
   "✓ Zato što koristimo SAMO proverene metode i programe koji su dizajnirani po Vašoj meri. Akreditovana smo škola Callan metod učenja, koji predstavlja brz, efektivan, efikasan  i  pre svega zabavan nacin učenja.";
 text_2 = text_2.split("");
-function generate_text_2() {
-  const intervalArticle = setInterval(add, 40);
-  let counter = 0;
-  console.log(text_2.length);
-  function add() {
-    offer_dynamic_2.innerHTML += text_2[counter];
-    counter++;
 
-    if (counter == text_2.length) {
-      clearInterval(intervalArticle);
-      generate_text_3();
-    }
-  }
-}
 const offer_dynamic_3 = document.querySelector(".offer_dynamic_3");
 let text_3 =
   "✓ Zato što uz HoneyBee English online nastavu štedite Vaše vreme i novac. Neka Vaš napredak krene iz udobnosti Vaše fotelje. Pridružite nam se i uverite se i sami zašto baš HoneyBee!";
 text_3 = text_3.split("");
-function generate_text_3() {
-  const intervalArticle = setInterval(add, 40);
-  let counter = 0;
-  console.log(text_3.length);
-  function add() {
-    offer_dynamic_3.innerHTML += text_3[counter];
-    counter++;
 
-    if (counter == text_3.length) {
+function generate_text(text, id) {
+  const intervalArticle = setInterval(add, 20);
+  let counter = 0;
+
+  function add() {
+    if (id == 1) {
+      offer_text.innerHTML += text[counter];
+      counter++;
+    } else if (id == 2) {
+      offer_dynamic_2.innerHTML += text[counter];
+      counter++;
+    } else {
+      offer_dynamic_3.innerHTML += text[counter];
+      counter++;
+    }
+
+    if (counter == text.length) {
       clearInterval(intervalArticle);
+      if (id == 1) {
+        generate_text(text_2, 2);
+      } else if (id == 2) {
+        generate_text(text_3, 3);
+      } else {
+        return false;
+      }
     }
   }
 }
@@ -227,19 +230,8 @@ window.addEventListener("scroll", function () {
       if (!text_triggered) {
         text_triggered = true;
         if (!offer_text.textContent) {
-          setTimeout(() => {
-            const intervalArticle = setInterval(add, 40);
-            let counter = 0;
-            function add() {
-              offer_text.innerHTML += text[counter];
-              counter++;
-
-              if (counter == text.length) {
-                clearInterval(intervalArticle);
-                generate_text_2();
-              }
-            }
-          }, 1000);
+          // pozovi funkciju
+          generate_text(text, 1);
         }
       }
     } else {

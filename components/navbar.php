@@ -18,7 +18,7 @@
             </ul>
         </li>
         <li id="about"><a href="about.php">O nama</a></li>
-        <li><a href="#testimonials_id">Iskustva polaznika</a></li>
+        <li><a href="testimonials.php">Iskustva polaznika</a></li>
         <li><a href="#contact_id">Kontakt</a></li>
 
     </ul>

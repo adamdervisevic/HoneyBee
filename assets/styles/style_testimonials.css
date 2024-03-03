@@ -1,0 +1,164 @@
+.testimonials {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 180rem;
+  margin: 20rem auto 5rem auto;
+}
+
+.testimonial_container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+  height: auto;
+  margin-bottom: 1rem;
+  transition: all 0.5s;
+}
+
+.type_zero {
+  max-height: 127px;
+}
+.type_one {
+  max-height: 154px;
+}
+.type_two {
+  max-height: 181px;
+}
+.type_three {
+  max-height: 208px;
+}
+
+.testimonial_container:nth-child(odd) {
+  transform: translateX(-5%);
+}
+.testimonial_container:nth-child(even) {
+  transform: translateX(5%);
+}
+.upper_part {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background-color: #fff;
+  min-height: 80px;
+  z-index: 2;
+}
+.upper_part img {
+  width: 8rem;
+  height: 8rem;
+}
+.bee_logo {
+  position: absolute;
+  top: 5px;
+  right: 70px;
+}
+.upper_part p {
+  font-size: 1.8rem;
+}
+.lower_part,
+.filler_text {
+  padding: 1rem 2rem 0 2rem;
+  background-color: #ffd8a8;
+}
+.lower_part p,
+.filler_text p {
+  font-size: 1.6rem;
+}
+.lower_part {
+  z-index: 2;
+}
+
+.filler_text {
+  transform: translateY(-140%);
+  transition: transform 0.5s;
+  z-index: 1;
+  overflow: hidden;
+}
+.filler_in {
+  transform: translateY(0%) !important;
+}
+
+.expand {
+  font-size: 2.5rem;
+  width: 40px;
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+.up_upper,
+.up_lower {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.up_lower {
+  width: 100%;
+  justify-content: space-between;
+  padding-right: 1rem;
+}
+
+@media only screen and (max-width: 1200px) {
+  .testimonial_container:nth-child(odd) {
+    transform: translateX(0%);
+  }
+}
+@media only screen and (max-width: 1030px) {
+  .lower_part p,
+  .filler_text p {
+    font-size: 1.4rem;
+  }
+
+  .type_zero {
+    max-height: 160px;
+  }
+  .type_one {
+    max-height: 180px;
+  }
+  .type_two {
+    max-height: 200px;
+  }
+  .type_three {
+    max-height: 220px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .up_lower {
+    flex-direction: column;
+  }
+  .bee_logo {
+    left: 85px;
+    top: 20px;
+  }
+}
+@media only screen and (max-width: 570px) {
+  .lower_part p,
+  .filler_text p {
+    font-size: 1.25rem;
+  }
+
+  .type_zero {
+    max-height: 180px;
+  }
+  .type_one {
+    max-height: 200px;
+  }
+  .type_two {
+    max-height: 220px;
+  }
+  .type_three {
+    max-height: 240px;
+  }
+}
+.default_height {
+  max-height: 2000px;
+}
+@media only screen and (max-width: 460px) {
+  .upper_part p {
+    font-size: 1.4rem !important;
+  }
+}
+@media only screen and (max-width: 370px) {
+  .upper_part p {
+    font-size: 1.1rem !important;
+  }
+}

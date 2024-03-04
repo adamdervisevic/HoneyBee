@@ -23,7 +23,7 @@
     <div class="content_teachers_holder">
       <img src="assets/img/Dragana_Gvozdenovic.webp" alt="teacher_2">
       <div class="teacher_info">
-        <p>Maja Stamenkovic</p>
+        <p>Dragana G.</p>
         <p>10+ godina iskustva</p>
         <p>Akreditovan i sertifikovan predavac engleskog jezika</p>
       </div>
@@ -51,7 +51,7 @@
     <div class="content_teachers_holder">
       <img src="assets/img/Dragana_Gvozdenovic.webp" alt="teacher_2">
       <div class="teacher_info">
-        <p>Maja Stamenkovic</p>
+        <p>Dragana G.</p>
         <p>10+ godina iskustva</p>
         <p>Akreditovan i sertifikovan predavac engleskog jezika</p>
       </div>
@@ -79,7 +79,7 @@
     <div class="content_teachers_holder">
       <img src="assets/img/Dragana_Gvozdenovic.webp" alt="teacher_2">
       <div class="teacher_info">
-        <p>Maja Stamenkovic</p>
+        <p>Dragana G.</p>
         <p>10+ godina iskustva</p>
         <p>Akreditovan i sertifikovan predavac engleskog jezika</p>
       </div>

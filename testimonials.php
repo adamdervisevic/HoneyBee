@@ -125,9 +125,20 @@ $student_11 = [
   'type_one'
 ];
 
+$student_12 = [
+  'm_s.webp',
+  'Miloš Stojanović , gradjevinski inženjer',
+  'Nakon više pokušaja da naučim engleski jezik u raznim školama i sa raznim profesorima konačno sam u školi HONEYBEE uz pomoć Callan metode, posvećenosti i znanja profesorke Maje uspeo da efikasno i brzo naučim engleski jezik.',
+  [
+    'Uz efikasne, zabavne i relaksirajuće časove u školi HONEYBEE možete lako i brzo da naučite engleski jezik i uštedite vreme i novac.',
+    'Svaka preporuka ,kako polaznicima tako i onima kojima je potrebno usavršavanje engleskog jezika.'
+  ],
+  'type_one'
+];
 
 
-$students = [$student_1, $student_2, $student_3, $student_4, $student_5, $student_6, $student_7, $student_8, $student_9, $student_10, $student_11];
+
+$students = [$student_1, $student_2, $student_3, $student_4, $student_5, $student_6, $student_7, $student_8, $student_9, $student_10, $student_11, $student_12];
 
 
 ?>

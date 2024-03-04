@@ -31,6 +31,16 @@
         <source src="assets/img/try_2.mp4" type="video/mp4">
       </video>
     </div>
+    <div>
+      <video width="100%" height="100%" controls poster="assets/img/logo.png" class="video">
+        <source src="assets/img/Bata.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div>
+      <video width="100%" height="100%" controls poster="assets/img/logo.png" class="video">
+        <source src="assets/img/Ivan.mp4" type="video/mp4">
+      </video>
+    </div>
   </div>
 
 </section>

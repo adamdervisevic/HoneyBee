@@ -1007,8 +1007,9 @@ address p {
 }
 
 .offer {
-  padding-top: 25rem;
-  padding-bottom: 25rem;
+  /* padding-top: 25rem;
+  padding-bottom: 25rem; */
+  position: relative;
   background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
     url("/assets/img/why.webp");
   background-size: contain;
@@ -1017,6 +1018,10 @@ address p {
   display: flex;
   justify-content: center;
   transition: all 1s ease-in;
+  /* height: auto;
+  min-height: 700px;
+  max-height: 834px; */
+  height: 834px;
 }
 
 .offer_1,
@@ -1078,4 +1083,46 @@ address p {
 
 ._2eZHnh_PMhyzt7w_zi7 {
   overflow: hidden !important;
+}
+
+/* animations */
+/* animations */
+@keyframes a_move {
+  0% {
+    left: 40%;
+    top: 10%;
+    transform: rotate(90deg); /* Initial rotation */
+  }
+  25% {
+    left: 60%;
+    /* No need to set transform here; it remains as the initial rotation */
+  }
+  50% {
+    left: 60%;
+    top: 10%;
+    transform: rotate(-90deg);
+  }
+  75% {
+    left: 40%;
+    /* No need to set transform here; it's already at -90deg rotation */
+  }
+  100% {
+    top: 20%;
+    left: 50%;
+    /* No need to set transform here; it's already at -90deg rotation */
+  }
+}
+
+.a_bee {
+  position: absolute;
+  width: 10rem;
+  height: auto;
+  top: 20%;
+  left: 50%;
+}
+.a_animate {
+  transform: rotate(0deg);
+  animation-name: a_move;
+  animation-duration: 6s;
+  animation-iteration-count: 1;
 }

@@ -176,7 +176,7 @@ window.addEventListener("scroll", function () {
   //
   if (distanceFromTop) {
     if (
-      window.scrollY * 1.7 >= distanceFromTop &&
+      window.scrollY * 1.6 >= distanceFromTop &&
       this.window.scrollY < distanceFromTop
     ) {
       reasons_why_container.classList.remove("reasons_why_disappear");
@@ -234,8 +234,12 @@ window.addEventListener("scroll", function () {
           generate_text(text, 1);
         }
       }
+      setTimeout(() => {
+        document.querySelector(".a_bee").classList.add("a_animate");
+      }, 150);
     } else {
       offer.classList.add("reasons_why_disappear");
+      document.querySelector(".a_bee").classList.remove("a_animate");
     }
   }
 });

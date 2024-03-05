@@ -1,7 +1,10 @@
 <section class="hero">
   <div class="hero-text">
+    <img class="hero_bee" src="assets/img/a_logo.png" alt="animated bee">
+
     <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem" class="title_container">
-      <p>Dobrodošli u</p>
+
+      <p class="intersect_point">Dobrodošli u</p>
       <h1>
         HoneyBee
       </h1>

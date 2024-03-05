@@ -46,6 +46,9 @@ nav {
 .navlist {
   display: flex;
 }
+.title_container {
+  position: relative;
+}
 .title_container p {
   font-size: 2rem !important;
 }
@@ -171,6 +174,7 @@ section {
   font-size: 18px;
   line-height: 1.9;
   margin-bottom: 20px;
+  z-index: 1;
 }
 .hero-img img {
   width: 500px;
@@ -308,6 +312,9 @@ section {
 }
 
 @media (max-width: 1200px) {
+  .hive {
+    right: 0 !important;
+  }
   #menu-icon {
     display: block;
   }
@@ -444,7 +451,7 @@ section {
 .hexagon {
   clip-path: polygon(50% -50%, 100% 50%, 100% 50%, 50% 150%, 0% 50%, 0% 50%);
 
-  background-image: url("/assets/img/main.webp");
+  background-image: url("/assets/img/main_3.webp");
   background-size: cover;
   margin: 0 auto;
 }
@@ -463,6 +470,7 @@ section {
   height: 128px;
   top: 46px;
   left: -85px;
+  background-image: url("/assets/img/main_2.webp");
 }
 
 .hex-b {
@@ -470,6 +478,7 @@ section {
   height: 160px;
   top: 120px;
   left: 50px;
+  background-image: url("/assets/img/main.webp");
 }
 @media screen and (min-width: 720px) and (max-width: 790px) {
   .hive {
@@ -510,7 +519,7 @@ section {
     height: 8rem;
   }
   .hero-text {
-    padding-top: 5rem;
+    padding-top: 12rem;
   }
   .hero {
     padding-top: 15rem;
@@ -524,10 +533,10 @@ section {
     font-size: 3rem !important;
   }
   .hero-text {
-    padding: 10rem 2rem;
+    padding: 13rem 2rem;
   }
 }
-@media only screen and (max-width: 420px) {
+@media only screen and (max-width: 427px) {
   .hero-text h1 {
     font-size: 2rem !important;
   }
@@ -553,7 +562,13 @@ section {
 }
 @media only screen and (max-width: 370px) {
   .hero-text {
-    padding: 10rem 1rem;
+    padding: 14rem 1rem;
+  }
+  .offer_2 h2 {
+    font-size: 2.7rem !important;
+  }
+  .a_bee {
+    top: 18% !important;
   }
 }
 @media only screen and (max-width: 330px) {
@@ -1012,7 +1027,7 @@ address p {
   position: relative;
   background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
     url("/assets/img/why.webp");
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: 0%, 100%;
   display: flex;
@@ -1047,6 +1062,7 @@ address p {
   align-items: center;
   width: 100%;
   overflow: hidden;
+  padding-bottom: 4rem;
 }
 .offer_2 h2 {
   color: white;
@@ -1060,7 +1076,70 @@ address p {
 .offer_dynamic_2 {
   margin: 3rem 0;
 }
-
+@media only screen and (max-width: 1240px) {
+  .offer_2 {
+    padding-bottom: 1rem;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .offer_2 {
+    padding-bottom: 4rem;
+  }
+}
+@media only screen and (max-width: 1002px) {
+  .offer_2 {
+    padding-bottom: 1rem;
+  }
+}
+@media only screen and (max-width: 795px) {
+  .offer_2 {
+    padding-bottom: 0;
+    padding-top: 2rem;
+  }
+}
+@media only screen and (max-width: 775px) {
+  .offer_2 {
+    padding-top: 5rem;
+  }
+}
+@media only screen and (max-width: 673px) {
+  .offer_2 {
+    padding-top: 8rem;
+  }
+}
+@media only screen and (max-width: 597px) {
+  .offer_2 {
+    padding-top: 11rem;
+  }
+}
+@media only screen and (max-width: 552px) {
+  .offer_2 {
+    padding-top: 14rem;
+  }
+}
+@media only screen and (max-width: 506px) {
+  .offer_2 h2 {
+    margin-top: 3rem;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .offer_2 {
+    padding-top: 0 !important;
+    padding-bottom: 3rem;
+  }
+  .offer_2 h2 {
+    margin-top: 3rem;
+  }
+}
+@media only screen and (max-width: 414px) {
+  .offer_2 {
+    padding-top: 0 !important;
+    padding-bottom: 0rem;
+  }
+  .offer_2 h2 {
+    margin-top: 3rem;
+  }
+}
 @media (max-width: 1024px) {
   .offer {
     grid-template-columns: 1fr;
@@ -1086,43 +1165,76 @@ address p {
 }
 
 /* animations */
-/* animations */
 @keyframes a_move {
   0% {
-    left: 40%;
-    top: 10%;
-    transform: rotate(90deg); /* Initial rotation */
+    transform: rotate(0deg) translate(0%, 0%) rotate(90deg);
   }
   25% {
-    left: 60%;
-    /* No need to set transform here; it remains as the initial rotation */
+    transform: rotate(90deg) translate(200%, 200%) rotate(180deg);
   }
-  50% {
-    left: 60%;
-    top: 10%;
-    transform: rotate(-90deg);
-  }
-  75% {
-    left: 40%;
-    /* No need to set transform here; it's already at -90deg rotation */
+  70% {
+    transform: rotate(180deg) translate(-200%, 250%) rotate(320deg);
   }
   100% {
-    top: 20%;
-    left: 50%;
-    /* No need to set transform here; it's already at -90deg rotation */
+    transform: rotate(320deg) translate(0%, 0%) rotate(400deg);
   }
 }
 
-.a_bee {
+@keyframes hero_move {
+  0% {
+    transform: rotate(0deg) translate(0%, 0%) rotate(-90deg);
+  }
+  25% {
+    transform: rotate(-90deg) translate(-200%, 200%) rotate(-180deg);
+  }
+  66% {
+    transform: rotate(-180deg) translate(250%, 250%) rotate(-320deg);
+  }
+  100% {
+    transform: rotate(-320deg) translate(0%, 0%) rotate(-400deg);
+  }
+}
+.a_bee,
+.hero_bee {
   position: absolute;
   width: 10rem;
   height: auto;
+  left: 45%;
+  z-index: 5;
+  cursor: pointer;
+}
+.a_bee {
   top: 20%;
-  left: 50%;
+  left: 55%;
+}
+.hero_bee {
+  top: 11%;
+}
+.hero_animate {
+  animation: hero_move 4.5s linear 1;
 }
 .a_animate {
   transform: rotate(0deg);
-  animation-name: a_move;
-  animation-duration: 6s;
-  animation-iteration-count: 1;
+  animation: a_move 4.5s linear 1;
+  will-change: transform;
+}
+
+.Pl9F4D0kOr1s0KUQ1VhD {
+  width: 100%;
+  max-width: 1000px;
+  height: 100%;
+  max-height: 700px;
+}
+#calendly_link {
+  height: 700px;
+}
+@media only screen and (max-width: 999px) {
+  #calendly_link {
+    height: 600px;
+  }
+}
+@media only screen and (max-width: 649px) {
+  #calendly_link {
+    height: 500px;
+  }
 }

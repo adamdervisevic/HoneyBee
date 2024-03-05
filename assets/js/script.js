@@ -101,7 +101,9 @@ const contact = document.querySelector(".contact-container")
 const offer = document.querySelector(".offer")
   ? document.querySelector(".offer")
   : null;
-
+const hero = document.querySelector(".intersect_point")
+  ? document.querySelector(".intersect_point")
+  : null;
 // const reasons_why_btn = document.querySelectorAll(".btn_why")
 //   ? document.querySelectorAll(".btn_why")
 //   : null;
@@ -155,7 +157,7 @@ function generate_text(text, id) {
   }
 }
 // scroll animation function
-window.addEventListener("scroll", function () {
+function animations_management(validated, validated_2) {
   // collect value of pixel
   const rect = reasons_why_container
     ? reasons_why_container.getBoundingClientRect()
@@ -166,14 +168,39 @@ window.addEventListener("scroll", function () {
   const rect_3 = testimonials ? testimonials.getBoundingClientRect() : null;
   const rect_4 = contact ? contact.getBoundingClientRect() : null;
   const rect_5 = offer ? offer.getBoundingClientRect() : null;
-
+  const rect_6 = hero ? hero.getBoundingClientRect() : null;
   // rect.top = distance form the top; window.pageYOffset = total distance
   const distanceFromTop = rect ? rect.top + window.scrollY : null;
   const distanceFromTop_2 = rect_2 ? rect_2.top + window.scrollY : null;
   const distanceFromTop_3 = rect_3 ? rect_3.top + window.scrollY : null;
   const distanceFromTop_4 = rect_4 ? rect_4.top + window.scrollY : null;
   const distanceFromTop_5 = rect_5 ? rect_5.top + window.scrollY : null;
+  const distanceFromTop_6 = rect_6 ? rect_6.top + window.scrollY : null;
+
   //
+  if (distanceFromTop_6) {
+    if (
+      window.scrollY * 0.5 >= distanceFromTop_6 ||
+      this.window.scrollY < distanceFromTop_6 ||
+      validated
+    ) {
+      if (
+        document
+          .querySelector(".hero_bee")
+          .classList.contains("hero_animate") &&
+        validated
+      ) {
+        document.querySelector(".hero_bee").classList.remove("hero_animate");
+      }
+
+      setTimeout(() => {
+        document.querySelector(".hero_bee").classList.add("hero_animate");
+      }, 150);
+    } else {
+      document.querySelector(".hero_bee").classList.remove("hero_animate");
+    }
+  }
+
   if (distanceFromTop) {
     if (
       window.scrollY * 1.6 >= distanceFromTop &&
@@ -222,8 +249,9 @@ window.addEventListener("scroll", function () {
 
   if (distanceFromTop_5) {
     if (
-      window.scrollY * 2.75 >= distanceFromTop_5 &&
-      this.window.scrollY < distanceFromTop_5
+      (window.scrollY * 2.75 >= distanceFromTop_5 &&
+        this.window.scrollY < distanceFromTop_5) ||
+      validated_2
     ) {
       offer.classList.remove("reasons_why_disappear");
 
@@ -234,6 +262,13 @@ window.addEventListener("scroll", function () {
           generate_text(text, 1);
         }
       }
+      if (
+        document.querySelector(".a_bee").classList.contains("a_animate") &&
+        validated_2
+      ) {
+        document.querySelector(".a_bee").classList.remove("a_animate");
+      }
+
       setTimeout(() => {
         document.querySelector(".a_bee").classList.add("a_animate");
       }, 150);
@@ -242,7 +277,29 @@ window.addEventListener("scroll", function () {
       document.querySelector(".a_bee").classList.remove("a_animate");
     }
   }
-});
+}
+
+window.addEventListener("load", () => animations_management(false, false));
+window.addEventListener("scroll", () => animations_management(false, false));
+
+document.querySelector(".hero_bee").onclick = () => {
+  if (!document.querySelector(".hero_bee").classList.contains("disabled")) {
+    animations_management(true);
+    document.querySelector(".hero_bee").classList.add("disabled");
+    setTimeout(() => {
+      document.querySelector(".hero_bee").classList.remove("disabled");
+    }, 6000);
+  }
+};
+document.querySelector(".a_bee").onclick = () => {
+  if (!document.querySelector(".a_bee").classList.contains("disabled")) {
+    animations_management(false, true);
+    document.querySelector(".a_bee").classList.add("disabled");
+    setTimeout(() => {
+      document.querySelector(".a_bee").classList.remove("disabled");
+    }, 4500);
+  }
+};
 
 // video skip back - forward
 document.addEventListener("DOMContentLoaded", function () {

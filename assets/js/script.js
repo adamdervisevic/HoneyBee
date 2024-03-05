@@ -115,18 +115,27 @@ const offer_text = document.querySelector(".offer_dynamic")
   ? document.querySelector(".offer_dynamic")
   : null;
 let text =
-  "✓ Zato sto smo zajedničkim trudom  postigli da naša škola ima zavidan broj učenika, a jedina reklama nam je bila preporuka prethodnih polaznika.";
+  "✓ Verujemo da ćemo Vam pružiti samo najbolje i da ćete uz nas s lakoćom progovoriti engleski jezik, zato što smo zajedničkim trudom postigli da naša škola ima zavidan broj učenika, a jedina reklama nam je bila preporuka prethodnih polaznika.";
 text = text.split("");
 let text_triggered = false;
 const offer_dynamic_2 = document.querySelector(".offer_dynamic_2");
 let text_2 =
-  "✓ Zato što koristimo SAMO proverene metode i programe koji su dizajnirani po Vašoj meri. Akreditovana smo škola Callan metod učenja, koji predstavlja brz, efektivan, efikasan  i  pre svega zabavan nacin učenja.";
+  "✓ Akreditovana smo škola Callan metod učenja, koji predstavlja brz, efektivan, efikasan i pre svega zabavan nacin učenja. Ovim programom i timskim radom postići ćemo merljive rezultate i moći ćete s lakoćom da komunicirate na engleskom jeziku.";
 text_2 = text_2.split("");
 
 const offer_dynamic_3 = document.querySelector(".offer_dynamic_3");
 let text_3 =
-  "✓ Zato što uz HoneyBee English online nastavu štedite Vaše vreme i novac. Neka Vaš napredak krene iz udobnosti Vaše fotelje. Pridružite nam se i uverite se i sami zašto baš HoneyBee!";
+  "✓ ONLINE je najbrži i najkomforniji način učenja. Preko besplatne Zoom aplikacije i naše platforme, uvodimo Vas u svet engleskog jezika. Dobićete pristup Callan aplikaciji, gde ćete moci da svakog dana vezbate i sami, uz pažljivo odabrane govorne vežbe.";
 text_3 = text_3.split("");
+
+const offer_dynamic_4 = document.querySelector(".offer_dynamic_4");
+let text_4 = "Pridružite nam se i uverite se zašto baš HoneyBee.";
+text_4 = text_4.split("");
+
+const offer_dynamic_5 = document.querySelector(".offer_dynamic_5");
+let text_5 =
+  " Koristimo SAMO proverene metode i programe koji su dizajnirani po Vašoj meri.";
+text_5 = text_5.split("");
 
 function generate_text(text, id) {
   const intervalArticle = setInterval(add, 20);
@@ -139,17 +148,27 @@ function generate_text(text, id) {
     } else if (id == 2) {
       offer_dynamic_2.innerHTML += text[counter];
       counter++;
-    } else {
+    } else if (id == 3) {
       offer_dynamic_3.innerHTML += text[counter];
+      counter++;
+    } else if (id == 4) {
+      offer_dynamic_4.innerHTML += text[counter];
+      counter++;
+    } else {
+      offer_dynamic_5.innerHTML += text[counter];
       counter++;
     }
 
     if (counter == text.length) {
       clearInterval(intervalArticle);
       if (id == 1) {
+        generate_text(text_5, 5);
+      } else if (id == 5) {
         generate_text(text_2, 2);
       } else if (id == 2) {
         generate_text(text_3, 3);
+      } else if (id == 3) {
+        generate_text(text_4, 4);
       } else {
         return false;
       }
@@ -250,7 +269,8 @@ function animations_management(validated, validated_2) {
   if (distanceFromTop_5) {
     if (
       (window.scrollY * 2.75 >= distanceFromTop_5 &&
-        this.window.scrollY < distanceFromTop_5) ||
+        window.scrollY <= 1312 &&
+        window.scrollY >= 312) ||
       validated_2
     ) {
       offer.classList.remove("reasons_why_disappear");
@@ -288,7 +308,7 @@ document.querySelector(".hero_bee").onclick = () => {
     document.querySelector(".hero_bee").classList.add("disabled");
     setTimeout(() => {
       document.querySelector(".hero_bee").classList.remove("disabled");
-    }, 6000);
+    }, 4500);
   }
 };
 document.querySelector(".a_bee").onclick = () => {

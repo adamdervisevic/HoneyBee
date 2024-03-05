@@ -141,6 +141,9 @@ nav {
   padding-bottom: 10rem;
   margin-bottom: 5rem;
 }
+.hero-text h1 {
+  position: relative;
+}
 section {
   padding: 0 19%;
 }
@@ -525,12 +528,22 @@ section {
     padding-top: 15rem;
   }
 }
+@media only screen and (max-width: 1340px) {
+  .hero_bee {
+    top: -120% !important;
+  }
+}
+
 @media only screen and (max-width: 670px) {
   .hero-text p {
     font-size: 1.5rem !important;
   }
   .hero-text h1 {
     font-size: 3rem !important;
+  }
+  .hero_bee {
+    top: -210% !important;
+    left: 50% !important;
   }
   .hero-text {
     padding: 13rem 2rem;
@@ -543,9 +556,9 @@ section {
   .hero-text p {
     font-size: 1.2rem !important;
   }
-  .offer {
-    padding-top: 10rem !important;
-    padding-bottom: 10rem !important;
+
+  .hero_bee {
+    top: -330% !important;
   }
 }
 
@@ -566,9 +579,6 @@ section {
   }
   .offer_2 h2 {
     font-size: 2.7rem !important;
-  }
-  .a_bee {
-    top: 18% !important;
   }
 }
 @media only screen and (max-width: 330px) {
@@ -1022,8 +1032,6 @@ address p {
 }
 
 .offer {
-  /* padding-top: 25rem;
-  padding-bottom: 25rem; */
   position: relative;
   background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
     url("/assets/img/why.webp");
@@ -1033,10 +1041,7 @@ address p {
   display: flex;
   justify-content: center;
   transition: all 1s ease-in;
-  /* height: auto;
-  min-height: 700px;
-  max-height: 834px; */
-  height: 834px;
+  height: 900px;
 }
 
 .offer_1,
@@ -1066,6 +1071,7 @@ address p {
 }
 .offer_2 h2 {
   color: white;
+  position: relative;
 }
 .offer_2 p {
   font-size: 20px;
@@ -1076,7 +1082,7 @@ address p {
 .offer_dynamic_2 {
   margin: 3rem 0;
 }
-@media only screen and (max-width: 1240px) {
+/* @media only screen and (max-width: 1240px) {
   .offer_2 {
     padding-bottom: 1rem;
   }
@@ -1139,7 +1145,7 @@ address p {
   .offer_2 h2 {
     margin-top: 3rem;
   }
-}
+} */
 @media (max-width: 1024px) {
   .offer {
     grid-template-columns: 1fr;
@@ -1204,11 +1210,12 @@ address p {
   cursor: pointer;
 }
 .a_bee {
-  top: 20%;
+  top: -170%;
   left: 55%;
 }
 .hero_bee {
-  top: 11%;
+  top: -30%;
+  left: 76%;
 }
 .hero_animate {
   animation: hero_move 4.5s linear 1;

@@ -3,7 +3,7 @@
     <div name="contact-form" class="form-container">
       <h2>KONTAKTIRAJTE
         NAS</h2>
-      <p>Popunite formu i neko ce Vam se javiti u narednih nekoliko sati</p>
+        <p>Popunite formu i neko će Vam se javiti u narednih nekoliko sati</p>
       <p class="form-notification"></p>
       <div class="name_mail_container">
         <div>

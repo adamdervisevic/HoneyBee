@@ -21,7 +21,7 @@
       <p>
         <a href="tel:+0652506452">0652506452</a>
       </p>
-      <p>Instagram: <a href="https://www.instagram.com/honeybee_school/">
+      <p>Instagram: <a href="https://www.instagram.com/honeybee_school/" target="_blank">
           honeybee_school
         </a></p>
       <p>

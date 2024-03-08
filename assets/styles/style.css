@@ -1015,8 +1015,9 @@ address p {
   gap: 1rem;
   font-size: 1.5rem;
 }
-.footer_nav a {
-  color: white;
+.footer_nav a,
+address p a {
+  color: #faaa1a !important;
 }
 .footer_address_links {
   display: flex;

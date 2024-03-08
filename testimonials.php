@@ -194,6 +194,10 @@ $students = [$student_1, $student_2, $student_3, $student_4, $student_5, $studen
 
 
   </section>
+  <video autoplay muted loop preload class="video">
+    <source src="assets/video_imgs/from_class.mp4" type="video/mp4">
+  </video>
+
   <script>
     const testimonial_container = document.querySelectorAll(".testimonial_container");
     const expand_btn = document.querySelectorAll('.expand');

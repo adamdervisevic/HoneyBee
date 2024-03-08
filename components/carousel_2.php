@@ -1,5 +1,5 @@
 <section class="our_teachers reasons_why_disappear">
-  <h2>Naši ucitelji</h2>
+  <h2>HoneyBee tim</h2>
   <div class="teachers_container teacher_carousel">
     <div class="content_teachers_holder">
       <img src="assets/img/Maja_Stamenkovic.webp" alt="teacher_1">

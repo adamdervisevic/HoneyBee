@@ -28,8 +28,8 @@
 
 </section>
 
-<div class="icons">
+<!-- <div class="icons">
   <a href="#" aria-label="instagram"><i class="ri-instagram-line"></i></a>
   <a href="#" aria-label="youtube"><i class="ri-youtube-line"></i></a>
   <a href="#" aria-label="facebook"><i class="ri-facebook-line"></i></a>
-</div>
+</div> -->

@@ -1,0 +1,111 @@
+h1 {
+  text-align: center;
+  font-size: 4.2rem;
+  color: white;
+}
+.callan_1 {
+  width: 100%;
+  max-width: 100rem;
+  margin: 5rem auto;
+  padding: 2rem 1rem;
+  color: white !important;
+  background-color: #5a3a02;
+  border-radius: 20px;
+  border: none;
+  box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.5);
+  transition: all 0.25s;
+}
+
+.callan_1 h2 {
+  padding-left: 1.5rem;
+  font-size: 3.2rem;
+  color: white;
+  width: 100%;
+}
+.callan_1 h3 {
+  padding-left: 1.5rem;
+  font-size: 2.4rem;
+}
+.callan_1 ul li,
+.callan_1 p {
+  font-size: 1.8rem;
+  margin: 1rem 0;
+  padding-left: 1.5rem;
+}
+.callan_1 p {
+  margin: 2rem 0;
+}
+
+.callan_1:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+  color: #5a3a02 !important;
+}
+.callan_1:hover h2 {
+  color: #5a3a02;
+}
+.big_callan {
+  width: 100%;
+  max-width: 160rem;
+  margin: 0 auto;
+  padding: 4rem 1rem;
+  border-radius: 20px;
+
+  background-color: rgba(255, 255, 255, 0.5);
+  box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+.p_callan > div,
+.ul_callan > ul {
+  display: none;
+}
+h3 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+ion-icon {
+  margin-right: 5rem;
+}
+.callan_images {
+  width: 100%;
+  max-width: 120rem;
+  margin: 5rem auto;
+  display: flex;
+}
+.callan_images img {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  height: auto;
+  object-fit: contain;
+  justify-self: center;
+}
+@media only screen and (max-width: 820px) {
+  .callan_images {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+
+@media only screen and (max-width: 580px) {
+  .callan_1 p,
+  .callan_1 li {
+    font-size: 1.6rem !important;
+  }
+  h2 {
+    font-size: 2.8rem !important;
+  }
+  .callan_1 h3 {
+    font-size: 2.4rem !important;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .callan_1 h3 {
+    font-size: 1.9rem !important;
+  }
+}
+@media only screen and (max-width: 420px) {
+  .callan_1 h3 {
+    font-size: 1.6rem !important;
+  }
+}

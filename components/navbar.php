@@ -19,6 +19,7 @@
         </li>
         <li id="about"><a href="about.php">O nama</a></li>
         <li><a href="testimonials.php">Iskustva polaznika</a></li>
+        <li><a href="callan.php">Callan Metod</a></li>
         <li><a href="#contact_id">Kontakt</a></li>
 
     </ul>

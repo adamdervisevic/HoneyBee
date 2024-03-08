@@ -2,13 +2,14 @@
 $title = "HoneyBee - Class Page"
   ?>
 <?php
+$callan_link = "<a style='color: #faaa1a !important; background-color: transparent; font-size: 2rem; padding: 0' href='callan.php'>Callan</a>";
 $class_target = $_GET['class_type'];
 $single_class = [
   "solo",
   "Individualna nastava za odrasle",
   ['prijatna atmosfera tokom nastave', 'efikasan i dinamičan način učenja', 'fokus je na govoru', 'Vi ste aktivni učesnici u konverzaciji', 'po završenom svakom nivou dobijate sertifikat (ukupno 12 nivoa)'],
   'Individualna nastava se kreira za Vas i po Vašoj meri. Ovaj oblik nastave omogućava da se fokusirate na Vaše lične ciljeve i napredak, bilo da se radi o poslovnom engleskom jeziku ili konverzaciji.',
-  'Koristimo proverene metode poput Callan metoda nastave, gde ste Vi kao polaznik aktivan učesnik u konverzaciji, dok Vam mi kao predavači pojašnjavamo vokabular i nove koncepte i u toku konverzacije ispravljamo napravljene greške. Tu smo da Vam pomognemo da tečno govorite engleski jezik uz intenzivnu konverzaciju.',
+  'Koristimo proverene metode poput ' . $callan_link . ' metod nastave, gde ste Vi kao polaznik aktivan učesnik u konverzaciji, dok Vam mi kao predavači pojašnjavamo vokabular i nove koncepte i u toku konverzacije ispravljamo napravljene greške. Tu smo da Vam pomognemo da tečno govorite engleski jezik uz intenzivnu konverzaciju.',
   '/assets/img/slika_za_individue.webp',
   [
     [
@@ -41,7 +42,7 @@ $dual_class = [
   "Učenje u paru (Dual fun)",
   ['prijatna atmosfera tokom nastave', 'efikasan i dinamičan način učenja', 'focus je na govoru', '-	Vi ste aktivni učesnici u konverzaciji', 'po završenom svakom nivou dobijate sertifikat ( ukupno 12 nivoa)'],
   'Ukoliko ste osoba koja pored individualnog pristupa voli i socijalnu interakciju , onda je ovaj program idealan za Vas . Ovde ćete imati priliku da učestvujete  u role play aktivnostima gde se simuliraju realne situacije kako iz svakodnevnog zivota , tako i iz Vašeg poslovnog okruzenja.',
-  'Ovaj tip programa je idealan ako biste zajedno učili s nekim iz vašeg okruzenja , bilo da se radi o Vašem partneru , prijatelju , ili pak rodjaku. Samim tim biste postigli i najrealnije simulacije iz svakodnevnog zivota.',
+  'Ovaj tip programa je idealan ako biste zajedno učili s nekim iz Vašeg okruzenja , bilo da se radi o Vašem partneru , prijatelju , ili pak rodjaku. Samim tim biste postigli i najrealnije simulacije iz svakodnevnog zivota.',
   '/assets/img/slika_za_duo.webp',
   [
     [
@@ -68,7 +69,7 @@ $junior_class = [
     'po završenom svakom nivou Vaše dete dobija diplomu'
   ],
   'Kroz ovaj program smo tu da Vašem detetu pruzimo ono najbolje. Kako sam i sama roditelj, razumem Vaše zelje I očekivanja koja imate kada je reč o napretku vašeg deteta. Zato sam kreirala poseban način učenja gde se pre svega fokusiramo na razvijanje konverzacije , učeći o mnogim korisnim stvarima i sve to kroz igru, koristeći pesme , price i druge kreativne aktivnosti u zavisnosti od uzrasta deteta.',
-  'Koristimo razlicite metode za aktivno učešće dece ,kao što je Callan metod za decu i role play aktivnosti , koje podsticu komunikaciju i brzo usvajanje i primenjivanje vokabulara. Ono što je vazno reći jeste da pored svih ovih aktivnosti , s velikom paznjom pristupamo svakom detetu i pratimo njegov napredak.',
+  'Koristimo razlicite metode za aktivno učešće dece, kao što je ' . $callan_link . ' metod za decu i role play aktivnosti , koje podsticu komunikaciju i brzo usvajanje i primenjivanje vokabulara. Ono što je vazno reći jeste da pored svih ovih aktivnosti , s velikom paznjom pristupamo svakom detetu i pratimo njegov napredak.',
   '/assets/img/slika_za_decu.webp',
   [
     [
@@ -111,6 +112,9 @@ for ($i = 0; $i < count($collect_class_types); $i++) {
 ?>
 <?php
 include "components/head.php";
+?>
+<link rel="stylesheet" href="assets\styles\style_class.css" />
+<?php
 include "components/navbar.php";
 ?>
 <main>

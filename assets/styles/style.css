@@ -21,6 +21,7 @@ h2 {
   color: #5a3a01;
   font-size: 3.2rem;
 }
+
 nav {
   position: fixed;
   right: 0;
@@ -128,6 +129,10 @@ nav {
   cursor: pointer;
   display: none;
 }
+main {
+  margin-top: 15rem;
+  margin-bottom: 10rem;
+}
 .hero {
   height: 100%;
   width: 100%;
@@ -137,7 +142,7 @@ nav {
   /* display: flex; */
   /* justify-content: space-around; */
   gap: 20rem;
-  padding-top: 25rem;
+  padding-top: 17.5rem;
   padding-bottom: 10rem;
   margin-bottom: 5rem;
 }
@@ -528,6 +533,11 @@ section {
     padding-top: 15rem;
   }
 }
+@media only screen and (max-width: 719px) {
+  .hero {
+    padding-top: 0 !important;
+  }
+}
 @media only screen and (max-width: 1340px) {
   .hero_bee {
     top: -120% !important;
@@ -542,8 +552,9 @@ section {
     font-size: 3rem !important;
   }
   .hero_bee {
-    top: -210% !important;
-    left: 50% !important;
+    top: -115% !important;
+    left: 70% !important;
+    width: 6rem !important;
   }
   .hero-text {
     padding: 13rem 2rem;
@@ -555,10 +566,6 @@ section {
   }
   .hero-text p {
     font-size: 1.2rem !important;
-  }
-
-  .hero_bee {
-    top: -330% !important;
   }
 }
 
@@ -576,9 +583,6 @@ section {
 @media only screen and (max-width: 370px) {
   .hero-text {
     padding: 14rem 1rem;
-  }
-  .offer_2 h2 {
-    font-size: 2.7rem !important;
   }
 }
 @media only screen and (max-width: 330px) {
@@ -1041,7 +1045,7 @@ address p {
   display: flex;
   justify-content: center;
   transition: all 1s ease-in;
-  height: 900px;
+  height: 1000px;
 }
 
 .offer_1,
@@ -1068,10 +1072,12 @@ address p {
   width: 100%;
   overflow: hidden;
   padding-bottom: 4rem;
+  padding-top: 15rem;
 }
 .offer_2 h2 {
   color: white;
   position: relative;
+  margin-bottom: 5rem;
 }
 .offer_2 p {
   font-size: 20px;
@@ -1082,75 +1088,43 @@ address p {
 .offer_dynamic_2 {
   margin: 3rem 0;
 }
-/* @media only screen and (max-width: 1240px) {
-  .offer_2 {
-    padding-bottom: 1rem;
-  }
-}
-@media only screen and (max-width: 1200px) {
-  .offer_2 {
-    padding-bottom: 4rem;
-  }
-}
-@media only screen and (max-width: 1002px) {
-  .offer_2 {
-    padding-bottom: 1rem;
-  }
-}
-@media only screen and (max-width: 795px) {
-  .offer_2 {
-    padding-bottom: 0;
-    padding-top: 2rem;
-  }
-}
-@media only screen and (max-width: 775px) {
-  .offer_2 {
-    padding-top: 5rem;
-  }
-}
-@media only screen and (max-width: 673px) {
-  .offer_2 {
-    padding-top: 8rem;
-  }
-}
-@media only screen and (max-width: 597px) {
-  .offer_2 {
-    padding-top: 11rem;
-  }
-}
-@media only screen and (max-width: 552px) {
-  .offer_2 {
-    padding-top: 14rem;
-  }
-}
-@media only screen and (max-width: 506px) {
+@media only screen and (max-width: 561px) {
   .offer_2 h2 {
-    margin-top: 3rem;
+    font-size: 2.6rem;
+  }
+  .offer_2 p {
+    font-size: 1.5rem;
+  }
+  .a_bee {
+    top: -140% !important;
+    width: 7rem !important;
+  }
+  .hero_bee {
+    width: 5rem !important;
+    top: -80% !important;
   }
 }
-@media only screen and (max-width: 500px) {
-  .offer_2 {
-    padding-top: 0 !important;
-    padding-bottom: 3rem;
-  }
+
+@media only screen and (max-width: 387px) {
   .offer_2 h2 {
-    margin-top: 3rem;
+    font-size: 1.8rem !important;
+  }
+  .a_bee {
+    width: 5rem !important;
+    top: -160% !important;
   }
 }
-@media only screen and (max-width: 414px) {
-  .offer_2 {
-    padding-top: 0 !important;
-    padding-bottom: 0rem;
-  }
-  .offer_2 h2 {
-    margin-top: 3rem;
-  }
-} */
+
 @media (max-width: 1024px) {
   .offer {
     grid-template-columns: 1fr;
     background-position: unset;
     background-size: cover;
+  }
+}
+@media only screen and (max-width: 427px) {
+  .hero_bee {
+    top: -160% !important;
   }
 }
 @media only screen and (max-width: 350px) {
@@ -1213,6 +1187,27 @@ address p {
   top: -170%;
   left: 55%;
 }
+@media only screen and (max-width: 768px) {
+  .a_bee {
+    width: 7rem !important;
+    top: -110% !important;
+  }
+}
+@media only screen and (max-width: 561px) {
+  .a_bee {
+    top: -120% !important;
+    width: 6rem !important;
+  }
+}
+@media only screen and (max-width: 473px) {
+  .offer_2 h2 {
+    font-size: 2.2rem;
+  }
+  .a_bee {
+    top: -150% !important;
+    width: 5rem !important;
+  }
+}
 .hero_bee {
   top: -30%;
   left: 76%;
@@ -1233,7 +1228,7 @@ address p {
   max-height: 700px;
 }
 #calendly_link {
-  height: 700px;
+  height: 750px;
 }
 @media only screen and (max-width: 999px) {
   #calendly_link {
@@ -1244,4 +1239,15 @@ address p {
   #calendly_link {
     height: 500px;
   }
+}
+
+.c_link {
+  display: block;
+  width: 100%;
+  max-width: 166px;
+  margin: 0 auto;
+}
+
+.c_one {
+  opacity: 1;
 }

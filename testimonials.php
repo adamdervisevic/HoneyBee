@@ -1,6 +1,9 @@
 <?php
 $title = "HoneyBee - Class Page";
 include "components/head.php";
+?>
+<link rel="stylesheet" href="assets\styles\style_testimonials.css" />
+<?php
 include "components/navbar.php";
 
 $student_1 = [
@@ -20,7 +23,7 @@ $student_1 = [
 
 $student_2 = [
   'g_c.webp',
-  'Gaga Cvetkovic,vaspitac',
+  'Gaga Cvetkovic, vaspitac',
   'Maja je majstor učenja na način koji je i obrazovan i zabavan. Njena sposobnost da prenese složene koncepte kroz jednostavne i humorističke primere čini časove uvek zanimljivim.',
   [
     'Prijateljstvo i učenje" - to su dve ključne reči koje bih upotrebila opisujući svoje iskustvo u školi engleskog jezika "HONEY BEE". Kroz protekle dve godine, Maja nije bila samo moja nastavnica već i dragoceni prijatelj na mom jezičkom putovanju.',

@@ -134,7 +134,7 @@ text_4 = text_4.split("");
 
 const offer_dynamic_5 = document.querySelector(".offer_dynamic_5");
 let text_5 =
-  " Koristimo SAMO proverene metode i programe koji su dizajnirani po Vašoj meri.";
+  "Koristimo SAMO proverene metode i programe koji su dizajnirani po Vašoj meri.";
 text_5 = text_5.split("");
 
 function generate_text(text, id) {
@@ -165,6 +165,14 @@ function generate_text(text, id) {
         generate_text(text_5, 5);
       } else if (id == 5) {
         generate_text(text_2, 2);
+        const c_link = document.createElement("a");
+        c_link.href = "callan.php";
+        c_link.classList.add("c_link");
+        const c_img = document.createElement("img");
+        c_img.src = "/assets/img/callan.png";
+        c_link.appendChild(c_img);
+        offer_dynamic_5.appendChild(c_link);
+        c_img.classList.add("c_one");
       } else if (id == 2) {
         generate_text(text_3, 3);
       } else if (id == 3) {
@@ -269,7 +277,7 @@ function animations_management(validated, validated_2) {
   if (distanceFromTop_5) {
     if (
       (window.scrollY * 2.75 >= distanceFromTop_5 &&
-        window.scrollY <= 1312 &&
+        window.scrollY <= 1512 &&
         window.scrollY >= 312) ||
       validated_2
     ) {
@@ -302,25 +310,28 @@ function animations_management(validated, validated_2) {
 window.addEventListener("load", () => animations_management(false, false));
 window.addEventListener("scroll", () => animations_management(false, false));
 
-document.querySelector(".hero_bee").onclick = () => {
-  if (!document.querySelector(".hero_bee").classList.contains("disabled")) {
-    animations_management(true);
-    document.querySelector(".hero_bee").classList.add("disabled");
-    setTimeout(() => {
-      document.querySelector(".hero_bee").classList.remove("disabled");
-    }, 4500);
-  }
-};
-document.querySelector(".a_bee").onclick = () => {
-  if (!document.querySelector(".a_bee").classList.contains("disabled")) {
-    animations_management(false, true);
-    document.querySelector(".a_bee").classList.add("disabled");
-    setTimeout(() => {
-      document.querySelector(".a_bee").classList.remove("disabled");
-    }, 4500);
-  }
-};
-
+if (document.querySelector(".hero_bee")) {
+  document.querySelector(".hero_bee").onclick = () => {
+    if (!document.querySelector(".hero_bee").classList.contains("disabled")) {
+      animations_management(true);
+      document.querySelector(".hero_bee").classList.add("disabled");
+      setTimeout(() => {
+        document.querySelector(".hero_bee").classList.remove("disabled");
+      }, 4500);
+    }
+  };
+}
+if (document.querySelector(".a_bee")) {
+  document.querySelector(".a_bee").onclick = () => {
+    if (!document.querySelector(".a_bee").classList.contains("disabled")) {
+      animations_management(false, true);
+      document.querySelector(".a_bee").classList.add("disabled");
+      setTimeout(() => {
+        document.querySelector(".a_bee").classList.remove("disabled");
+      }, 4500);
+    }
+  };
+}
 // video skip back - forward
 document.addEventListener("DOMContentLoaded", function () {
   const video = document.querySelectorAll("video");

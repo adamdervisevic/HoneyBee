@@ -18,9 +18,15 @@
   <div class="footer_address_links">
     <address>
       <p>Contact us:</p>
-      <p>Ulica - broj</p>
-      <p>064-123-45-67</p>
-      <p>HoneyBee@gmail.com</p>
+      <p>
+        <a href="tel:+0652506452">0652506452</a>
+      </p>
+      <p>Instagram: <a href="https://www.instagram.com/honeybee_school/">
+          honeybee_school
+        </a></p>
+      <p>
+        <a href="mailto:honeybeeschool@outlook.com">honeybeeschool@outlook.com</a>
+      </p>
     </address>
     <div class="footer_nav">
       <a href="#" aria-label="programi">Programi</a>

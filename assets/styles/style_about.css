@@ -100,3 +100,9 @@
 .about_us_container:hover h2 {
   color: black;
 }
+.callan_link {
+  color: #faaa1a;
+}
+.about_us_container:hover .callan_link {
+  color: #fff;
+}

@@ -2,7 +2,7 @@
   <div>
     <div>
       <div class="icons_footer">
-        <a href="#" aria-label="instagram"><i class="ri-instagram-line"></i></a>
+        <a href="https://www.instagram.com/honeybee_school/" aria-label="instagram"><i class="ri-instagram-line"></i></a>
         <a href="#" aria-label="youtube"><i class="ri-youtube-line"></i></a>
         <a href="#" aria-label="facebook"><i class="ri-facebook-line"></i></a>
       </div>
@@ -10,7 +10,8 @@
         <span>
           <?php echo date("Y") ?>
         </span>
-        by HoneyBee
+        by <a href="https://github.com/adamdervisevic" target="_blank" style="color: #faaa1a;">Adam</a> &
+        <a href="https://github.com/UrosZikic" target="_blank" style="color: #faaa1a;">Uros</a>
       </p>
     </div>
 

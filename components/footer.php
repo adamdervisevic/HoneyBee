@@ -31,7 +31,7 @@
     <div class="footer_nav">
       <a href="about.php" aria-label="o nama">O nama</a>
       <a href="callan.php" aria-label="callan metod">Callan Metod</a>
-      <a href="#testimonials_id" aria-label="iskustva">Iskustva</a>
+      <a href="testimonials.php" aria-label="iskustva">Iskustva</a>
       <a href="#contact_id" aria-label="kontakt">Kontakt</a>
     </div>
   </div>

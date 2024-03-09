@@ -1,5 +1,5 @@
 <?php
-$title = "HoneyBee - About Callan";
+$title = "HoneyBee - Callan metoda predavanja";
 include "components/head.php";
 ?>
 <link rel="stylesheet" href="assets/styles/style_callan.css">

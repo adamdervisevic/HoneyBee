@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="description"
-    content="Experience innovative teaching methods and interactive lessons at HoneyBee. Enroll in our online English courses.">
+    content="Experience innovative teaching methods and interactive lessons at HoneyBee. Enroll in our online English courses. Usavršite engleski jezik kroz proverene metode i interaktivne časove sa iskusnim predavačima škole HoneyBee.">
   <meta name="keywords" content="English courses online,
 Learn English in Serbia,
 Online English school Serbia,
@@ -12,7 +12,21 @@ English lessons Serbia,
 English language classes,
 Serbian students English,
 ESL classes online,
-Language learning Serbia">
+Language learning Serbia,
+Engleski kursevi online,
+Naučite engleski u Srbiji,
+Škola engleskog,
+Škola engleskog u Nišu,
+Online škola engleskog jezika u Srbiji,
+Časovi engleskog jezika u Srbiji,
+Časovi engleskog jezika online,
+Engleski za studente u Srbiji,
+Online ESL časovi,
+Učenje jezika u Srbiji,
+Niš,
+Callan,
+Callan metod
+">
   <meta name="author" content="Uros Zikic, Adam Dervisevic">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/x-icon" href="../assets/img/logo.webp">

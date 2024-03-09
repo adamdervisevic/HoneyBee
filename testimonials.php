@@ -1,5 +1,5 @@
 <?php
-$title = "HoneyBee - Class Page";
+$title = "HoneyBee - Iskustva polaznika";
 include "components/head.php";
 ?>
 <link rel="stylesheet" href="assets\styles\style_testimonials.css" />

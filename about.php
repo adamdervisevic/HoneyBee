@@ -1,5 +1,5 @@
 <?php
-$title = "HoneyBee - About Page"
+$title = "HoneyBee | akreditovana online škola engleskog jezika"
   ?>
 <?php
 include "components/head.php";

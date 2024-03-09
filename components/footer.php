@@ -29,9 +29,8 @@
       </p>
     </address>
     <div class="footer_nav">
-      <a href="#" aria-label="programi">Programi</a>
-      <a href="#" aria-label="o name">O nama</a>
-      <a href="#" aria-label="cenovnik">Cenovnik</a>
+      <a href="about.php" aria-label="o nama">O nama</a>
+      <a href="callan.php" aria-label="callan metod">Callan Metod</a>
       <a href="#testimonials_id" aria-label="iskustva">Iskustva</a>
       <a href="#contact_id" aria-label="kontakt">Kontakt</a>
     </div>

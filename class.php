@@ -1,11 +1,11 @@
 <?php
-$title = "HoneyBee - Class Page"
-  ?>
-<?php
 $callan_link = "<a style='color: #faaa1a !important; background-color: transparent; font-size: 2rem; padding: 0' href='callan.php'>Callan</a>";
 $class_target = $_GET['class_type'];
+
+$title = "HoneyBee | " . $class_target . " kurs";
+
 $single_class = [
-  "solo",
+  "individualni",
   "Individualna nastava za odrasle",
   ['Prijatna atmosfera tokom nastave', 'Efikasan i dinamičan način učenja', 'Fokus je na govoru', 'Vi ste aktivni učesnici u konverzaciji', 'Po završenom svakom nivou dobijate sertifikat (ukupno 12 nivoa)'],
   'Individualna nastava se kreira za Vas i po Vašoj meri. Ovaj oblik nastave omogućava da se fokusirate na Vaše lične ciljeve i napredak, bilo da se radi o poslovnom engleskom jeziku ili konverzaciji.',
@@ -39,7 +39,7 @@ $single_class = [
   ]
 ];
 $dual_class = [
-  "group",
+  "grupni",
   "Učenje u paru (Dual fun)",
   ['Prijatna atmosfera tokom nastave', 'Efikasan i dinamičan način učenja', 'Focus je na govoru', 'Vi ste aktivni učesnici u konverzaciji', 'Po završenom svakom nivou dobijate sertifikat ( ukupno 12 nivoa)'],
   'Ukoliko ste osoba koja pored individualnog pristupa voli i socijalnu interakciju , onda je ovaj program idealan za Vas . Ovde ćete imati priliku da učestvujete  u role play aktivnostima gde se simuliraju realne situacije kako iz svakodnevnog zivota , tako i iz Vašeg poslovnog okruzenja.',

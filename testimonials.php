@@ -36,7 +36,7 @@ $student_2 = [
 
 $student_3 = [
   'i_j.webp',
-  'Ivan Jovic, inspektor',
+  'Ivan Jovic',
   'Od srca preporučujem školu engleskog jezika HoneyBee, jer je moj engleski postao značajno bolji i dostigao zavidan konverzacijski nivo.',
   [
     'Pri tom su termini časova bili usklađeni sa mojim obavezama, a predavač Maja je na izuzetno zanimljiv interaktivan način predstavila lekcije i omogućila da uspešno i lako napredujem.'

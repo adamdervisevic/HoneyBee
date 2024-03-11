@@ -73,12 +73,17 @@ $student_5 = [
 $student_6 = [
   't_m.webp',
   'Teodora Marković, medicinski radnik',
-  'Sve pohvale i preporuke sa nase strane.',
+  '  Hi my Bee! 
+  Ćao učiteljice
+Vrlo sam zadovoljna dosadašnjim učenjem, progres u mom znanju je vidlji, dosta ljudi i sa posla je primetilo napredak , baš sam srećna💖
+  
+  ',
   ['
-  Jedva čekam sledeci čas da nastavimo da radimo! Hvala ti 
+
+Jedva čekam sledeći čas da nastavimo da radimo! Hvala ti
   '
   ],
-  'type_zero'
+  'type_one'
 ];
 
 $student_7 = [

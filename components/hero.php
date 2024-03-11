@@ -17,7 +17,7 @@
     <p>Uz proverene tehnike I metode učenja pomoći ćemo Vam da postignete merljive rezultate i usavršite svoju
       svakodnevnu ili poslovnu komunikaciju.</p>
     <p>Uvek je pravi trenutak za napredak!</p>
-    <a href="#calendly_link">Prijavite se</a>
+    <a href="#contact_id">Prijavite se</a>
     <div class="hive header_hive">
       <div class="hexagon header_hexagon hex-s"></div>
       <div class="hexagon header_hexagon hex-m"></div>

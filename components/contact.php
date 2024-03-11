@@ -1,9 +1,9 @@
-<div style="padding: 0.5rem" id="contact_id">
+<div id="contact_id">
   <div class="contact-container reasons_why_disappear">
     <div name="contact-form" class="form-container">
       <h2>KONTAKTIRAJTE
         NAS</h2>
-        <p>Popunite formu i neko će Vam se javiti u narednih nekoliko sati</p>
+      <p>Popunite formu i neko će Vam se javiti u narednih nekoliko sati</p>
       <p class="form-notification"></p>
       <div class="name_mail_container">
         <div>

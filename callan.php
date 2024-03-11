@@ -190,7 +190,6 @@ include "components/header.php";
   </div>
   <?php
   include "components/contact.php";
-  include "components/calendly.php";
   ?>
 </main>
 

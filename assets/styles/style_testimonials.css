@@ -161,6 +161,11 @@
   .upper_part p {
     font-size: 1.1rem !important;
   }
+  .bee_logo {
+    width: 4rem !important;
+    height: 4rem !important;
+    top: 40px !important;
+  }
 }
 
 .video {

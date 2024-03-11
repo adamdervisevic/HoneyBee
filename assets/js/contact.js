@@ -102,7 +102,7 @@ function sendMail() {
   }
 
   (function () {
-    emailjs.init("jPlN-CgAlnxZExtuz"); // Replace with your actual user ID
+    emailjs.init("PBseeIsWApm-wKJeS"); // Replace with your actual user ID
   })();
 
   const params = {
@@ -112,8 +112,8 @@ function sendMail() {
     email: document.querySelector("#email").value,
   };
 
-  const serviceID = "service_3mhew3t";
-  const templateID = "template_cuafwjq";
+  const serviceID = "service_79ccvpa";
+  const templateID = "template_tktmtor";
 
   emailjs
     .send(serviceID, templateID, params)

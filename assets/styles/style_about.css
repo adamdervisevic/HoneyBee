@@ -69,6 +69,7 @@
   }
   .about_us_content p {
     font-size: 1.4rem;
+    padding: 0;
   }
   .about_us_content h2 {
     font-size: 2rem;

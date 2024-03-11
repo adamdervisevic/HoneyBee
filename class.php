@@ -2,6 +2,8 @@
 $callan_link = "<a style='color: #faaa1a !important; background-color: transparent; font-size: 2rem; padding: 0' href='callan.php'>Callan</a>";
 $class_target = $_GET['class_type'];
 
+
+
 $title = "HoneyBee | " . $class_target . " kurs";
 
 $single_class = [
@@ -100,12 +102,14 @@ $junior_class = [
 ];
 $collect_class_types = [$single_class, $dual_class, $junior_class];
 
-$target;
+$target = null;
 
 for ($i = 0; $i < count($collect_class_types); $i++) {
   if ($class_target === $collect_class_types[$i][0]) {
     $target = $collect_class_types[$i];
     break;
+  } else if ($i + 1 == count($collect_class_types) && !$target) {
+    Header("Location: index.php");
   }
 }
 
@@ -197,7 +201,6 @@ include "components/navbar.php";
 
   <?php
   include "components/contact.php";
-  include "components/calendly.php";
   ?>
 </main>
 <?php

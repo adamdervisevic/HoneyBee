@@ -13,7 +13,6 @@ include "components/header.php";
     include "components/carousel_2.php";
     include "components/carousel.php";
     include "components/contact.php";
-    include "components/calendly.php";
     ?>
 </main>
 

@@ -53,7 +53,6 @@ include "components/navbar.php";
 
   <?php
   include "components/contact.php";
-  include "components/calendly.php";
   ?>
 </main>
 <?php

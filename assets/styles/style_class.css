@@ -119,7 +119,10 @@
   .class_program h1 {
     font-size: 3.4rem !important;
   }
-  .class_program div > p {
+  .cenovnik div h2 {
+    font-size: 2rem;
+  }
+  .cenovnik div > p {
     font-size: 1.5rem !important;
   }
 }
@@ -128,10 +131,21 @@
   .class_program div h1 {
     font-size: 2.4rem !important;
   }
+  .cenovnik div ul li {
+    font-size: 1.4rem !important;
+  }
+  .cenovnik div > p {
+    font-size: 1.4rem !important;
+  }
+}
+@media only screen and (max-width: 380px) {
+  .class_program div h1 {
+    font-size: 1.8rem;
+  }
   .class_program ul li {
-    font-size: 1.2rem !important;
+    font-size: 1.3rem !important;
   }
   .class_program div > p {
-    font-size: 1.2rem !important;
+    font-size: 1.3rem !important;
   }
 }

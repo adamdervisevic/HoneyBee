@@ -8,7 +8,7 @@ include "components/navbar.php";
 
 $student_1 = [
   'b_k.webp',
-  'Bojana Kostadinovic, komercijalista',
+  'Bojana Kostadinović, komercijalista',
   'Predavači su izuzetno ljubazni, pristupacni, puni razumevanja i posvećeni svakom detetu bez obzira što su grupice u pitanju. Njihova strpljivost, znanje i metode ključ su uspeha moje dece.',
   [
     'Sin je krenuo pre dve godine sa pohadjanjem nastave. Sa inovativnim metodama vrlo brzo se video napredak, a da on toga nije bio ni svestan. Svakim casom koji je jedva čekao, sta ce to novo biti, koja igra ili učenje o nečemu, on je sve bolje savladavao jezik i u školi napredovao. Za pola godine prijavljen je na prvo takmičenje u školi. Ove godine je krenula i ćerka koja ima minimalno predznanje, a već se vidi veliki napredak.',
@@ -23,7 +23,7 @@ $student_1 = [
 
 $student_2 = [
   'g_c.webp',
-  'Gaga Cvetkovic, vaspitac',
+  'Gaga Cvetković, vaspitač',
   'Maja je majstor učenja na način koji je i obrazovan i zabavan. Njena sposobnost da prenese složene koncepte kroz jednostavne i humorističke primere čini časove uvek zanimljivim.',
   [
     'Prijateljstvo i učenje" - to su dve ključne reči koje bih upotrebila opisujući svoje iskustvo u školi engleskog jezika "HONEY BEE". Kroz protekle dve godine, Maja nije bila samo moja nastavnica već i dragoceni prijatelj na mom jezičkom putovanju.',
@@ -36,7 +36,7 @@ $student_2 = [
 
 $student_3 = [
   'i_j.webp',
-  'Ivan Jovic',
+  'Ivan Jović',
   'Od srca preporučujem školu engleskog jezika HoneyBee, jer je moj engleski postao značajno bolji i dostigao zavidan konverzacijski nivo.',
   [
     'Pri tom su termini časova bili usklađeni sa mojim obavezama, a predavač Maja je na izuzetno zanimljiv interaktivan način predstavila lekcije i omogućila da uspešno i lako napredujem.'
@@ -46,7 +46,7 @@ $student_3 = [
 
 $student_4 = [
   'd_m.webp',
-  'Dragana Miljkovic, umetnik',
+  'Dragana Miljković, umetnik',
   'Pohađanje škole engleskog jezika "HoneyBee” predstavlja jedno od najosvežavajućih iskustava u mom ličnom razvoju. Ova škola nije samo mesto gde se uči jezik; ona je zajednica koja podstiče rast, samopouzdanje i ljubav prema engleskom jeziku.',
   ['
   Jedna od ključnih karakteristika koja izdvaja "HoneyBee" je struktura nastave. Nastavnici su uspeli da spoje tradicionalne i inovativne metode učenja. Raznovrsnost časova, uključujući gramatičke vežbe, konverzaciju i kreativne projekte, čini svaki čas dinamičnim i zanimljivim.
@@ -61,7 +61,7 @@ $student_4 = [
 
 $student_5 = [
   'o_j.webp',
-  'Obrenija Jasnic, medicinski radnik',
+  'Obrenija Jasnić, medicinski radnik',
   'Nasa teacher Maja je najdivnija osoba.
   Svoj posao radi profesionalno sa puno ljubavi i paznje prema deci.
   Mateja obozava vreme provedeno sa njom.
@@ -72,7 +72,7 @@ $student_5 = [
 
 $student_6 = [
   't_m.webp',
-  'Teodora Markovic, medicinski radnik',
+  'Teodora Marković, medicinski radnik',
   'Sve pohvale i preporuke sa nase strane.',
   ['
   Jedva čekam sledeci čas da nastavimo da radimo! Hvala ti 
@@ -83,7 +83,7 @@ $student_6 = [
 
 $student_7 = [
   'i_l.webp',
-  'Ivana Lalic',
+  'Ivana Lalić',
   'Zelim izraziti svoje zadovoljstvo postignutim napretkom u konverzaciji i poslovnom engleskom jeziku. Iskreno, ova škola je prevazišla moja očekivanja.',
   ['Istakla bih izvanrednu stručnost i posvećenost predavača.', 'Mnogo sam samouverenija u komunikaciji na engleskom jeziku, kako u svakodnevnim situacijama, tako i u poslovnom okruženju. Preporučujem ovu školu svima koji žele brz i efikasan napredak u engleskom jeziku.'],
   'type_one'
@@ -91,7 +91,7 @@ $student_7 = [
 
 $student_8 = [
   'j_m.webp',
-  'Jelena Markovic',
+  'Jelena Marković',
   'Kao mlada osoba koja se pripremala za selidbu u drzavu engleskg govornog područja i želela lakše naći posao, odlučila sam se obratiti timu  HoneyBee za online učenje engleskog jezika. I mogu s ponosom reći da je to bila najbolja odluka koju sam mogla doneti.',
   [
     'Već pri prvom kontaktu s timom, osetila sam toplinu i ljubaznost njihovog pristupa. Bili su neverovatno fleksibilni i prilagodljivi mojim potrebama i rasporedu, što je za mene koja sam tada je i dalje radila puno radno vreme, bilo od ključne važnosti.',
@@ -104,7 +104,7 @@ $student_8 = [
 
 $student_9 = [
   'u_s.webp',
-  'Uros Stojkovic, komercijalista',
+  'Uros Stojković, komercijalista',
   'Škola "HoneyBee" me je dovela do toga da zavolim engleski jezik, ne samo da radim od časa do časa već i da krenem svakodnevno da razmisljam na engleskom jeziku.',
   [
     'Zahvaljujući divnim profesorima, njihovim pristupom i posvećenosti došli smo do onog nivoa o kom sam maštao, i ne..tu nije kraj!'
@@ -114,7 +114,7 @@ $student_9 = [
 
 $student_10 = [
   'd_i.webp',
-  'Danica Ilic, pravnik',
+  'Danica Ilić, pravnik',
   'Šta reći,osim puno pohvala za ovaj izvanredan tim mladih ljudi koji vole rad sa decom ali i sa odraslima. Puno ozbiljnog rada protkanog zabavom za svačiji ukus i za svaki uzrast...to mogu da potvrdim iskustvom svog deteta koje od kada uči sa ovim izvsrnim predavačima ne samo da ostvaruje odlične rezultate iz engleskog jezika u školi,već i uživa u tome što rade i željno iščekuje svaki naredni čas...',
   ['Takodje,moja prijateljica koja je učila sa njima ima samo reči hvale...Puno strpljenja,taktičnost ,maštovitost i  kreativnost je ono što pružaju svojim učenicima a online pristup bilo kada i bilo gde je još jedna prednost ovakvog učenja .Sve pohvale i sve preporuke,najbolji ste 🥰'],
   'type_three'
@@ -122,7 +122,7 @@ $student_10 = [
 
 $student_11 = [
   'h_i.webp',
-  'Hristina Gigic, preduzetnica',
+  'Hristina Gigić, preduzetnica',
   'Odusevljeni smo napretkom nase cerke. Za jako kratko vreme, njeno vladanje engleskim jezikom je znatno poraslo zahvaljujuci efikasnim metodama nastave.',
   ['Majina posvecenost ucenicima podstice kako akademske vestine, tako i mentalni sklop njenih ucenika. Visoko preporucujemo za izvanredno obrazovanje iz engleskog jezika'],
   'type_one'
@@ -217,13 +217,13 @@ $students = [$student_1, $student_2, $student_3, $student_4, $student_5, $studen
         btn.innerHTML = "+";
         filler_text[id].classList.remove("filler_in");
         testimonial_container[id].classList.remove('default_height');
+
       }
     }))
 
   </script>
   <?php
   include "components/contact.php";
-  include "components/calendly.php";
   ?>
 </main>
 <?php

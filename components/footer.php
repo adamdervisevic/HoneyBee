@@ -2,7 +2,8 @@
   <div>
     <div>
       <div class="icons_footer">
-        <a href="https://www.instagram.com/honeybee_school/" aria-label="instagram"><i class="ri-instagram-line"></i></a>
+        <a href="https://www.instagram.com/honeybee_school/" aria-label="instagram"><i
+            class="ri-instagram-line"></i></a>
         <a href="#" aria-label="youtube"><i class="ri-youtube-line"></i></a>
         <a href="#" aria-label="facebook"><i class="ri-facebook-line"></i></a>
       </div>
@@ -26,7 +27,7 @@
           honeybee_school
         </a></p>
       <p>
-        <a href="mailto:honeybeeschool@outlook.com">honeybeeschool@outlook.com</a>
+        <a href="mailto:schoolhoneybee@outlook.com">schoolhoneybee@outlook.com</a>
       </p>
     </address>
     <div class="footer_nav">

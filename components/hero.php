@@ -14,7 +14,7 @@
     <p>Unapredite svoje znanje engleskog jezika i konačno počnite da govorite sa samopouzdanjem.</p>
     <p>U našoj online učionici Vas očekuju stručni predavači koji će Vam pomoći da s lakoćom savladate engleski
       jezik.</p>
-    <p>Uz proverene tehnike I metode učenja pomoći ćemo Vam da postignete merljive rezultate i usavršite svoju
+    <p>Uz proverene tehnike i metode učenja pomoći ćemo Vam da postignete merljive rezultate i usavršite svoju
       svakodnevnu ili poslovnu komunikaciju.</p>
     <p>Uvek je pravi trenutak za napredak!</p>
     <a href="#contact_id">Prijavite se</a>

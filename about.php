@@ -29,7 +29,7 @@ include "components/navbar.php";
       <p>Izmedju ostalog, akreditovana smo škola engleskog jezika za <a href="callan.php" class="callan_link">Callan</a>
         metod koji
         predstavlja dinamičan i zabavan
-        nacin učenja, gde je focus stavljen na govor i pitanja koja podstiču da komunikacija bude na zavidnom nivou.
+        nacin učenja, gde je fokus stavljen na govor i pitanja koja podstiču da komunikacija bude na zavidnom nivou.
         Saznajte vise o <a href="callan.php" class="callan_link">Callan</a> metod učenju na ovom linku <a
           href="callan.php" class="callan_link">Callan</a> method. </p>
       </p>

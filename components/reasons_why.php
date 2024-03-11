@@ -3,7 +3,7 @@
   <div class="section_why_hive">
     <button class="btn_why">
       <div class="hexagon hex-why">
-        <p style="color: #faaa1a;">Štedite vreme , novac i energiju</p>
+        <p style="color: #faaa1a;">Štedite vreme, novac i energiju</p>
       </div>
     </button>
     <button class="btn_why">

@@ -15,7 +15,7 @@ $single_class = [
   '/assets/img/slika_za_individue.webp',
   [
     [
-      'Cenovnik za konverzacijski engleski na mesecnom nivou',
+      'Cenovnik za konverzacijski engleski na mesečnom nivou',
       '2x1 čas nedeljno',
       '9.000 dinara',
       [
@@ -27,7 +27,7 @@ $single_class = [
       ]
     ],
     [
-      'Cenovnik za poslovni engleski na mesecnom nivou',
+      'Cenovnik za poslovni engleski na mesečnom nivou',
       '2x1 čas nedeljno',
       '11.400 dinara',
       [
@@ -44,12 +44,12 @@ $dual_class = [
   "grupni",
   "Učenje u paru (Dual fun)",
   ['Prijatna atmosfera tokom nastave', 'Efikasan i dinamičan način učenja', 'Focus je na govoru', 'Vi ste aktivni učesnici u konverzaciji', 'Po završenom svakom nivou dobijate sertifikat ( ukupno 12 nivoa)'],
-  'Ukoliko ste osoba koja pored individualnog pristupa voli i socijalnu interakciju , onda je ovaj program idealan za Vas . Ovde ćete imati priliku da učestvujete  u role play aktivnostima gde se simuliraju realne situacije kako iz svakodnevnog zivota , tako i iz Vašeg poslovnog okruzenja.',
-  'Ovaj tip programa je idealan ako biste zajedno učili s nekim iz Vašeg okruzenja , bilo da se radi o Vašem partneru , prijatelju , ili pak rodjaku. Samim tim biste postigli i najrealnije simulacije iz svakodnevnog zivota.',
+  'Ukoliko ste osoba koja pored individualnog pristupa voli i socijalnu interakciju , onda je ovaj program idealan za Vas . Ovde ćete imati priliku da učestvujete  u role play aktivnostima gde se simuliraju realne situacije kako iz svakodnevnog života, tako i iz Vašeg poslovnog okruzenja.',
+  'Ovaj tip programa je idealan ako biste zajedno učili s nekim iz Vašeg okruzenja , bilo da se radi o Vašem partneru , prijatelju , ili pak rođaku. Samim tim biste postigli i najrealnije simulacije iz svakodnevnog života.',
   '/assets/img/slika_za_duo.webp',
   [
     [
-      'Cenovnik za učenje u paru (Dual fun) na mesecnom nivou po osobi',
+      'Cenovnik za učenje u paru (Dual fun) na mesečnom nivou po osobi',
       '2x1 čas nedeljno',
       '4.200 dinara',
       [
@@ -68,7 +68,7 @@ $junior_class = [
   [
     'Prijatna i zabavna atmosfera tokom nastave',
     'Efikasan i dinamičan način učenja',
-    'Focus je na govoru',
+    'Fokus je na govoru',
     'Vaše dete aktivno učestvuje u konverzaciji',
     'Po završenom svakom nivou Vaše dete dobija diplomu'
   ],
@@ -150,7 +150,7 @@ include "components/navbar.php";
         <?php echo $target[4] ?>
       </p>
       <p>
-        Očekujemo Vas s velikom radošču!!!
+        Očekujemo Vas s velikom radošću!!!
       </p>
       <a href="#contact_id">Prijava</a>
     </div>

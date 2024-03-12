@@ -234,9 +234,10 @@ function animations_management(validated, validated_2) {
       this.window.scrollY < distanceFromTop
     ) {
       reasons_why_container.classList.remove("reasons_why_disappear");
-    } else {
-      reasons_why_container.classList.add("reasons_why_disappear");
     }
+    // else {
+    //   reasons_why_container.classList.add("reasons_why_disappear");
+    // }
   }
 
   if (distanceFromTop_2) {
@@ -245,9 +246,10 @@ function animations_management(validated, validated_2) {
       this.window.scrollY < distanceFromTop_2
     ) {
       our_teachers_container.classList.remove("reasons_why_disappear");
-    } else {
-      our_teachers_container.classList.add("reasons_why_disappear");
     }
+    // else {
+    //   our_teachers_container.classList.add("reasons_why_disappear");
+    // }
   }
 
   if (distanceFromTop_3) {
@@ -256,22 +258,21 @@ function animations_management(validated, validated_2) {
       this.window.scrollY < distanceFromTop_3
     ) {
       testimonials.classList.remove("reasons_why_disappear");
-    } else {
-      testimonials.classList.add("reasons_why_disappear");
     }
+    // else {
+    //   testimonials.classList.add("reasons_why_disappear");
+    // }
   }
 
   if (distanceFromTop_4) {
     let contact_multiplier = contact_class_validation ? 4 : 1.225;
 
-    if (
-      window.scrollY * contact_multiplier >= distanceFromTop_4 &&
-      this.window.scrollY < distanceFromTop_4
-    ) {
+    if (window.scrollY * contact_multiplier >= distanceFromTop_4) {
       contact.classList.remove("reasons_why_disappear");
-    } else {
-      contact.classList.add("reasons_why_disappear");
     }
+    //  else {
+    //   contact.classList.add("reasons_why_disappear");
+    // }
   }
 
   if (distanceFromTop_5) {
@@ -301,11 +302,12 @@ function animations_management(validated, validated_2) {
         document.querySelector(".a_bee").classList.add("a_animate");
       }, 150);
     } else {
-      offer.classList.add("reasons_why_disappear");
+      // offer.classList.add("reasons_why_disappear");
       document.querySelector(".a_bee").classList.remove("a_animate");
     }
   }
 }
+
 
 window.addEventListener("load", () => animations_management(false, false));
 window.addEventListener("scroll", () => animations_management(false, false));

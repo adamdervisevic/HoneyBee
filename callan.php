@@ -1,3 +1,4 @@
+
 <?php
 $title = "HoneyBee - Callan metoda predavanja";
 include "components/head.php";
@@ -46,6 +47,7 @@ include "components/header.php";
       <p>
         Uvek potražite školu akreditovanu za Callan metod. To mozete uciniti klikom na Callan metod akreditovane skole.
       </p>
+      <p><a href="https://callan.co.uk/find-an-accredited-for-online-school-or-teacher/" style="color: #faaa1a;" target="_blank">accredited online school</a><!--check--></p>
     </div>
   </section>
   <section class="big_callan">

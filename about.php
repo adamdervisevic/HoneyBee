@@ -44,7 +44,7 @@ include "components/navbar.php";
         okruzenjem za vaš napredak. </p>
       <p>Naši predavči su stručni, uvek nasmejani, ljubazni i puni podrške. Strast i ljubav prema jezicima je ono što
         nas spaja i to je prva stvar koju ćete osetiti u nasoj učionici. Svaki cas je dizajniran po Vašoj meri.</p>
-      <p>Radujemo se da zajedno sa izgradimo taj nivo znanja gde ćete sa samopouzdanjem moći da razgovarate i
+      <p>Radujemo se da zajedno sa vama izgradimo taj nivo znanja gde ćete sa samopouzdanjem moći da razgovarate i
         razmišljate na engleskom jeziku. </p>
       </p>
     </div>
